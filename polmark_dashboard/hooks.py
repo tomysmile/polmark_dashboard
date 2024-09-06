@@ -6,6 +6,32 @@ app_email = "tomysmile@gmail.com"
 app_license = "mit"
 # required_apps = []
 
+fixtures = [
+    {
+        "doctype": "Workspace",
+        "filters": [
+            [
+                "name", "in", [
+                    "Kab. Bekasi",
+                    "Kota Balikpapan",
+                    "Kota Bandung",
+                    "Kota Bekasi",
+                    "Kota Medan",
+                    "Prov. Jawa Barat",
+                    "Prov. SumUt",
+                    "Pendampingan 2024",
+                    "Informasi Umum",
+                    "PILKADA 2024",
+                    "PILEG 2024",
+                    "PILPRES 2024",
+                    "Polmark"
+                ]
+            ]
+        ]
+    }
+]
+
+
 # Includes in <head>
 # ------------------
 
