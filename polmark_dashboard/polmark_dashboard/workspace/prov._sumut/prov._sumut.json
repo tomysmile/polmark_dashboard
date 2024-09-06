@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 16:31:56.818049",
+ "creation": "2024-09-06 17:38:50.777591",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -11,7 +11,7 @@
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
- "label": "Prov. SumUt",
+ "label": "Prov. Sumut",
  "links": [
   {
    "dependencies": "",
@@ -91,10 +91,10 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 17:00:39.837031",
+ "modified": "2024-09-06 21:33:50.879723",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Prov. SumUt",
+ "name": "Prov. Sumut",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "Pendampingan 2024",
@@ -102,7 +102,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 8.0,
+ "sequence_id": 7.0,
  "shortcuts": [],
- "title": "Prov. SumUt"
+ "title": "Prov. Sumut"
 }

@@ -1,8 +1,13 @@
 {
  "charts": [],
- "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 16:35:45.458006",
- "custom_blocks": [],
+ "content": "[{\"id\":\"tkt6-_cYuf\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"k_CiVUQTU2\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"63jTMbhW9G\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}}]",
+ "creation": "2024-09-06 17:38:51.155558",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Tahapan Pilkada",
+   "label": "Tahapan Pilkada"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -91,7 +96,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 16:59:23.553679",
+ "modified": "2024-09-06 21:33:50.576631",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Informasi Umum",
@@ -102,7 +107,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 5.0,
+ "sequence_id": 4.0,
  "shortcuts": [],
  "title": "Informasi Umum"
 }

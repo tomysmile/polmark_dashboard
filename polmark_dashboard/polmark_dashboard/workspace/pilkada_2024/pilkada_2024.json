@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 16:27:30.759923",
+ "creation": "2024-09-06 17:38:50.253794",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -91,18 +91,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 16:57:47.032422",
+ "modified": "2024-09-06 21:33:50.442281",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "PILKADA 2024",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Polmark",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 4.0,
+ "sequence_id": 3.0,
  "shortcuts": [],
  "title": "PILKADA 2024"
 }

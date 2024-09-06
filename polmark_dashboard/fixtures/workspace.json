@@ -7,152 +7,6 @@
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": "stock",
-  "indicator_color": "green",
-  "is_hidden": 0,
-  "label": "Polmark",
-  "links": [
-   {
-    "dependencies": "",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Activity Log",
-    "link_count": 0,
-    "link_to": "Activity Log",
-    "link_type": "DocType",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Access Log",
-    "link_count": 0,
-    "link_to": "Access Log",
-    "link_type": "DocType",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Role Permissions Manager",
-    "link_count": 0,
-    "link_to": "permission-manager",
-    "link_type": "Page",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "User Permissions",
-    "link_count": 0,
-    "link_to": "User Permission",
-    "link_type": "DocType",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Role Permission for Page and Report",
-    "link_count": 0,
-    "link_to": "Role Permission for Page and Report",
-    "link_type": "DocType",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "User",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 1,
-    "label": "Permitted Documents For User",
-    "link_count": 0,
-    "link_to": "Permitted Documents For User",
-    "link_type": "Report",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   },
-   {
-    "dependencies": "DocShare",
-    "description": null,
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Document Share Report",
-    "link_count": 0,
-    "link_to": "Document Share Report",
-    "link_type": "Report",
-    "onboard": 0,
-    "only_for": null,
-    "parent": "Polmark",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
-   }
-  ],
-  "modified": "2024-09-06 16:58:19.413175",
-  "module": "Polmark Dashboard",
-  "name": "Polmark",
-  "number_cards": [],
-  "parent_page": "",
-  "public": 1,
-  "quick_lists": [],
-  "restrict_to_domain": "",
-  "roles": [],
-  "sequence_id": 1.0,
-  "shortcuts": [],
-  "title": "Polmark"
- },
- {
-  "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
-  "docstatus": 0,
-  "doctype": "Workspace",
-  "for_user": "",
-  "hide_custom": 0,
   "icon": "project",
   "indicator_color": "green",
   "is_hidden": 0,
@@ -278,16 +132,16 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 16:58:41.827833",
+  "modified": "2024-09-06 21:31:34.584202",
   "module": "Polmark Dashboard",
   "name": "PILEG 2024",
   "number_cards": [],
-  "parent_page": "Polmark",
+  "parent_page": "",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 2.0,
+  "sequence_id": 1.0,
   "shortcuts": [],
   "title": "PILEG 2024"
  },
@@ -424,16 +278,16 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 16:59:01.641226",
+  "modified": "2024-09-06 21:31:34.655016",
   "module": "Polmark Dashboard",
   "name": "PILPRES 2024",
   "number_cards": [],
-  "parent_page": "Polmark",
+  "parent_page": "",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 3.0,
+  "sequence_id": 2.0,
   "shortcuts": [],
   "title": "PILPRES 2024"
  },
@@ -570,16 +424,16 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 16:57:47.032422",
+  "modified": "2024-09-06 21:31:34.730594",
   "module": "Polmark Dashboard",
   "name": "PILKADA 2024",
   "number_cards": [],
-  "parent_page": "Polmark",
+  "parent_page": "",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 4.0,
+  "sequence_id": 3.0,
   "shortcuts": [],
   "title": "PILKADA 2024"
  },
@@ -716,7 +570,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 16:59:48.109889",
+  "modified": "2024-09-06 21:31:34.904805",
   "module": "Polmark Dashboard",
   "name": "Pendampingan 2024",
   "number_cards": [],
@@ -725,7 +579,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 6.0,
+  "sequence_id": 5.0,
   "shortcuts": [],
   "title": "Pendampingan 2024"
  },
@@ -862,7 +716,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:01:51.092571",
+  "modified": "2024-09-06 21:31:35.306640",
   "module": "Polmark Dashboard",
   "name": "Kota Bekasi",
   "number_cards": [],
@@ -871,7 +725,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 11.0,
+  "sequence_id": 10.0,
   "shortcuts": [],
   "title": "Kota Bekasi"
  },
@@ -1008,7 +862,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:00:13.301581",
+  "modified": "2024-09-06 21:31:34.975773",
   "module": "Polmark Dashboard",
   "name": "Prov. Jawa Barat",
   "number_cards": [],
@@ -1017,7 +871,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 7.0,
+  "sequence_id": 6.0,
   "shortcuts": [],
   "title": "Prov. Jawa Barat"
  },
@@ -1154,7 +1008,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:01:27.965307",
+  "modified": "2024-09-06 21:31:35.227309",
   "module": "Polmark Dashboard",
   "name": "Kab. Bekasi",
   "number_cards": [],
@@ -1163,7 +1017,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 10.0,
+  "sequence_id": 9.0,
   "shortcuts": [],
   "title": "Kab. Bekasi"
  },
@@ -1300,7 +1154,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:00:39.837031",
+  "modified": "2024-09-06 21:31:35.062152",
   "module": "Polmark Dashboard",
   "name": "Prov. SumUt",
   "number_cards": [],
@@ -1309,7 +1163,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 8.0,
+  "sequence_id": 7.0,
   "shortcuts": [],
   "title": "Prov. SumUt"
  },
@@ -1446,7 +1300,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:03:22.670814",
+  "modified": "2024-09-06 21:31:35.653406",
   "module": "Polmark Dashboard",
   "name": "Kota Medan",
   "number_cards": [],
@@ -1455,7 +1309,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 15.0,
+  "sequence_id": 14.0,
   "shortcuts": [],
   "title": "Kota Medan"
  },
@@ -1592,7 +1446,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:02:18.657760",
+  "modified": "2024-09-06 21:31:35.380463",
   "module": "Polmark Dashboard",
   "name": "Kota Bandung",
   "number_cards": [],
@@ -1601,7 +1455,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 12.0,
+  "sequence_id": 11.0,
   "shortcuts": [],
   "title": "Kota Bandung"
  },
@@ -1738,7 +1592,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 17:03:00.647111",
+  "modified": "2024-09-06 21:31:35.560833",
   "module": "Polmark Dashboard",
   "name": "Kota Balikpapan",
   "number_cards": [],
@@ -1747,14 +1601,22 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 14.0,
+  "sequence_id": 13.0,
   "shortcuts": [],
   "title": "Kota Balikpapan"
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"tkt6-_cYuf\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"k_CiVUQTU2\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"63jTMbhW9G\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Tahapan Pilkada",
+    "label": "Tahapan Pilkada",
+    "parent": "Informasi Umum",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -1884,7 +1746,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 16:59:23.553679",
+  "modified": "2024-09-06 21:31:34.814354",
   "module": "Polmark Dashboard",
   "name": "Informasi Umum",
   "number_cards": [],
@@ -1893,7 +1755,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 5.0,
+  "sequence_id": 4.0,
   "shortcuts": [],
   "title": "Informasi Umum"
  }
