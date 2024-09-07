@@ -18,13 +18,22 @@ fixtures = [
                     "Kota Bekasi",
                     "Kota Medan",
                     "Prov. Jawa Barat",
-                    "Prov. SumUt",
+                    "Prov. Sumut",
+                    "Prov. Kalteng",
                     "Pendampingan 2024",
                     "Informasi Umum",
                     "PILKADA 2024",
                     "PILEG 2024",
-                    "PILPRES 2024",
-                    "Polmark"
+                    "PILPRES 2024"
+                ]
+            ]
+        ]
+    }, {
+        "doctype": "Custom HTML Block",
+        "filters": [
+            [
+                "name", "in", [
+                    "Tahapan Pilkada",
                 ]
             ]
         ]

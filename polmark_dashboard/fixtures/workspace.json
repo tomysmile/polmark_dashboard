@@ -7,6 +7,152 @@
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
+  "icon": "menu",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Prov. Kalteng",
+  "links": [
+   {
+    "dependencies": "",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Activity Log",
+    "link_count": 0,
+    "link_to": "Activity Log",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Access Log",
+    "link_count": 0,
+    "link_to": "Access Log",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Role Permissions Manager",
+    "link_count": 0,
+    "link_to": "permission-manager",
+    "link_type": "Page",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "User Permissions",
+    "link_count": 0,
+    "link_to": "User Permission",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Role Permission for Page and Report",
+    "link_count": 0,
+    "link_to": "Role Permission for Page and Report",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "User",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 1,
+    "label": "Permitted Documents For User",
+    "link_count": 0,
+    "link_to": "Permitted Documents For User",
+    "link_type": "Report",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": "DocShare",
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Document Share Report",
+    "link_count": 0,
+    "link_to": "Document Share Report",
+    "link_type": "Report",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Prov. Kalteng",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   }
+  ],
+  "modified": "2024-09-06 21:33:50.995576",
+  "module": "",
+  "name": "Prov. Kalteng",
+  "number_cards": [],
+  "parent_page": "Pendampingan 2024",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": "",
+  "roles": [],
+  "sequence_id": 8.0,
+  "shortcuts": [],
+  "title": "Prov. Kalteng"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
   "icon": "project",
   "indicator_color": "green",
   "is_hidden": 0,
@@ -132,7 +278,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.584202",
+  "modified": "2024-09-06 21:33:49.963977",
   "module": "Polmark Dashboard",
   "name": "PILEG 2024",
   "number_cards": [],
@@ -278,7 +424,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.655016",
+  "modified": "2024-09-06 21:33:50.327828",
   "module": "Polmark Dashboard",
   "name": "PILPRES 2024",
   "number_cards": [],
@@ -424,7 +570,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.730594",
+  "modified": "2024-09-06 21:33:50.442281",
   "module": "Polmark Dashboard",
   "name": "PILKADA 2024",
   "number_cards": [],
@@ -570,7 +716,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.904805",
+  "modified": "2024-09-06 21:33:50.674327",
   "module": "Polmark Dashboard",
   "name": "Pendampingan 2024",
   "number_cards": [],
@@ -716,7 +862,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.306640",
+  "modified": "2024-09-06 21:33:51.157245",
   "module": "Polmark Dashboard",
   "name": "Kota Bekasi",
   "number_cards": [],
@@ -862,7 +1008,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.975773",
+  "modified": "2024-09-06 21:33:50.772519",
   "module": "Polmark Dashboard",
   "name": "Prov. Jawa Barat",
   "number_cards": [],
@@ -1008,7 +1154,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.227309",
+  "modified": "2024-09-06 21:33:51.063776",
   "module": "Polmark Dashboard",
   "name": "Kab. Bekasi",
   "number_cards": [],
@@ -1032,7 +1178,7 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "Prov. SumUt",
+  "label": "Prov. Sumut",
   "links": [
    {
     "dependencies": "",
@@ -1046,7 +1192,7 @@
     "link_type": "DocType",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1063,7 +1209,7 @@
     "link_type": "DocType",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1080,7 +1226,7 @@
     "link_type": "Page",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1097,7 +1243,7 @@
     "link_type": "DocType",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1114,7 +1260,7 @@
     "link_type": "DocType",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1131,7 +1277,7 @@
     "link_type": "Report",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
@@ -1148,15 +1294,15 @@
     "link_type": "Report",
     "onboard": 0,
     "only_for": null,
-    "parent": "Prov. SumUt",
+    "parent": "Prov. Sumut",
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.062152",
+  "modified": "2024-09-06 21:33:50.879723",
   "module": "Polmark Dashboard",
-  "name": "Prov. SumUt",
+  "name": "Prov. Sumut",
   "number_cards": [],
   "parent_page": "Pendampingan 2024",
   "public": 1,
@@ -1165,7 +1311,7 @@
   "roles": [],
   "sequence_id": 7.0,
   "shortcuts": [],
-  "title": "Prov. SumUt"
+  "title": "Prov. Sumut"
  },
  {
   "charts": [],
@@ -1300,7 +1446,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.653406",
+  "modified": "2024-09-06 21:33:51.573143",
   "module": "Polmark Dashboard",
   "name": "Kota Medan",
   "number_cards": [],
@@ -1446,7 +1592,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.380463",
+  "modified": "2024-09-06 21:33:51.246460",
   "module": "Polmark Dashboard",
   "name": "Kota Bandung",
   "number_cards": [],
@@ -1592,7 +1738,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:35.560833",
+  "modified": "2024-09-06 21:33:51.441471",
   "module": "Polmark Dashboard",
   "name": "Kota Balikpapan",
   "number_cards": [],
@@ -1746,7 +1892,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-06 21:31:34.814354",
+  "modified": "2024-09-06 21:33:50.576631",
   "module": "Polmark Dashboard",
   "name": "Informasi Umum",
   "number_cards": [],
