@@ -1,0 +1,74 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:46:39.826493",
+  "name": "Tahapan Pilkada 2024"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:46:54.574566",
+  "name": "PKPU 2024"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:47:10.350804",
+  "name": "Peta Politik Dasar"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:47:19.765886",
+  "name": "Hasil Survei"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:47:27.918438",
+  "name": "Peta Zona Pemenangan"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:47:35.481383",
+  "name": "Materi Workshop"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:47:56.339058",
+  "name": "Visi Misi dan Program Kerja"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:48:12.683105",
+  "name": "Visi Misi dan Program Kerja Kompetitor"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "enabled": 1,
+  "modified": "2024-09-07 12:48:19.143528",
+  "name": "Biodata Kandidat"
+ }
+]

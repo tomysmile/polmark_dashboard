@@ -37,6 +37,8 @@ fixtures = [
                 ]
             ]
         ]
+    }, {
+        "doctype": "Document Category"
     }
 ]
 
