@@ -10,6 +10,7 @@
   "description",
   "document_category",
   "zone_category",
+  "zone_category_code",
   "upload_file",
   "document_metadata_section",
   "column_break_ppdq",
@@ -94,11 +95,18 @@
   {
    "fieldname": "column_break_ppdq",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "zone_category.zone_code",
+   "fieldname": "zone_category_code",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Zone Category Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-07 15:22:10.721148",
+ "modified": "2024-09-07 16:41:00.871981",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
