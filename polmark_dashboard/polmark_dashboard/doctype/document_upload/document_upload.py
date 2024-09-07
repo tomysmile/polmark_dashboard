@@ -18,7 +18,8 @@ URL_PREFIXES = ("http://", "https://")
 
 
 class DocumentUpload(Document):
-	pass
+	def get_query_param(param):
+		return frappe.local.request.args.get(param)
 
 	def set_file_type(self):
 		file_type = mimetypes.guess_type(self.upload_file)[0]
@@ -105,3 +106,14 @@ class DocumentUpload(Document):
 		self.set_file_type()
 		self.get_content()
 		self.file_size = self.check_max_file_size()
+
+	def get_list(self, *args, **kwargs):
+		# Get filters from query string
+		filter_value = self.get_query_param('document_category')
+
+		# Apply custom filtering logic based on query string
+		if filter_value:
+			kwargs['filters'].append(['document_category', '=', filter_value])
+
+		# Return the filtered list
+		return super().get_list(*args, **kwargs)

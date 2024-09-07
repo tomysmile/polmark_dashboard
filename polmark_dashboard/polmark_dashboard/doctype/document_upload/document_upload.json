@@ -7,10 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
+  "description",
   "document_category",
   "zone_category",
-  "column_break_nfgu",
-  "description",
   "upload_file",
   "document_metadata_section",
   "column_break_ppdq",
@@ -81,8 +80,10 @@
   {
    "fieldname": "document_category",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Document Category",
-   "options": "Document Category"
+   "options": "Document Category",
+   "reqd": 1
   },
   {
    "fieldname": "zone_category",
@@ -93,15 +94,11 @@
   {
    "fieldname": "column_break_ppdq",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_nfgu",
-   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-07 14:05:56.403887",
+ "modified": "2024-09-07 15:22:10.721148",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
