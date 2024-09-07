@@ -4,71 +4,80 @@
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:46:39.826493",
-  "name": "Tahapan Pilkada 2024"
+  "modified": "2024-09-07 14:11:59.903289",
+  "name": "Tahapan Pilkada 2024",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:46:54.574566",
-  "name": "PKPU 2024"
+  "modified": "2024-09-07 14:11:55.018683",
+  "name": "PKPU 2024",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:47:10.350804",
-  "name": "Peta Politik Dasar"
+  "modified": "2024-09-07 14:11:50.610333",
+  "name": "Peta Politik Dasar",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:47:19.765886",
-  "name": "Hasil Survei"
+  "modified": "2024-09-07 14:11:46.129068",
+  "name": "Hasil Survei",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:47:27.918438",
-  "name": "Peta Zona Pemenangan"
+  "modified": "2024-09-07 14:11:41.784593",
+  "name": "Peta Zona Pemenangan",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:47:35.481383",
-  "name": "Materi Workshop"
+  "modified": "2024-09-07 14:11:37.681616",
+  "name": "Materi Workshop",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:47:56.339058",
-  "name": "Visi Misi dan Program Kerja"
+  "modified": "2024-09-07 14:11:33.593168",
+  "name": "Visi Misi dan Program Kerja",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:48:12.683105",
-  "name": "Visi Misi dan Program Kerja Kompetitor"
+  "modified": "2024-09-07 14:11:26.996595",
+  "name": "Visi Misi dan Program Kerja Kompetitor",
+  "standard": 1
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Document Category",
   "enabled": 1,
-  "modified": "2024-09-07 12:48:19.143528",
-  "name": "Biodata Kandidat"
+  "modified": "2024-09-07 14:11:22.598198",
+  "name": "Biodata Kandidat",
+  "standard": 1
  }
 ]

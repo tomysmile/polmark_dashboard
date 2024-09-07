@@ -2,26 +2,29 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-09-07 12:44:28.523513",
+ "creation": "2024-09-07 13:11:35.401328",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "description",
-  "enabled",
-  "standard"
+  "code_level",
+  "standard",
+  "enabled"
  ],
  "fields": [
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
-  },
   {
    "default": "1",
    "fieldname": "enabled",
    "fieldtype": "Check",
-   "in_list_view": 1,
    "label": "Enabled"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "code_level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Code Level",
+   "length": 1,
+   "non_negative": 1
   },
   {
    "default": "0",
@@ -32,10 +35,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-07 14:11:07.311364",
+ "modified": "2024-09-07 13:26:49.693739",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Document Category",
+ "name": "Zone Level",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -53,8 +56,8 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_field": "code_level",
+ "sort_order": "ASC",
  "states": [],
  "track_changes": 1
 }

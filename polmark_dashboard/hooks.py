@@ -38,7 +38,20 @@ fixtures = [
             ]
         ]
     }, {
-        "doctype": "Document Category"
+        "doctype": "Document Category",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
+        "doctype": "Zone Category",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
+        "doctype": "Zone Level",
+        "filters": [
+            ["standard", "=", 1]
+        ]
     }
 ]
 
