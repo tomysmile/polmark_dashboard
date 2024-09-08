@@ -52,6 +52,11 @@ fixtures = [
         "filters": [
             ["standard", "=", 1]
         ]
+    }, {
+        "doctype": "News Site",
+        "filters": [
+            ["standard", "=", 1]
+        ]
     }
 ]
 

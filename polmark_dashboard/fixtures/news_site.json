@@ -1,0 +1,122 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:15:42.159265",
+  "name": "detik.com",
+  "standard": 1,
+  "website": "https://www.detik.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:18:13.690828",
+  "name": "Radar Jabar",
+  "standard": 1,
+  "website": "https://radarjabar.disway.id/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:15:46.107611",
+  "name": "Pikiran Rakyat",
+  "standard": 1,
+  "website": "https://www.pikiran-rakyat.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:15:52.146385",
+  "name": "Kompas.com",
+  "standard": 1,
+  "website": "https://www.kompas.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:19:43.407744",
+  "name": "Tribunnews.com",
+  "standard": 1,
+  "website": "https://tribunnews.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:20:13.651348",
+  "name": "CNN Indonesia",
+  "standard": 1,
+  "website": "https://www.cnnindonesia.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:21:04.201832",
+  "name": "Antara News",
+  "standard": 1,
+  "website": "https://www.antaranews.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:21:41.352037",
+  "name": "CNBC Indonesia",
+  "standard": 1,
+  "website": "https://www.cnbc.com/indonesia/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:22:16.284024",
+  "name": "New York Times Indonesia",
+  "standard": 1,
+  "website": "https://www.nytimes.com/topic/destination/indonesia"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:22:28.984436",
+  "name": "Sindonews",
+  "standard": 1,
+  "website": "https://www.sindonews.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:22:39.951884",
+  "name": "JPNN",
+  "standard": 1,
+  "website": "https://www.jpnn.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:22:55.151433",
+  "name": "Media Indonesia",
+  "standard": 1,
+  "website": "https://mediaindonesia.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:21:25.377871",
+  "name": "VIVA.co.id",
+  "standard": 1,
+  "website": "https://www.viva.co.id/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:55:17.585797",
+  "name": "Liputan6",
+  "standard": 1,
+  "website": "https://www.liputan6.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:18:09.400032",
+  "name": "Tribun Jabar",
+  "standard": 1,
+  "website": "https://jabar.tribunnews.com/"
+ }
+]
