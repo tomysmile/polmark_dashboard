@@ -1,8 +1,13 @@
 {
  "charts": [],
- "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"3VZK7XOfbg\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Balikpapan-00\",\"col\":12}}]",
  "creation": "2024-09-08 13:05:51.671676",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "Block Pendampingan Kota Balikpapan-00",
+   "label": "Block Pendampingan Kota Balikpapan-00"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -91,7 +96,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-08 13:34:08.639744",
+ "modified": "2024-09-08 16:52:36.924432",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "xKota Balikpapan",

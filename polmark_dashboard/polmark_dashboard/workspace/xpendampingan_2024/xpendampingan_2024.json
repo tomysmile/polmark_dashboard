@@ -1,8 +1,13 @@
 {
  "charts": [],
- "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"lfHnWIgqV1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan-00\",\"col\":12}}]",
  "creation": "2024-09-08 13:05:51.057982",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "Block Pendampingan-00",
+   "label": "Block Pendampingan-00"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -91,7 +96,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-08 13:33:12.412579",
+ "modified": "2024-09-08 16:54:29.545608",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "xPendampingan 2024",

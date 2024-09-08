@@ -1,14 +1,19 @@
 {
  "charts": [],
- "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"3N_ZgXo4H2\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Medan-00\",\"col\":12}}]",
  "creation": "2024-09-08 13:05:51.498990",
- "custom_blocks": [],
+ "custom_blocks": [
+  {
+   "custom_block_name": "Block Pendampingan Kota Medan-00",
+   "label": "Block Pendampingan Kota Medan-00"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "icon": "menu",
- "idx": 0,
+ "idx": 1,
  "indicator_color": "",
  "is_hidden": 0,
  "label": "xKota Medan",
@@ -91,7 +96,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-08 13:34:14.347168",
+ "modified": "2024-09-08 16:52:52.467577",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "xKota Medan",

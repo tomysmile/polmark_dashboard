@@ -13,16 +13,6 @@
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 14:13:04.715116",
-  "name": "Kabupaten Bekasi",
-  "standard": 1,
-  "zone_code": "32.16",
-  "zone_level": "Kota/Kabupaten"
- },
- {
-  "docstatus": 0,
-  "doctype": "Zone Category",
-  "enabled": 1,
   "modified": "2024-09-07 14:13:19.953368",
   "name": "Kota Bekasi",
   "standard": 1,
@@ -97,6 +87,16 @@
   "name": "Kabupaten Sukabumi",
   "standard": 1,
   "zone_code": "32.02",
+  "zone_level": "Kota/Kabupaten"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Zone Category",
+  "enabled": 1,
+  "modified": "2024-09-07 14:13:04.715116",
+  "name": "Kabupaten Bekasi",
+  "standard": 1,
+  "zone_code": "32.16",
   "zone_level": "Kota/Kabupaten"
  },
  {

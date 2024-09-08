@@ -1798,8 +1798,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"uxmZv4J5pa\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Bogor-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kota Bogor-00",
+    "label": "Block Pendampingan Kota Bogor-00",
+    "parent": "xKota Bogor",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -1929,7 +1937,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:34:03.104996",
+  "modified": "2024-09-08 16:52:16.537978",
   "module": "",
   "name": "xKota Bogor",
   "number_cards": [],
@@ -1944,8 +1952,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"E71X_OdVC1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Prov. Kalteng-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Prov. Kalteng-00",
+    "label": "Block Pendampingan Prov. Kalteng-00",
+    "parent": "xProv. Kalteng",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -2075,7 +2091,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:43.640573",
+  "modified": "2024-09-08 16:51:21.389767",
   "module": "",
   "name": "xProv. Kalteng",
   "number_cards": [],
@@ -2382,8 +2398,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"lfHnWIgqV1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan-00",
+    "label": "Block Pendampingan-00",
+    "parent": "xPendampingan 2024",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -2513,7 +2537,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:12.412579",
+  "modified": "2024-09-08 16:54:29.545608",
   "module": "Polmark Dashboard",
   "name": "xPendampingan 2024",
   "number_cards": [],
@@ -2528,8 +2552,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"unQqIFyT2r\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Bekasi-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kota Bekasi-00",
+    "label": "Block Pendampingan Kota Bekasi-00",
+    "parent": "xKota Bekasi",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -2659,7 +2691,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:53.398140",
+  "modified": "2024-09-08 16:51:48.483778",
   "module": "Polmark Dashboard",
   "name": "xKota Bekasi",
   "number_cards": [],
@@ -2674,8 +2706,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"Zje3giEHOK\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Prov. Jawa Barat-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Prov. Jawa Barat-00",
+    "label": "Block Pendampingan Prov. Jawa Barat-00",
+    "parent": "xProv. Jawa Barat",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -2805,7 +2845,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:31.206369",
+  "modified": "2024-09-08 16:40:12.806735",
   "module": "Polmark Dashboard",
   "name": "xProv. Jawa Barat",
   "number_cards": [],
@@ -2820,8 +2860,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"8e3gFh_fv5\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kab.Bekasi-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kab.Bekasi-00",
+    "label": "Block Pendampingan Kab.Bekasi-00",
+    "parent": "xKab. Bekasi",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -2951,7 +2999,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:48.785787",
+  "modified": "2024-09-08 16:51:34.881293",
   "module": "Polmark Dashboard",
   "name": "xKab. Bekasi",
   "number_cards": [],
@@ -2966,8 +3014,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"yvcdv3fpfD\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Prov. Sumut-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Prov. Sumut-00",
+    "label": "Block Pendampingan Prov. Sumut-00",
+    "parent": "xProv. Sumut",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -3097,7 +3153,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:37.695880",
+  "modified": "2024-09-08 16:51:03.840345",
   "module": "Polmark Dashboard",
   "name": "xProv. Sumut",
   "number_cards": [],
@@ -3112,8 +3168,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"zTPRj3wHcL\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Bandung-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kota Bandung-00",
+    "label": "Block Pendampingan Kota Bandung-00",
+    "parent": "xKota Bandung",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -3243,7 +3307,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:33:58.188897",
+  "modified": "2024-09-08 16:52:02.479830",
   "module": "Polmark Dashboard",
   "name": "xKota Bandung",
   "number_cards": [],
@@ -3258,8 +3322,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"3VZK7XOfbg\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Balikpapan-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kota Balikpapan-00",
+    "label": "Block Pendampingan Kota Balikpapan-00",
+    "parent": "xKota Balikpapan",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -3389,7 +3461,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:34:08.639744",
+  "modified": "2024-09-08 16:52:36.924432",
   "module": "Polmark Dashboard",
   "name": "xKota Balikpapan",
   "number_cards": [],
@@ -4234,8 +4306,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"3N_ZgXo4H2\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Medan-00\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Block Pendampingan Kota Medan-00",
+    "label": "Block Pendampingan Kota Medan-00",
+    "parent": "xKota Medan",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -4365,7 +4445,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-09-08 13:34:14.347168",
+  "modified": "2024-09-08 16:52:52.467577",
   "module": "Polmark Dashboard",
   "name": "xKota Medan",
   "number_cards": [],
