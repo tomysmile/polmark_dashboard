@@ -29,14 +29,7 @@ fixtures = [
             ]
         ]
     }, {
-        "doctype": "Custom HTML Block",
-        "filters": [
-            [
-                "name", "in", [
-                    "Tahapan Pilkada",
-                ]
-            ]
-        ]
+        "doctype": "Custom HTML Block"
     }, {
         "doctype": "Document Category",
         "filters": [
