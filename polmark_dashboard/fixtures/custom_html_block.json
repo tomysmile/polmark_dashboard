@@ -2,9 +2,9 @@
  {
   "docstatus": 0,
   "doctype": "Custom HTML Block",
-  "html": "<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>Tahapan Pilkada</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>Tahapan Pilkada</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>Tahapan Pilkada</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n",
-  "modified": "2024-09-08 12:50:38.444211",
-  "name": "Block Jawa Barat",
+  "html": "<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>Tahapan Pilkada 2024</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>PKPU 2024</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n<div class=\"custom-square-box custom-block-link\">\r\n    <a href=\"/app/document-upload\" class=\"block-link\" style=\"text-decoration:none\">\r\n        <div class=\"square-box-content block-content\">\r\n            <h3>Rekap DPT 2024</h3>\r\n            <p><em>Klik untuk melihat dokumentasi tahapan Pilkada</em></p>\r\n        </div>\r\n    </a>\r\n</div>\r\n",
+  "modified": "2024-09-08 13:05:19.480800",
+  "name": "Block Informasi Umum-00",
   "private": 0,
   "roles": [],
   "script": null,
