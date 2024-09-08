@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 17:38:51.061597",
+ "creation": "2024-09-08 13:05:51.498990",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -9,9 +9,9 @@
  "hide_custom": 0,
  "icon": "menu",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
- "label": "Kota Balikpapan",
+ "label": "xKota Medan",
  "links": [
   {
    "dependencies": "",
@@ -91,18 +91,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 21:33:51.441471",
+ "modified": "2024-09-08 13:34:14.347168",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Kota Balikpapan",
+ "name": "xKota Medan",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Pendampingan 2024",
+ "parent_page": "xPendampingan 2024",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 13.0,
  "shortcuts": [],
- "title": "Kota Balikpapan"
+ "title": "xKota Medan"
 }

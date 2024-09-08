@@ -1,17 +1,22 @@
 {
  "charts": [],
- "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 17:38:50.043409",
- "custom_blocks": [],
+ "content": "[{\"id\":\"RGBKYuhqq1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Informasi Umum-00\",\"col\":12}}]",
+ "creation": "2024-09-08 13:05:51.769366",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Block Informasi Umum-00",
+   "label": "Block Informasi Umum-00"
+  }
+ ],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "project",
+ "icon": "projects",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
- "label": "PILEG 2024",
+ "label": "xInformasi Umum",
  "links": [
   {
    "dependencies": "",
@@ -91,10 +96,10 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 21:33:49.963977",
+ "modified": "2024-09-08 13:33:05.127668",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "PILEG 2024",
+ "name": "xInformasi Umum",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -102,7 +107,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 1.0,
+ "sequence_id": 3.0,
  "shortcuts": [],
- "title": "PILEG 2024"
+ "title": "xInformasi Umum"
 }

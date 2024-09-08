@@ -1,17 +1,17 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 17:38:50.355595",
+ "creation": "2024-09-08 13:05:51.236314",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "projects",
+ "icon": "menu",
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
- "label": "Pendampingan 2024",
+ "label": "xProv. Jawa Barat",
  "links": [
   {
    "dependencies": "",
@@ -91,18 +91,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 21:33:50.674327",
+ "modified": "2024-09-08 13:33:31.206369",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Pendampingan 2024",
+ "name": "xProv. Jawa Barat",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "PILKADA 2024",
+ "parent_page": "xPendampingan 2024",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 5.0,
  "shortcuts": [],
- "title": "Pendampingan 2024"
+ "title": "xProv. Jawa Barat"
 }

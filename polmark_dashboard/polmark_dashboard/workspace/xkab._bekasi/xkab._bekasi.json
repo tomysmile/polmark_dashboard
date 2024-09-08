@@ -1,22 +1,17 @@
 {
  "charts": [],
- "content": "[{\"id\":\"tkt6-_cYuf\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"k_CiVUQTU2\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}},{\"id\":\"63jTMbhW9G\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Tahapan Pilkada\",\"col\":4}}]",
- "creation": "2024-09-06 17:38:51.155558",
- "custom_blocks": [
-  {
-   "custom_block_name": "Tahapan Pilkada",
-   "label": "Tahapan Pilkada"
-  }
- ],
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
+ "creation": "2024-09-08 13:05:51.322923",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "projects",
+ "icon": "menu",
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
- "label": "Informasi Umum",
+ "label": "xKab. Bekasi",
  "links": [
   {
    "dependencies": "",
@@ -96,18 +91,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 21:33:50.576631",
+ "modified": "2024-09-08 13:33:48.785787",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Informasi Umum",
+ "name": "xKab. Bekasi",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "PILKADA 2024",
+ "parent_page": "xPendampingan 2024",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 4.0,
+ "sequence_id": 8.0,
  "shortcuts": [],
- "title": "Informasi Umum"
+ "title": "xKab. Bekasi"
 }

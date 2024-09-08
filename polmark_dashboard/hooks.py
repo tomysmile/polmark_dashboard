@@ -8,26 +8,7 @@ app_license = "mit"
 
 fixtures = [
     {
-        "doctype": "Workspace",
-        "filters": [
-            [
-                "name", "in", [
-                    "Kab. Bekasi",
-                    "Kota Balikpapan",
-                    "Kota Bandung",
-                    "Kota Bekasi",
-                    "Kota Medan",
-                    "Prov. Jawa Barat",
-                    "Prov. Sumut",
-                    "Prov. Kalteng",
-                    "Pendampingan 2024",
-                    "Informasi Umum",
-                    "PILKADA 2024",
-                    "PILEG 2024",
-                    "PILPRES 2024"
-                ]
-            ]
-        ]
+        "doctype": "Workspace"
     }, {
         "doctype": "Custom HTML Block"
     }, {

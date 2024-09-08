@@ -1,17 +1,17 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}}]",
- "creation": "2024-09-06 17:38:50.669883",
+ "creation": "2024-09-08 13:05:51.057982",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "menu",
+ "icon": "projects",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
- "label": "Kab. Bekasi",
+ "label": "xPendampingan 2024",
  "links": [
   {
    "dependencies": "",
@@ -91,18 +91,18 @@
    "type": "Link"
   }
  ],
- "modified": "2024-09-06 21:33:51.063776",
+ "modified": "2024-09-08 13:33:12.412579",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Kab. Bekasi",
+ "name": "xPendampingan 2024",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Pendampingan 2024",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 9.0,
+ "sequence_id": 4.0,
  "shortcuts": [],
- "title": "Kab. Bekasi"
+ "title": "xPendampingan 2024"
 }
