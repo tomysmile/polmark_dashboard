@@ -3,14 +3,12 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
-frappe.listview_settings['News Link'] = {
+frappe.listview_settings['Google Drive Link'] = {
   onload: function(listview) {
     // Define the default sort order
-    listview.sort_by = 'posted_date';   // Replace with your field
-    listview.sort_order = 'asc';       // 'asc' for ascending, 'desc' for descending
   },
   formatters: {
-    source_url(val) {
+    google_drive_url(val) {
       return `<a href="${val}" target="_blank">${val}</a>`;
     },
   }

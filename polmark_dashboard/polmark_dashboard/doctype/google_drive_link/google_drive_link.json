@@ -7,7 +7,7 @@
  "field_order": [
   "title",
   "zone",
-  "zone_code",
+  "zone_category_code",
   "google_drive_url",
   "clickable_url"
  ],
@@ -43,19 +43,21 @@
    "reqd": 1
   },
   {
-   "fieldname": "zone_code",
-   "fieldtype": "Read Only",
-   "label": "Zone Code"
-  },
-  {
    "fieldname": "clickable_url",
    "fieldtype": "HTML",
    "label": "Clickable URL"
+  },
+  {
+   "fetch_from": "zone.zone_code",
+   "fieldname": "zone_category_code",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Zone Category Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 15:27:35.558319",
+ "modified": "2024-09-08 15:45:46.546714",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Google Drive Link",

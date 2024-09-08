@@ -43,8 +43,6 @@
    "allow_in_quick_entry": 1,
    "fieldname": "news_site_provider",
    "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "News Site Provider",
    "options": "News Site",
    "reqd": 1
@@ -92,7 +90,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 15:30:57.047476",
+ "modified": "2024-09-08 15:49:54.025142",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "News Link",
