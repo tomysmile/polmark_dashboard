@@ -2,14 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "News Site",
-  "modified": "2024-09-08 11:15:42.159265",
-  "name": "detik.com",
-  "standard": 1,
-  "website": "https://www.detik.com/"
- },
- {
-  "docstatus": 0,
-  "doctype": "News Site",
   "modified": "2024-09-08 11:18:13.690828",
   "name": "Radar Jabar",
   "standard": 1,
@@ -46,14 +38,6 @@
   "name": "CNN Indonesia",
   "standard": 1,
   "website": "https://www.cnnindonesia.com/"
- },
- {
-  "docstatus": 0,
-  "doctype": "News Site",
-  "modified": "2024-09-08 11:21:04.201832",
-  "name": "Antara News",
-  "standard": 1,
-  "website": "https://www.antaranews.com/"
  },
  {
   "docstatus": 0,
@@ -118,5 +102,29 @@
   "name": "Tribun Jabar",
   "standard": 1,
   "website": "https://jabar.tribunnews.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 15:01:32.424559",
+  "name": "Tempo News",
+  "standard": 1,
+  "website": "https://www.tempo.co/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:21:04.201832",
+  "name": "Antara News",
+  "standard": 1,
+  "website": "https://www.antaranews.com/"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "News Site",
+  "modified": "2024-09-08 11:15:42.159265",
+  "name": "detik.com",
+  "standard": 1,
+  "website": "https://www.detik.com/"
  }
 ]

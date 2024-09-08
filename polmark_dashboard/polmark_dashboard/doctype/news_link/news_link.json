@@ -11,6 +11,7 @@
   "news_site_provider",
   "zone_category",
   "zone_category_code",
+  "clickable_url",
   "section_break_kaab",
   "headline_image",
   "image_preview"
@@ -43,13 +44,17 @@
    "fieldname": "news_site_provider",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "News Site Provider",
    "options": "News Site",
    "reqd": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "zone_category",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Zone Category",
    "options": "Zone Category",
    "reqd": 1
@@ -78,11 +83,16 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "Zone Category Code"
+  },
+  {
+   "fieldname": "clickable_url",
+   "fieldtype": "HTML",
+   "label": "Clickable URL"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 12:17:21.028838",
+ "modified": "2024-09-08 15:30:57.047476",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "News Link",
@@ -99,6 +109,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Polmark Dashboard Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
   }
  ],
  "quick_entry": 1,

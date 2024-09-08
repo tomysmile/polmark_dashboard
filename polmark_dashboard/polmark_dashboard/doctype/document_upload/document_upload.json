@@ -9,6 +9,7 @@
   "title",
   "description",
   "document_category",
+  "document_category_slug",
   "zone_category",
   "zone_category_code",
   "upload_file",
@@ -31,10 +32,10 @@
    "unique": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "upload_file",
    "fieldtype": "Attach",
-   "label": "Upload File",
-   "set_only_once": 1
+   "label": "Upload File"
   },
   {
    "depends_on": "eval:doc.upload_file != null",
@@ -102,11 +103,18 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "Zone Category Code"
+  },
+  {
+   "fetch_from": "document_category.slug",
+   "fieldname": "document_category_slug",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Document Category Slug"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-07 16:41:00.871981",
+ "modified": "2024-09-08 14:40:29.848405",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
@@ -124,6 +132,15 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
   }
  ],
  "show_title_field_in_link": 1,

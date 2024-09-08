@@ -8,6 +8,16 @@ app_license = "mit"
 
 fixtures = [
     {
+        "doctype": "Role",
+        "filters": [
+           ["name", "in", ["Polmark Dashboard Manager", "Polmark Dashboard User"]]
+        ]
+    }, {
+        "doctype": "Role Profile",
+        "filters": [
+            ["name", "in", ["Polmark Dashboard Manager", "Polmark Dashboard User"]]
+        ]
+    }, {
         "doctype": "Workspace"
     }, {
         "doctype": "Custom HTML Block"

@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-09-08 14:42:19.113395",
+  "name": "Polmark Dashboard Manager",
+  "role_profile": "Polmark Dashboard Manager",
+  "roles": [
+   {
+    "parent": "Polmark Dashboard Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Polmark Dashboard Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-09-08 14:54:19.970535",
+  "name": "Polmark Dashboard User",
+  "role_profile": "Polmark Dashboard User",
+  "roles": [
+   {
+    "parent": "Polmark Dashboard User",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Polmark Dashboard User"
+   }
+  ]
+ }
+]

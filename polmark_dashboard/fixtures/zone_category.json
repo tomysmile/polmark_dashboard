@@ -103,20 +103,20 @@
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 13:54:24.000951",
-  "name": "Provinsi Sumatera Utara",
+  "modified": "2024-09-07 13:22:08.696585",
+  "name": "Provinsi Jawa Barat",
   "standard": 1,
-  "zone_code": "12",
+  "zone_code": "32",
   "zone_level": "Provinsi"
  },
  {
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 13:22:08.696585",
-  "name": "Provinsi Jawa Barat",
+  "modified": "2024-09-07 13:54:24.000951",
+  "name": "Provinsi Sumatera Utara",
   "standard": 1,
-  "zone_code": "32",
+  "zone_code": "12",
   "zone_level": "Provinsi"
  }
 ]

@@ -109,12 +109,12 @@ class DocumentUpload(Document):
 
 	def get_list(self, *args, **kwargs):
 		# Get filters from query string
-		document_category_filter_value = self.get_query_param('document_category')
+		document_category_filter_value = self.get_query_param('document_category_slug')
 		zone_category_code_filter_value = self.get_query_param('zone_category_code')
 
 		# Apply custom filtering logic based on query string
 		if document_category_filter_value:
-			kwargs['filters'].append(['document_category', '=', document_category_filter_value])
+			kwargs['filters'].append(['document_category_slug', '=', document_category_filter_value])
 
 		if zone_category_code_filter_value:
 			kwargs['filters'].append(['zone_category_code', '=', zone_category_code_filter_value])
