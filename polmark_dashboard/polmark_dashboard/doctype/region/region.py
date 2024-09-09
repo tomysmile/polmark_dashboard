@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ZoneCategory(Document):
+class Region(Document):
 	pass

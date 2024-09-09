@@ -27,12 +27,12 @@ fixtures = [
             ["standard", "=", 1]
         ]
     }, {
-        "doctype": "Zone Category",
+        "doctype": "Region",
         "filters": [
             ["standard", "=", 1]
         ]
     }, {
-        "doctype": "Zone Level",
+        "doctype": "Region Level",
         "filters": [
             ["standard", "=", 1]
         ]

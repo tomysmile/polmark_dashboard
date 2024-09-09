@@ -2,32 +2,16 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-09-07 12:51:58.683526",
+ "creation": "2024-09-09 13:22:31.314811",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "zone_code",
-  "zone_level",
-  "enabled",
+  "region_level_code",
   "standard"
  ],
  "fields": [
   {
-   "default": "1",
-   "fieldname": "enabled",
-   "fieldtype": "Check",
-   "label": "Enabled"
-  },
-  {
    "allow_in_quick_entry": 1,
-   "fieldname": "zone_code",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Zone Code",
-   "reqd": 1
-  },
-  {
    "default": "0",
    "fieldname": "standard",
    "fieldtype": "Check",
@@ -35,21 +19,20 @@
   },
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "zone_level",
-   "fieldtype": "Link",
+   "fieldname": "region_level_code",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Zone Level",
-   "options": "Zone Level",
+   "label": "Region Level Code",
+   "length": 1,
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 14:49:17.911129",
+ "modified": "2024-09-09 13:27:02.654373",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Zone Category",
+ "name": "Region Level",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -88,7 +71,7 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "zone_code",
+ "sort_field": "region_level_code",
  "sort_order": "ASC",
  "states": [],
  "track_changes": 1

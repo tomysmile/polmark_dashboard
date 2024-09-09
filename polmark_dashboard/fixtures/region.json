@@ -1,0 +1,101 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:33:17.384011",
+  "name": "Provinsi Sumatera Utara",
+  "region_code": "12",
+  "region_level": "Provinsi",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:33:33.091769",
+  "name": "Kota Medan",
+  "region_code": "12.71",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:34:10.740566",
+  "name": "Provinsi Jawa Barat",
+  "region_code": "32",
+  "region_level": "Provinsi",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:34:28.810310",
+  "name": "Kabupaten Sukabumi",
+  "region_code": "32.02",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:34:44.248406",
+  "name": "Kabupaten Bekasi",
+  "region_code": "32.16",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:35:16.918434",
+  "name": "Kota Bogor",
+  "region_code": "32.71",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:36:07.116356",
+  "name": "Kota Bandung",
+  "region_code": "32.73",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:36:20.885534",
+  "name": "Kota Bekasi",
+  "region_code": "32.75",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:36:38.274804",
+  "name": "Kota Tasikmalaya",
+  "region_code": "32.78",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:37:02.014108",
+  "name": "Provinsi Kalimantan Tengah",
+  "region_code": "62",
+  "region_level": "Provinsi",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:37:40.852608",
+  "name": "Kota Balikpapan",
+  "region_code": "64.71",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ }
+]

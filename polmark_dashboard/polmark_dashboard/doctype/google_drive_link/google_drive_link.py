@@ -11,11 +11,11 @@ class GoogleDriveLink(Document):
 
 	def get_list(self, *args, **kwargs):
 		# Get filters from query string
-		zone_category_code_filter_value = self.get_query_param('zone_category_code')
+		region_code_filter_value = self.get_query_param('region_code')
 
 		# Apply custom filtering logic based on query string
-		if zone_category_code_filter_value:
-			kwargs['filters'].append(['zone_category_code', '=', zone_category_code_filter_value])
+		if region_code_filter_value:
+			kwargs['filters'].append(['region_code', '=', region_code_filter_value])
 
 		# Return the filtered list
 		return super().get_list(*args, **kwargs)

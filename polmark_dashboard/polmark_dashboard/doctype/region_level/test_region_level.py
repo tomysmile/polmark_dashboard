@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestZoneLevel(FrappeTestCase):
+class TestRegionLevel(FrappeTestCase):
 	pass

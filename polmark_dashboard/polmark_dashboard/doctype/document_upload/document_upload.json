@@ -10,8 +10,8 @@
   "description",
   "document_category",
   "document_category_slug",
-  "zone_category",
-  "zone_category_code",
+  "region",
+  "region_code",
   "upload_file",
   "document_metadata_section",
   "column_break_ppdq",
@@ -88,21 +88,8 @@
    "reqd": 1
   },
   {
-   "fieldname": "zone_category",
-   "fieldtype": "Link",
-   "label": "Zone Category",
-   "options": "Zone Category"
-  },
-  {
    "fieldname": "column_break_ppdq",
    "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "zone_category.zone_code",
-   "fieldname": "zone_category_code",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Zone Category Code"
   },
   {
    "fetch_from": "document_category.slug",
@@ -110,11 +97,24 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "Document Category Slug"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fetch_from": "region.region_code",
+   "fieldname": "region_code",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Region Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-08 14:40:29.848405",
+ "modified": "2024-09-09 13:54:02.579344",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
