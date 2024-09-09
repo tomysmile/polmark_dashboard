@@ -36,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 13:50:15.852632",
+ "modified": "2024-09-09 19:05:16.887179",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Rekap DPT 2024",
@@ -53,6 +53,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Polmark Dashboard Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
   }
  ],
  "sort_field": "modified",

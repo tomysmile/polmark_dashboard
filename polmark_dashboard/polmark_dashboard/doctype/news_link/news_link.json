@@ -11,7 +11,6 @@
   "news_site_provider",
   "region",
   "region_code",
-  "clickable_url",
   "section_break_kaab",
   "headline_image",
   "image_preview"
@@ -66,11 +65,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "clickable_url",
-   "fieldtype": "HTML",
-   "label": "Clickable URL"
-  },
-  {
    "allow_in_quick_entry": 1,
    "fieldname": "region",
    "fieldtype": "Link",
@@ -90,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 13:52:23.890415",
+ "modified": "2024-09-09 19:02:31.586366",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "News Link",

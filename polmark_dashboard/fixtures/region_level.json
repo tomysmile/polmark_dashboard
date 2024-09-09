@@ -10,22 +10,6 @@
  {
   "docstatus": 0,
   "doctype": "Region Level",
-  "modified": "2024-09-09 13:27:52.983857",
-  "name": "Provinsi",
-  "region_level_code": 2,
-  "standard": 1
- },
- {
-  "docstatus": 0,
-  "doctype": "Region Level",
-  "modified": "2024-09-09 13:28:07.384398",
-  "name": "Kota/Kabupaten",
-  "region_level_code": 3,
-  "standard": 1
- },
- {
-  "docstatus": 0,
-  "doctype": "Region Level",
   "modified": "2024-09-09 13:28:15.682936",
   "name": "Kecamatan",
   "region_level_code": 4,
@@ -45,6 +29,22 @@
   "modified": "2024-09-09 13:28:31.659763",
   "name": "TPS",
   "region_level_code": 6,
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Level",
+  "modified": "2024-09-09 13:27:52.983857",
+  "name": "Provinsi",
+  "region_level_code": 2,
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Level",
+  "modified": "2024-09-09 13:28:07.384398",
+  "name": "Kota/Kabupaten",
+  "region_level_code": 3,
   "standard": 1
  }
 ]

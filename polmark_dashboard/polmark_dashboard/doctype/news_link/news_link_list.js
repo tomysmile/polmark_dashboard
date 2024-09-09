@@ -4,6 +4,7 @@ function getQueryParam(param) {
 }
 
 frappe.listview_settings['News Link'] = {
+  hide_name_column: true, // hide the last column which shows the `name`
   onload: function(listview) {
     // Define the default sort order
     listview.sort_by = 'posted_date';   // Replace with your field

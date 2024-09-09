@@ -2,15 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Region",
-  "modified": "2024-09-09 13:33:17.384011",
-  "name": "Provinsi Sumatera Utara",
-  "region_code": "12",
-  "region_level": "Provinsi",
-  "standard": 1
- },
- {
-  "docstatus": 0,
-  "doctype": "Region",
   "modified": "2024-09-09 13:33:33.091769",
   "name": "Kota Medan",
   "region_code": "12.71",
@@ -32,15 +23,6 @@
   "modified": "2024-09-09 13:34:28.810310",
   "name": "Kabupaten Sukabumi",
   "region_code": "32.02",
-  "region_level": "Kota/Kabupaten",
-  "standard": 1
- },
- {
-  "docstatus": 0,
-  "doctype": "Region",
-  "modified": "2024-09-09 13:34:44.248406",
-  "name": "Kabupaten Bekasi",
-  "region_code": "32.16",
   "region_level": "Kota/Kabupaten",
   "standard": 1
  },
@@ -95,6 +77,24 @@
   "modified": "2024-09-09 13:37:40.852608",
   "name": "Kota Balikpapan",
   "region_code": "64.71",
+  "region_level": "Kota/Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:33:17.384011",
+  "name": "Provinsi Sumatera Utara",
+  "region_code": "12",
+  "region_level": "Provinsi",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "modified": "2024-09-09 13:34:44.248406",
+  "name": "Kabupaten Bekasi",
+  "region_code": "32.16",
   "region_level": "Kota/Kabupaten",
   "standard": 1
  }

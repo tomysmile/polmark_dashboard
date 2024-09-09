@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:full_name",
+ "autoname": "hash",
  "creation": "2024-09-08 16:36:31.737215",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -68,11 +68,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 13:46:02.262648",
+ "modified": "2024-09-09 14:19:25.647472",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Organisation Structure",
- "naming_rule": "By fieldname",
+ "naming_rule": "Random",
  "nsm_parent_field": "parent_organisation_structure",
  "owner": "Administrator",
  "permissions": [

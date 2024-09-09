@@ -49,5 +49,21 @@ frappe.ui.form.on("News Link", {
   refresh: function(frm) {
       // Ensure the preview gets updated on form load
       frm.trigger('image');
-  }
+  },
+  onload: function(frm) {
+    // Get the URL
+    let url = window.location.href;
+    
+    // Use URLSearchParams to parse the query string
+    let params = new URLSearchParams(window.location.search);
+
+    // Check if a specific query parameter exists
+    if (params.has('region')) {
+        // Get the value from the query string
+        let query_value = params.get('region');
+        
+        // Set the value in the form field (replace 'field_name_in_form' with your field name)
+        frm.set_value('region', query_value);
+    }
+  },
 });
