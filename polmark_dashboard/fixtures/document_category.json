@@ -1,14 +1,5 @@
 [
  {
-  "category_name": "PKPU 2024",
-  "docstatus": 0,
-  "doctype": "Document Category",
-  "modified": "2024-09-08 14:30:23.370892",
-  "name": "aecpev7pc8",
-  "slug": "pkpu-2024",
-  "standard": 1
- },
- {
   "category_name": "Peta Politik Dasar",
   "docstatus": 0,
   "doctype": "Document Category",
@@ -60,6 +51,15 @@
   "modified": "2024-09-08 14:33:42.952583",
   "name": "agb5p9tlg3",
   "slug": "materi-debat",
+  "standard": 1
+ },
+ {
+  "category_name": "PKPU 2024",
+  "docstatus": 0,
+  "doctype": "Document Category",
+  "modified": "2024-09-08 14:30:23.370892",
+  "name": "aecpev7pc8",
+  "slug": "pkpu-2024",
   "standard": 1
  },
  {

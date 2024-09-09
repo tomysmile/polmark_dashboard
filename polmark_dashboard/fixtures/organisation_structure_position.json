@@ -1,0 +1,128 @@
+[
+ {
+  "description": "Mendukung ketua dalam menjalankan tugas dan bertanggung jawab atas koordinasi bagian-bagian tertentu dalam tim.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:44:33.173614",
+  "name": "Wakil Ketua Tim Pemenangan",
+  "sequence_number": 2,
+  "standard": 1
+ },
+ {
+  "description": "Mengelola administrasi tim, membuat laporan, dan memastikan semua dokumen dan informasi terkait kampanye tercatat dengan baik.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:48:56.562101",
+  "name": "Sekretaris",
+  "sequence_number": 3,
+  "standard": 1
+ },
+ {
+  "description": "Mengelola anggaran kampanye, mengatur pengeluaran dan pemasukan dana, serta memastikan transparansi dan akuntabilitas keuangan.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:49:12.618442",
+  "name": "Bendahara",
+  "sequence_number": 4,
+  "standard": 1
+ },
+ {
+  "description": "Mengkoordinasikan kegiatan kampanye di lapangan, seperti pertemuan langsung dengan pemilih, kegiatan kampanye tatap muka, serta distribusi bahan kampanye.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:49:32.643696",
+  "name": "Koordinator Lapangan (Korlap)",
+  "sequence_number": 5,
+  "standard": 1
+ },
+ {
+  "description": "Bertanggung jawab atas strategi komunikasi, hubungan dengan media, serta penyebaran informasi melalui media cetak, elektronik, dan sosial.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:49:46.779242",
+  "name": "Koordinator Media dan Publikasi",
+  "sequence_number": 6,
+  "standard": 1
+ },
+ {
+  "description": "Mengelola data pemilih dan menyusun strategi untuk memaksimalkan suara. Selain itu, bertanggung jawab atas pelatihan dan pengelolaan saksi di TPS.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:50:15.651694",
+  "name": "Koordinator Data dan Saksi",
+  "sequence_number": 7,
+  "standard": 1
+ },
+ {
+  "description": "Mengelola relawan yang bekerja untuk pemenangan, mengatur pembagian tugas, dan memastikan dukungan di lapangan.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:50:30.370290",
+  "name": "Koordinator Relawan",
+  "sequence_number": 8,
+  "standard": 1
+ },
+ {
+  "description": "Bertanggung jawab atas distribusi alat peraga kampanye, kebutuhan logistik saat acara kampanye, dan pengelolaan peralatan yang diperlukan tim.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:50:45.500978",
+  "name": "Koordinator Logistik",
+  "sequence_number": 9,
+  "standard": 1
+ },
+ {
+  "description": "Menyusun dan merancang program-program unggulan serta kebijakan yang ditawarkan oleh calon kepala daerah, sesuai dengan kebutuhan dan aspirasi masyarakat.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:51:00.131325",
+  "name": "Koordinator Program dan Kebijakan",
+  "sequence_number": 10,
+  "standard": 1
+ },
+ {
+  "description": "Bertugas memberikan saran dan dukungan hukum, mengawasi aspek legal dari kampanye, serta menangani jika ada masalah hukum terkait pemilu.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:51:13.147621",
+  "name": "Tim Hukum",
+  "sequence_number": 11,
+  "standard": 1
+ },
+ {
+  "description": "Mengelola hubungan dengan kelompok-kelompok masyarakat, organisasi kemasyarakatan, serta komunitas lokal yang berpotensi mendukung calon.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:51:25.074832",
+  "name": "Koordinator Jaringan dan Komunitas",
+  "sequence_number": 12,
+  "standard": 1
+ },
+ {
+  "description": "Bertanggung jawab mengelola data, analisis suara, dan pengelolaan teknologi informasi yang digunakan dalam kampanye, termasuk survei digital dan pengumpulan informasi lapangan.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:51:39.356346",
+  "name": "Tim IT dan Data Analisis",
+  "sequence_number": 13,
+  "standard": 1
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 12:20:19.126979",
+  "name": "Anggota Umum",
+  "sequence_number": 14,
+  "standard": 1
+ },
+ {
+  "description": "Pimpinan utama dalam tim, bertanggung jawab atas strategi keseluruhan dan pengambilan keputusan.",
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 11:44:19.909369",
+  "name": "Ketua Tim Pemenangan",
+  "sequence_number": 1,
+  "standard": 1
+ }
+]

@@ -63,20 +63,20 @@
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 14:13:01.115366",
-  "name": "Kabupaten Tasikmalaya",
+  "modified": "2024-09-07 14:13:24.292120",
+  "name": "Kota Tasikmalaya",
   "standard": 1,
-  "zone_code": "32.06",
+  "zone_code": "32.78",
   "zone_level": "Kota/Kabupaten"
  },
  {
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 14:13:24.292120",
-  "name": "Kota Tasikmalaya",
+  "modified": "2024-09-07 14:13:01.115366",
+  "name": "Kabupaten Tasikmalaya",
   "standard": 1,
-  "zone_code": "32.78",
+  "zone_code": "32.06",
   "zone_level": "Kota/Kabupaten"
  },
  {
@@ -93,11 +93,11 @@
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 14:13:04.715116",
-  "name": "Kabupaten Bekasi",
+  "modified": "2024-09-07 13:54:24.000951",
+  "name": "Provinsi Sumatera Utara",
   "standard": 1,
-  "zone_code": "32.16",
-  "zone_level": "Kota/Kabupaten"
+  "zone_code": "12",
+  "zone_level": "Provinsi"
  },
  {
   "docstatus": 0,
@@ -113,10 +113,10 @@
   "docstatus": 0,
   "doctype": "Zone Category",
   "enabled": 1,
-  "modified": "2024-09-07 13:54:24.000951",
-  "name": "Provinsi Sumatera Utara",
+  "modified": "2024-09-07 14:13:04.715116",
+  "name": "Kabupaten Bekasi",
   "standard": 1,
-  "zone_code": "12",
-  "zone_level": "Provinsi"
+  "zone_code": "32.16",
+  "zone_level": "Kota/Kabupaten"
  }
 ]

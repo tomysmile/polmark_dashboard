@@ -41,6 +41,11 @@ fixtures = [
         "filters": [
             ["standard", "=", 1]
         ]
+    }, {
+        "doctype": "Organisation Structure Position",
+        "filters": [
+            ["standard", "=", 1]
+        ]
     }
 ]
 
