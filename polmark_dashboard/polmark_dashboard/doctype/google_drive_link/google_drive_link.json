@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-09-08 12:37:48.120988",
  "doctype": "DocType",
@@ -57,7 +58,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:49:56.351817",
+ "modified": "2024-09-10 11:55:02.250146",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Google Drive Link",

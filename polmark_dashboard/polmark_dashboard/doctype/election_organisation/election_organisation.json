@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-09-09 14:30:30.320862",
  "doctype": "DocType",
@@ -34,7 +35,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 18:46:31.739541",
+ "modified": "2024-09-10 11:55:34.010561",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Election Organisation",

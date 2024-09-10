@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2024-09-07 12:44:28.523513",
@@ -19,7 +20,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:02:07.442489",
+ "modified": "2024-09-10 11:55:55.236609",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Category",

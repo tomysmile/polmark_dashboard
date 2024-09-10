@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2024-09-09 13:21:46.051472",
@@ -37,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 13:31:54.134622",
+ "modified": "2024-09-10 11:55:15.028957",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region",

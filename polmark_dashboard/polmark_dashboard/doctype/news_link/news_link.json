@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-09-07 17:08:16.555309",
  "doctype": "DocType",
@@ -84,7 +85,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:50:31.951779",
+ "modified": "2024-09-10 11:54:49.969601",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "News Link",
