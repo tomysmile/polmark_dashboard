@@ -84,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 19:02:31.586366",
+ "modified": "2024-09-10 11:50:31.951779",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "News Link",
@@ -130,7 +130,5 @@
  "sort_order": "DESC",
  "states": [],
  "title_field": "title",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }

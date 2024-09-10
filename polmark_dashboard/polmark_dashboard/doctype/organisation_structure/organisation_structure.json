@@ -68,7 +68,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 14:19:25.647472",
+ "modified": "2024-09-10 11:50:14.110294",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Organisation Structure",
@@ -110,6 +110,7 @@
    "share": 1
   }
  ],
+ "quick_entry": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

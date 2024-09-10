@@ -33,7 +33,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 11:48:29.809409",
+ "modified": "2024-09-10 11:49:19.475531",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Organisation Structure Position",
@@ -77,6 +77,5 @@
  "sort_field": "sequence_number",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1,
- "track_seen": 1
+ "track_changes": 1
 }

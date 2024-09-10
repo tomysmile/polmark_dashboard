@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:title",
  "creation": "2024-09-06 17:47:28.782184",
@@ -108,7 +109,8 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:06:34.342181",
+ "make_attachments_public": 1,
+ "modified": "2024-09-10 11:51:40.596423",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
@@ -135,6 +137,18 @@
    "report": 1,
    "role": "All",
    "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Polmark Dashboard Manager",
+   "share": 1,
+   "write": 1
   }
  ],
  "show_title_field_in_link": 1,
