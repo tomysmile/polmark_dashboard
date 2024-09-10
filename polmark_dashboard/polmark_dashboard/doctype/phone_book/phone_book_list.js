@@ -1,4 +1,4 @@
-frappe.listview_settings["Contact List"] = {
+frappe.listview_settings["Phone Book"] = {
   hide_name_column: true, // hide the last column which shows the `name`
   formatters: {
     phone_number(val) {

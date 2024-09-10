@@ -1,7 +1,7 @@
 // Copyright (c) 2024, thinkspedia and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Contact List", {
+frappe.ui.form.on("Phone Book", {
 	refresh(frm) {
     frm.fields_dict['phone_number'].input.addEventListener('input', function(e) {
       let value = e.target.value;

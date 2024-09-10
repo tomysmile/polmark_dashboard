@@ -46,6 +46,11 @@ fixtures = [
         "filters": [
             ["standard", "=", 1]
         ]
+    }, {
+        "doctype": "Election Zone",
+        "filters": [
+            ["standard", "=", 1]
+        ]
     }
 ]
 

@@ -1,92 +1,72 @@
 [
  {
-  "category_name": "Peta Politik Dasar",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:30:31.999060",
-  "name": "aefgp584e5",
-  "slug": "peta-politik-dasar",
+  "modified": "2024-09-10 11:02:42.742850",
+  "name": "Biodata Kandidat",
   "standard": 1
  },
  {
-  "category_name": "Hasil Survei",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:30:40.434395",
-  "name": "aei4mi3hud",
-  "slug": "hasil-survei",
+  "modified": "2024-09-10 11:02:54.350584",
+  "name": "Visi Misi dan Program Kerja",
   "standard": 1
  },
  {
-  "category_name": "Peta Zona Pemenangan",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:00.284833",
-  "name": "aftqokt7oo",
-  "slug": "peta-zona-pemenangan",
+  "modified": "2024-09-10 11:03:02.079903",
+  "name": "Visi Misi dan Program Kerja Kompetitor",
   "standard": 1
  },
  {
-  "category_name": "Visi Misi Program Kerja Kandidat",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:19.647517",
-  "name": "ag3skdq50k",
-  "slug": "visi-misi-program-kerja-kandidat",
+  "modified": "2024-09-10 11:03:10.940597",
+  "name": "Materi Workshop",
   "standard": 1
  },
  {
-  "category_name": "Visi Misi Program Kerja Kompetitor",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:28.554580",
-  "name": "ag6l0f6kdo",
-  "slug": "visi-misi-program-kerja-kompetitor",
+  "modified": "2024-09-10 11:03:17.458567",
+  "name": "Materi Debat",
   "standard": 1
  },
  {
-  "category_name": "Materi Debat",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:42.952583",
-  "name": "agb5p9tlg3",
-  "slug": "materi-debat",
+  "modified": "2024-09-10 11:03:27.977841",
+  "name": "Peta Zona Pemenangan",
   "standard": 1
  },
  {
-  "category_name": "PKPU 2024",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:30:23.370892",
-  "name": "aecpev7pc8",
-  "slug": "pkpu-2024",
+  "modified": "2024-09-10 11:03:35.477365",
+  "name": "Hasil Survei",
   "standard": 1
  },
  {
-  "category_name": "Biodata Kandidat",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:36.971073",
-  "name": "ag99e29dmg",
-  "slug": "biodata-kandidat",
+  "modified": "2024-09-10 11:03:42.407777",
+  "name": "Peta Politik Dasar",
   "standard": 1
  },
  {
-  "category_name": "Materi Workshop",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:33:09.866601",
-  "name": "ag0q75lkcd",
-  "slug": "materi-workshop",
+  "modified": "2024-09-10 11:03:47.808462",
+  "name": "PKPU 2024",
   "standard": 1
  },
  {
-  "category_name": "Tahapan Pilkada 2024",
   "docstatus": 0,
   "doctype": "Document Category",
-  "modified": "2024-09-08 14:29:59.591364",
-  "name": "ae5bdffjis",
-  "slug": "tahapan-pilkada-2024",
+  "modified": "2024-09-10 11:03:55.507672",
+  "name": "Tahapan Pilkada 2024",
   "standard": 1
  }
 ]

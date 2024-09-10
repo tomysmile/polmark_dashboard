@@ -1,24 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
- "creation": "2024-09-08 16:12:50.370794",
+ "creation": "2024-09-10 11:11:58.635407",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "full_name",
-  "phone_number",
-  "organization",
   "region",
-  "region_code"
+  "region_code",
+  "enabled",
+  "standard"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "standard",
+   "fieldtype": "Check",
+   "label": "Standard"
+  },
+  {
    "fieldname": "region",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region",
    "reqd": 1
@@ -27,43 +29,21 @@
    "fetch_from": "region.region_code",
    "fieldname": "region_code",
    "fieldtype": "Read Only",
-   "hidden": 1,
    "label": "Region Code"
   },
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "label": "Full Name",
-   "reqd": 1
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "phone_number",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Phone Number",
-   "options": "Phone",
-   "reqd": 1
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "organization",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Organization",
-   "options": "Election Organisation"
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 18:55:21.324855",
+ "modified": "2024-09-10 11:22:11.381907",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Contact List",
- "naming_rule": "Random",
+ "name": "Election Zone",
  "owner": "Administrator",
  "permissions": [
   {
@@ -100,10 +80,10 @@
    "share": 1
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "full_name",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
