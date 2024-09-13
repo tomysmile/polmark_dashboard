@@ -37,6 +37,11 @@ fixtures = [
             ["standard", "=", 1]
         ]
     }, {
+        "doctype": "Dapil DPR RI",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
         "doctype": "News Site",
         "filters": [
             ["standard", "=", 1]

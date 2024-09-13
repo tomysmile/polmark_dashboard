@@ -1,0 +1,139 @@
+[
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city_name": null,
+    "parent": "BANTEN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3602"
+   },
+   {
+    "city_name": null,
+    "parent": "BANTEN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3601"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-13 16:05:39.007591",
+  "name": "BANTEN I",
+  "province_name": null,
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city_name": null,
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3672"
+   },
+   {
+    "city_name": null,
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3673"
+   },
+   {
+    "city_name": null,
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3604"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-13 16:05:39.031166",
+  "name": "BANTEN II",
+  "province_name": null,
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city_name": null,
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3674"
+   },
+   {
+    "city_name": null,
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3671"
+   },
+   {
+    "city_name": null,
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3603"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-13 16:05:39.042831",
+  "name": "BANTEN III",
+  "province_name": null,
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city_name": null,
+    "parent": "JAWA BARAT VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3216"
+   },
+   {
+    "city_name": null,
+    "parent": "JAWA BARAT VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3215"
+   },
+   {
+    "city_name": null,
+    "parent": "JAWA BARAT VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI",
+    "region": "3214"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT VII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-13 16:05:39.052906",
+  "name": "JAWA BARAT VII",
+  "province_name": null,
+  "region": "32",
+  "standard": 1
+ }
+]
