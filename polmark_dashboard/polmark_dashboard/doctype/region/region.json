@@ -2,13 +2,18 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "field:region_code",
  "creation": "2024-09-09 13:21:46.051472",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "region_code",
-  "region_level",
+  "region_type",
+  "level",
+  "region_name",
+  "parent_code",
+  "parent_type",
+  "parent_name",
   "standard"
  ],
  "fields": [
@@ -24,25 +29,62 @@
    "fieldname": "region_code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Region Code",
+   "in_standard_filter": 1,
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "region_type.level",
+   "fieldname": "level",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Level",
+   "length": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "region_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Region Type",
    "reqd": 1
   },
   {
    "allow_in_quick_entry": 1,
-   "fieldname": "region_level",
-   "fieldtype": "Link",
-   "label": "Region Level",
-   "options": "Region Level",
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "parent_code",
+   "fieldtype": "Int",
+   "label": "Parent Code",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "parent_type",
+   "fieldtype": "Data",
+   "label": "Parent Type"
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "label": "Parent Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:55:15.028957",
+ "modified": "2024-09-13 15:48:56.136548",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region",
- "naming_rule": "Set by user",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -79,9 +121,10 @@
    "share": 1
   }
  ],
- "quick_entry": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "region_code",
  "sort_order": "ASC",
  "states": [],
+ "title_field": "region_name",
  "track_changes": 1
 }

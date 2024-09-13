@@ -1,0 +1,58 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 3,
+  "modified": "2024-09-12 14:44:53.734273",
+  "name": "Kota",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 3,
+  "modified": "2024-09-12 14:45:04.284080",
+  "name": "Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 4,
+  "modified": "2024-09-12 14:45:19.573820",
+  "name": "Kecamatan",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 5,
+  "modified": "2024-09-12 14:45:26.992823",
+  "name": "Kelurahan",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 5,
+  "modified": "2024-09-12 14:45:34.404879",
+  "name": "Desa",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 1,
+  "modified": "2024-09-12 14:44:30.157227",
+  "name": "Negara",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region Type",
+  "level": 2,
+  "modified": "2024-09-12 14:44:44.765731",
+  "name": "Provinsi",
+  "standard": 1
+ }
+]

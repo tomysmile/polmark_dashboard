@@ -32,7 +32,7 @@ fixtures = [
             ["standard", "=", 1]
         ]
     }, {
-        "doctype": "Region Level",
+        "doctype": "Region Type",
         "filters": [
             ["standard", "=", 1]
         ]

@@ -7,7 +7,8 @@
  "field_order": [
   "enabled",
   "region",
-  "region_code"
+  "region_code",
+  "my_datatable"
  ],
  "fields": [
   {
@@ -32,11 +33,16 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "Region Code"
+  },
+  {
+   "fieldname": "my_datatable",
+   "fieldtype": "HTML",
+   "label": "Data Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:50:42.218003",
+ "modified": "2024-09-10 12:12:25.916509",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Rekap DPT 2024",

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class RegionLevel(Document):
+class TabularPilkadaItemBekasi(Document):
 	pass

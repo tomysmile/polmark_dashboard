@@ -1,39 +1,38 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-09-09 13:22:31.314811",
+ "creation": "2024-09-12 14:42:53.665590",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "region_level_code",
+  "level",
   "standard"
  ],
  "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Level",
+   "reqd": 1
+  },
   {
    "allow_in_quick_entry": 1,
    "default": "0",
    "fieldname": "standard",
    "fieldtype": "Check",
    "label": "Standard"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "region_level_code",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Region Level Code",
-   "length": 1,
-   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 11:55:22.837077",
+ "modified": "2024-09-12 14:44:20.875880",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Region Level",
+ "name": "Region Type",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -50,18 +49,6 @@
    "write": 1
   },
   {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Polmark Dashboard Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
    "email": 1,
    "export": 1,
    "print": 1,
@@ -72,8 +59,8 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "region_level_code",
- "sort_order": "ASC",
+ "sort_field": "modified",
+ "sort_order": "DESC",
  "states": [],
  "track_changes": 1
 }

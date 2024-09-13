@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 11:31:15.645013",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region",
+  "standard",
+  "column_break_jlbb",
+  "level",
+  "section_break_qzex",
+  "jml_penduduk",
+  "jml_dpt",
+  "jml_kk",
+  "jml_cde",
+  "column_break_kjej",
+  "jml_rak",
+  "jml_perempuan",
+  "jml_muda",
+  "zonasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "zonasi",
+   "fieldtype": "Data",
+   "label": "Zonasi"
+  },
+  {
+   "fieldname": "jml_penduduk",
+   "fieldtype": "Int",
+   "label": "Penduduk",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_kk",
+   "fieldtype": "Int",
+   "label": "KK",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_dpt",
+   "fieldtype": "Int",
+   "label": "DPT",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_cde",
+   "fieldtype": "Int",
+   "label": "CDE",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_rak",
+   "fieldtype": "Float",
+   "label": "RAK",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_perempuan",
+   "fieldtype": "Int",
+   "label": "Perempuan",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "jml_muda",
+   "fieldtype": "Int",
+   "label": "Muda",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "section_break_qzex",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "region.region_type",
+   "fieldname": "level",
+   "fieldtype": "Read Only",
+   "label": "Level"
+  },
+  {
+   "fieldname": "column_break_jlbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kjej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "standard",
+   "fieldtype": "Check",
+   "label": "Standard"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-13 13:26:22.494108",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "Zona Pemenangan Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

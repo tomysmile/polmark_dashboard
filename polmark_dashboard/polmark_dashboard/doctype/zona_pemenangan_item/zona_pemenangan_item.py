@@ -3,9 +3,7 @@
 
 # import frappe
 from frappe.model.document import Document
-# from frappe.model.naming import getseries
-# from frappe.model.naming import make_autoname
 
 
-class ElectionZone(Document):
-	pass
+class ZonaPemenanganItem(Document):
+    pass

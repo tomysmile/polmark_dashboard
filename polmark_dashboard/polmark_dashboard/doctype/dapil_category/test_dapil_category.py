@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestRegionLevel(FrappeTestCase):
+class TestDapilCategory(FrappeTestCase):
 	pass
