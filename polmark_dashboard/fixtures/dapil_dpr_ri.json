@@ -1,128 +1,1614 @@
 [
  {
-  "chair_allocation": 6,
+  "chair_allocation": 7,
   "cities": [
    {
-    "city_name": null,
-    "parent": "BANTEN I",
+    "city": "1101",
+    "city_name": "ACEH SELATAN",
+    "parent": "ACEH I",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3602"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "BANTEN I",
+    "city": "1102",
+    "city_name": "ACEH TENGGARA",
+    "parent": "ACEH I",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3601"
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1105",
+    "city_name": "ACEH BARAT",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1106",
+    "city_name": "ACEH BESAR",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1107",
+    "city_name": "PIDIE",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1109",
+    "city_name": "SIMEULUE",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1110",
+    "city_name": "ACEH SINGKIL",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1112",
+    "city_name": "ACEH BARAT DAYA",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1113",
+    "city_name": "GAYO LUES",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1114",
+    "city_name": "ACEH JAYA",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1115",
+    "city_name": "NAGAN RAYA",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1118",
+    "city_name": "PIDIE JAYA",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1171",
+    "city_name": "KOTA BANDA ACEH",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1172",
+    "city_name": "KOTA SABANG",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1175",
+    "city_name": "KOTA SUBULUSSALAM",
+    "parent": "ACEH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
    }
   ],
   "dapil_category": "DPR RI",
-  "dapil_name": "BANTEN I",
+  "dapil_name": "ACEH I",
   "docstatus": 0,
   "doctype": "Dapil DPR RI",
   "election_year": "2024",
-  "modified": "2024-09-13 16:05:39.007591",
-  "name": "BANTEN I",
-  "province_name": null,
-  "region": "36",
+  "modified": "2024-09-14 14:01:04.099770",
+  "name": "ACEH I",
+  "province_name": "ACEH",
+  "region": "11",
   "standard": 1
  },
  {
   "chair_allocation": 6,
   "cities": [
    {
-    "city_name": null,
-    "parent": "BANTEN II",
+    "city": "1103",
+    "city_name": "ACEH TIMUR",
+    "parent": "ACEH II",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3672"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "BANTEN II",
+    "city": "1104",
+    "city_name": "ACEH TENGAH",
+    "parent": "ACEH II",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3673"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "BANTEN II",
+    "city": "1108",
+    "city_name": "ACEH UTARA",
+    "parent": "ACEH II",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3604"
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1111",
+    "city_name": "BIREUEN",
+    "parent": "ACEH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1116",
+    "city_name": "ACEH TAMIANG",
+    "parent": "ACEH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1117",
+    "city_name": "BENER MERIAH",
+    "parent": "ACEH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1173",
+    "city_name": "KOTA LHOKSEUMAWE",
+    "parent": "ACEH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1174",
+    "city_name": "KOTA LANGSA",
+    "parent": "ACEH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
    }
   ],
   "dapil_category": "DPR RI",
-  "dapil_name": "BANTEN II",
+  "dapil_name": "ACEH II",
   "docstatus": 0,
   "doctype": "Dapil DPR RI",
   "election_year": "2024",
-  "modified": "2024-09-13 16:05:39.031166",
-  "name": "BANTEN II",
-  "province_name": null,
-  "region": "36",
+  "modified": "2024-09-14 14:01:04.183602",
+  "name": "ACEH II",
+  "province_name": "ACEH",
+  "region": "11",
   "standard": 1
  },
  {
   "chair_allocation": 10,
   "cities": [
    {
-    "city_name": null,
-    "parent": "BANTEN III",
+    "city": "1207",
+    "city_name": "DELI SERDANG",
+    "parent": "SUMATERA UTARA I",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3674"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "BANTEN III",
+    "city": "1218",
+    "city_name": "SERDANG BEDAGAI",
+    "parent": "SUMATERA UTARA I",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3671"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "BANTEN III",
+    "city": "1271",
+    "city_name": "KOTA MEDAN",
+    "parent": "SUMATERA UTARA I",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3603"
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1276",
+    "city_name": "KOTA TEBING TINGGI",
+    "parent": "SUMATERA UTARA I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
    }
   ],
   "dapil_category": "DPR RI",
-  "dapil_name": "BANTEN III",
+  "dapil_name": "SUMATERA UTARA I",
   "docstatus": 0,
   "doctype": "Dapil DPR RI",
   "election_year": "2024",
-  "modified": "2024-09-13 16:05:39.042831",
-  "name": "BANTEN III",
-  "province_name": null,
-  "region": "36",
+  "modified": "2024-09-14 14:01:04.230842",
+  "name": "SUMATERA UTARA I",
+  "province_name": "SUMATERA UTARA",
+  "region": "12",
   "standard": 1
  },
  {
   "chair_allocation": 10,
   "cities": [
    {
-    "city_name": null,
-    "parent": "JAWA BARAT VII",
+    "city": "1201",
+    "city_name": "TAPANULI TENGAH",
+    "parent": "SUMATERA UTARA II",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3216"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
-    "parent": "JAWA BARAT VII",
+    "city": "1202",
+    "city_name": "TAPANULI UTARA",
+    "parent": "SUMATERA UTARA II",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3215"
+    "parenttype": "Dapil DPR RI"
    },
    {
-    "city_name": null,
+    "city": "1203",
+    "city_name": "TAPANULI SELATAN",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1204",
+    "city_name": "NIAS",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1210",
+    "city_name": "LABUHANBATU",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1212",
+    "city_name": "TOBA",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1213",
+    "city_name": "MANDAILING NATAL",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1214",
+    "city_name": "NIAS SELATAN",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1216",
+    "city_name": "HUMBANG HASUNDUTAN",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1217",
+    "city_name": "SAMOSIR",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1220",
+    "city_name": "PADANG LAWAS UTARA",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1221",
+    "city_name": "PADANG LAWAS",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1222",
+    "city_name": "LABUHANBATU SELATAN",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1223",
+    "city_name": "LABUHANBATU UTARA",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1224",
+    "city_name": "NIAS UTARA",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1225",
+    "city_name": "NIAS BARAT",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1273",
+    "city_name": "KOTA SIBOLGA",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1277",
+    "city_name": "KOTA PADANGSIDIMPUAN",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1278",
+    "city_name": "KOTA GUNUNGSITOLI",
+    "parent": "SUMATERA UTARA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA UTARA II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.256574",
+  "name": "SUMATERA UTARA II",
+  "province_name": "SUMATERA UTARA",
+  "region": "12",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "1205",
+    "city_name": "LANGKAT",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1206",
+    "city_name": "KARO",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1208",
+    "city_name": "SIMALUNGUN",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1209",
+    "city_name": "ASAHAN",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1211",
+    "city_name": "DAIRI",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1215",
+    "city_name": "PAKPAK BHARAT",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1219",
+    "city_name": "BATU BARA",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1272",
+    "city_name": "KOTA PEMATANGSIANTAR",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1274",
+    "city_name": "KOTA TANJUNG BALAI",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1275",
+    "city_name": "KOTA BINJAI",
+    "parent": "SUMATERA UTARA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA UTARA III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.349265",
+  "name": "SUMATERA UTARA III",
+  "province_name": "SUMATERA UTARA",
+  "region": "12",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "1301",
+    "city_name": "PESISIR SELATAN",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1302",
+    "city_name": "SOLOK",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1303",
+    "city_name": "SIJUNJUNG",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1304",
+    "city_name": "TANAH DATAR",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1309",
+    "city_name": "KEPULAUAN MENTAWAI",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1310",
+    "city_name": "DHARMASRAYA",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1311",
+    "city_name": "SOLOK SELATAN",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1371",
+    "city_name": "KOTA PADANG",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1372",
+    "city_name": "KOTA SOLOK",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1373",
+    "city_name": "KOTA SAWAHLUNTO",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1374",
+    "city_name": "KOTA PADANG PANJANG",
+    "parent": "SUMATERA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA BARAT I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.411731",
+  "name": "SUMATERA BARAT I",
+  "province_name": "SUMATERA BARAT",
+  "region": "13",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "1305",
+    "city_name": "PADANG PARIAMAN",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1306",
+    "city_name": "AGAM",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1307",
+    "city_name": "LIMA PULUH KOTA",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1308",
+    "city_name": "PASAMAN",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1312",
+    "city_name": "PASAMAN BARAT",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1375",
+    "city_name": "KOTA BUKITTINGGI",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1376",
+    "city_name": "KOTA PAYAKUMBUH",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1377",
+    "city_name": "KOTA PARIAMAN",
+    "parent": "SUMATERA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA BARAT II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.459476",
+  "name": "SUMATERA BARAT II",
+  "province_name": "SUMATERA BARAT",
+  "region": "13",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "1403",
+    "city_name": "BENGKALIS",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1406",
+    "city_name": "ROKAN HULU",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1407",
+    "city_name": "ROKAN HILIR",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1408",
+    "city_name": "SIAK",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1410",
+    "city_name": "KEPULAUAN MERANTI",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1471",
+    "city_name": "KOTA PEKANBARU",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1472",
+    "city_name": "KOTA DUMAI",
+    "parent": "RIAU I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "RIAU I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.504116",
+  "name": "RIAU I",
+  "province_name": "RIAU",
+  "region": "14",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "1401",
+    "city_name": "KAMPAR",
+    "parent": "RIAU II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1402",
+    "city_name": "INDRAGIRI HULU",
+    "parent": "RIAU II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1404",
+    "city_name": "INDRAGIRI HILIR",
+    "parent": "RIAU II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1405",
+    "city_name": "PELALAWAN",
+    "parent": "RIAU II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1409",
+    "city_name": "KUANTAN SINGINGI",
+    "parent": "RIAU II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "RIAU II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.541606",
+  "name": "RIAU II",
+  "province_name": "RIAU",
+  "region": "14",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "1501",
+    "city_name": "KERINCI",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1502",
+    "city_name": "MERANGIN",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1503",
+    "city_name": "SAROLANGUN",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1504",
+    "city_name": "BATANGHARI",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1505",
+    "city_name": "MUARO JAMBI",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1506",
+    "city_name": "TANJUNG JABUNG BARAT",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1507",
+    "city_name": "TANJUNG JABUNG TIMUR",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1508",
+    "city_name": "BUNGO",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1509",
+    "city_name": "TEBO",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1571",
+    "city_name": "KOTA JAMBI",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1572",
+    "city_name": "KOTA SUNGAI PENUH",
+    "parent": "JAMBI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAMBI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.572063",
+  "name": "JAMBI",
+  "province_name": "JAMBI",
+  "region": "15",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "1605",
+    "city_name": "MUSI RAWAS",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1606",
+    "city_name": "MUSI BANYUASIN",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1607",
+    "city_name": "BANYUASIN",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1613",
+    "city_name": "MUSI RAWAS UTARA",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1671",
+    "city_name": "KOTA PALEMBANG",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1673",
+    "city_name": "KOTA LUBUK LINGGAU",
+    "parent": "SUMATERA SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA SELATAN I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.626771",
+  "name": "SUMATERA SELATAN I",
+  "province_name": "SUMATERA SELATAN",
+  "region": "16",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "1601",
+    "city_name": "OGAN KOMERING ULU",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1602",
+    "city_name": "OGAN KOMERING ILIR",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1603",
+    "city_name": "MUARA ENIM",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1604",
+    "city_name": "LAHAT",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1608",
+    "city_name": "OGAN KOMERING ULU TIMUR",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1609",
+    "city_name": "OGAN KOMERING ULU SELATAN",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1610",
+    "city_name": "OGAN ILIR",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1611",
+    "city_name": "EMPAT LAWANG",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1612",
+    "city_name": "PENUKAL ABAB LEMATANG ILIR",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1672",
+    "city_name": "KOTA PAGAR ALAM",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1674",
+    "city_name": "KOTA PRABUMULIH",
+    "parent": "SUMATERA SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SUMATERA SELATAN II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.659723",
+  "name": "SUMATERA SELATAN II",
+  "province_name": "SUMATERA SELATAN",
+  "region": "16",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 4,
+  "cities": [
+   {
+    "city": "1701",
+    "city_name": "BENGKULU SELATAN",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1702",
+    "city_name": "REJANG LEBONG",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1703",
+    "city_name": "BENGKULU UTARA",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1704",
+    "city_name": "KAUR",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1705",
+    "city_name": "SELUMA",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1706",
+    "city_name": "MUKO MUKO",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1707",
+    "city_name": "LEBONG",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1708",
+    "city_name": "KEPAHIANG",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1709",
+    "city_name": "BENGKULU TENGAH",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1771",
+    "city_name": "KOTA BENGKULU",
+    "parent": "BENGKULU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BENGKULU",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.709708",
+  "name": "BENGKULU",
+  "province_name": "BENGKULU",
+  "region": "17",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "1801",
+    "city_name": "LAMPUNG SELATAN",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1804",
+    "city_name": "LAMPUNG BARAT",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1806",
+    "city_name": "TANGGAMUS",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1809",
+    "city_name": "PESAWARAN",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1810",
+    "city_name": "PRINGSEWU",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1813",
+    "city_name": "PESISIR BARAT",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1871",
+    "city_name": "KOTA BANDAR LAMPUNG",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1872",
+    "city_name": "KOTA METRO",
+    "parent": "LAMPUNG I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "LAMPUNG I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.755229",
+  "name": "LAMPUNG I",
+  "province_name": "LAMPUNG",
+  "region": "18",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "1802",
+    "city_name": "LAMPUNG TENGAH",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1803",
+    "city_name": "LAMPUNG UTARA",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1805",
+    "city_name": "TULANG BAWANG",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1807",
+    "city_name": "LAMPUNG TIMUR",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1808",
+    "city_name": "WAY KANAN",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1811",
+    "city_name": "MESUJI",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1812",
+    "city_name": "TULANG BAWANG BARAT",
+    "parent": "LAMPUNG II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "LAMPUNG II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.796095",
+  "name": "LAMPUNG II",
+  "province_name": "LAMPUNG",
+  "region": "18",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "1901",
+    "city_name": "BANGKA",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1902",
+    "city_name": "BELITUNG",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1903",
+    "city_name": "BANGKA SELATAN",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1904",
+    "city_name": "BANGKA TENGAH",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1905",
+    "city_name": "BANGKA BARAT",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1906",
+    "city_name": "BELITUNG TIMUR",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "1971",
+    "city_name": "KOTA PANGKAL PINANG",
+    "parent": "KEPULAUAN BANGKA BELITUNG",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KEPULAUAN BANGKA BELITUNG",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.832078",
+  "name": "KEPULAUAN BANGKA BELITUNG",
+  "province_name": "KEPULAUAN BANGKA BELITUNG",
+  "region": "19",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 4,
+  "cities": [
+   {
+    "city": "2101",
+    "city_name": "BINTAN",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2102",
+    "city_name": "KARIMUN",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2103",
+    "city_name": "NATUNA",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2104",
+    "city_name": "LINGGA",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2105",
+    "city_name": "KEPULAUAN ANAMBAS",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2171",
+    "city_name": "KOTA BATAM",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "2172",
+    "city_name": "KOTA TANJUNG PINANG",
+    "parent": "KEPULAUAN RIAU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KEPULAUAN RIAU",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.871768",
+  "name": "KEPULAUAN RIAU",
+  "province_name": "KEPULAUAN RIAU",
+  "region": "21",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3175",
+    "city_name": "KOTA JAKARTA TIMUR",
+    "parent": "DKI JAKARTA I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "DKI JAKARTA I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.908919",
+  "name": "DKI JAKARTA I",
+  "province_name": "DKI JAKARTA",
+  "region": "31",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3171",
+    "city_name": "KOTA JAKARTA PUSAT",
+    "parent": "DKI JAKARTA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3174",
+    "city_name": "KOTA JAKARTA SELATAN",
+    "parent": "DKI JAKARTA II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "DKI JAKARTA II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.930240",
+  "name": "DKI JAKARTA II",
+  "province_name": "DKI JAKARTA",
+  "region": "31",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3101",
+    "city_name": "KEPULAUAN  SERIBU",
+    "parent": "DKI JAKARTA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3172",
+    "city_name": "KOTA JAKARTA UTARA",
+    "parent": "DKI JAKARTA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3173",
+    "city_name": "KOTA JAKARTA BARAT",
+    "parent": "DKI JAKARTA III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "DKI JAKARTA III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.961814",
+  "name": "DKI JAKARTA III",
+  "province_name": "DKI JAKARTA",
+  "region": "31",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3273",
+    "city_name": "KOTA BANDUNG",
+    "parent": "JAWA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3277",
+    "city_name": "KOTA CIMAHI",
+    "parent": "JAWA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:04.986601",
+  "name": "JAWA BARAT I",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3204",
+    "city_name": "BANDUNG",
+    "parent": "JAWA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3217",
+    "city_name": "BANDUNG BARAT",
+    "parent": "JAWA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.007771",
+  "name": "JAWA BARAT II",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "3203",
+    "city_name": "CIANJUR",
+    "parent": "JAWA BARAT III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3271",
+    "city_name": "KOTA BOGOR",
+    "parent": "JAWA BARAT III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.028962",
+  "name": "JAWA BARAT III",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3202",
+    "city_name": "SUKABUMI",
+    "parent": "JAWA BARAT IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3272",
+    "city_name": "KOTA SUKABUMI",
+    "parent": "JAWA BARAT IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT IV",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.049473",
+  "name": "JAWA BARAT IV",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "3201",
+    "city_name": "BOGOR",
+    "parent": "JAWA BARAT V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT V",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.083296",
+  "name": "JAWA BARAT V",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3275",
+    "city_name": "KOTA BEKASI",
+    "parent": "JAWA BARAT VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3276",
+    "city_name": "KOTA DEPOK",
+    "parent": "JAWA BARAT VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT VI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.104401",
+  "name": "JAWA BARAT VI",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3214",
+    "city_name": "PURWAKARTA",
     "parent": "JAWA BARAT VII",
     "parentfield": "cities",
-    "parenttype": "Dapil DPR RI",
-    "region": "3214"
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3215",
+    "city_name": "KARAWANG",
+    "parent": "JAWA BARAT VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3216",
+    "city_name": "BEKASI",
+    "parent": "JAWA BARAT VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
    }
   ],
   "dapil_category": "DPR RI",
@@ -130,10 +1616,3245 @@
   "docstatus": 0,
   "doctype": "Dapil DPR RI",
   "election_year": "2024",
-  "modified": "2024-09-13 16:05:39.052906",
+  "modified": "2024-09-14 14:01:05.127641",
   "name": "JAWA BARAT VII",
-  "province_name": null,
+  "province_name": "JAWA BARAT",
   "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "3209",
+    "city_name": "CIREBON",
+    "parent": "JAWA BARAT VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3212",
+    "city_name": "INDRAMAYU",
+    "parent": "JAWA BARAT VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3274",
+    "city_name": "KOTA CIREBON",
+    "parent": "JAWA BARAT VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT VIII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.158530",
+  "name": "JAWA BARAT VIII",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3210",
+    "city_name": "MAJALENGKA",
+    "parent": "JAWA BARAT IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3211",
+    "city_name": "SUMEDANG",
+    "parent": "JAWA BARAT IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3213",
+    "city_name": "SUBANG",
+    "parent": "JAWA BARAT IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT IX",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.188805",
+  "name": "JAWA BARAT IX",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3207",
+    "city_name": "CIAMIS",
+    "parent": "JAWA BARAT X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3208",
+    "city_name": "KUNINGAN",
+    "parent": "JAWA BARAT X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3218",
+    "city_name": "PANGANDARAN",
+    "parent": "JAWA BARAT X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3279",
+    "city_name": "KOTA BANJAR",
+    "parent": "JAWA BARAT X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT X",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.213692",
+  "name": "JAWA BARAT X",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3205",
+    "city_name": "GARUT",
+    "parent": "JAWA BARAT XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3206",
+    "city_name": "TASIKMALAYA",
+    "parent": "JAWA BARAT XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3278",
+    "city_name": "KOTA TASIKMALAYA",
+    "parent": "JAWA BARAT XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA BARAT XI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.240456",
+  "name": "JAWA BARAT XI",
+  "province_name": "JAWA BARAT",
+  "region": "32",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3322",
+    "city_name": "SEMARANG",
+    "parent": "JAWA TENGAH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3324",
+    "city_name": "KENDAL",
+    "parent": "JAWA TENGAH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3373",
+    "city_name": "KOTA SALATIGA",
+    "parent": "JAWA TENGAH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3374",
+    "city_name": "KOTA SEMARANG",
+    "parent": "JAWA TENGAH I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.266213",
+  "name": "JAWA TENGAH I",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3319",
+    "city_name": "KUDUS",
+    "parent": "JAWA TENGAH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3320",
+    "city_name": "JEPARA",
+    "parent": "JAWA TENGAH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3321",
+    "city_name": "DEMAK",
+    "parent": "JAWA TENGAH II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.294876",
+  "name": "JAWA TENGAH II",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "3315",
+    "city_name": "GROBOGAN",
+    "parent": "JAWA TENGAH III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3316",
+    "city_name": "BLORA",
+    "parent": "JAWA TENGAH III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3317",
+    "city_name": "REMBANG",
+    "parent": "JAWA TENGAH III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3318",
+    "city_name": "PATI",
+    "parent": "JAWA TENGAH III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.318946",
+  "name": "JAWA TENGAH III",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3312",
+    "city_name": "WONOGIRI",
+    "parent": "JAWA TENGAH IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3313",
+    "city_name": "KARANGANYAR",
+    "parent": "JAWA TENGAH IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3314",
+    "city_name": "SRAGEN",
+    "parent": "JAWA TENGAH IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH IV",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.345892",
+  "name": "JAWA TENGAH IV",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3309",
+    "city_name": "BOYOLALI",
+    "parent": "JAWA TENGAH V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3310",
+    "city_name": "KLATEN",
+    "parent": "JAWA TENGAH V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3311",
+    "city_name": "SUKOHARJO",
+    "parent": "JAWA TENGAH V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3372",
+    "city_name": "KOTA SURAKARTA",
+    "parent": "JAWA TENGAH V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH V",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.370045",
+  "name": "JAWA TENGAH V",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3306",
+    "city_name": "PURWOREJO",
+    "parent": "JAWA TENGAH VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3307",
+    "city_name": "WONOSOBO",
+    "parent": "JAWA TENGAH VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3308",
+    "city_name": "MAGELANG",
+    "parent": "JAWA TENGAH VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3323",
+    "city_name": "TEMANGGUNG",
+    "parent": "JAWA TENGAH VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3371",
+    "city_name": "KOTA MAGELANG",
+    "parent": "JAWA TENGAH VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH VI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.396357",
+  "name": "JAWA TENGAH VI",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3303",
+    "city_name": "PURBALINGGA",
+    "parent": "JAWA TENGAH VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3304",
+    "city_name": "BANJARNEGARA",
+    "parent": "JAWA TENGAH VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3305",
+    "city_name": "KEBUMEN",
+    "parent": "JAWA TENGAH VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH VII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.425390",
+  "name": "JAWA TENGAH VII",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3301",
+    "city_name": "CILACAP",
+    "parent": "JAWA TENGAH VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3302",
+    "city_name": "BANYUMAS",
+    "parent": "JAWA TENGAH VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH VIII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.449024",
+  "name": "JAWA TENGAH VIII",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3328",
+    "city_name": "TEGAL",
+    "parent": "JAWA TENGAH IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3329",
+    "city_name": "BREBES",
+    "parent": "JAWA TENGAH IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3376",
+    "city_name": "KOTA TEGAL",
+    "parent": "JAWA TENGAH IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH IX",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.469260",
+  "name": "JAWA TENGAH IX",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3325",
+    "city_name": "BATANG",
+    "parent": "JAWA TENGAH X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3326",
+    "city_name": "PEKALONGAN",
+    "parent": "JAWA TENGAH X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3327",
+    "city_name": "PEMALANG",
+    "parent": "JAWA TENGAH X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3375",
+    "city_name": "KOTA PEKALONGAN",
+    "parent": "JAWA TENGAH X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TENGAH X",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.501694",
+  "name": "JAWA TENGAH X",
+  "province_name": "JAWA TENGAH",
+  "region": "33",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3401",
+    "city_name": "KULON PROGO",
+    "parent": "DAERAH ISTIMEWA YOGYAKARTA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3402",
+    "city_name": "BANTUL",
+    "parent": "DAERAH ISTIMEWA YOGYAKARTA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3403",
+    "city_name": "GUNUNGKIDUL",
+    "parent": "DAERAH ISTIMEWA YOGYAKARTA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3404",
+    "city_name": "SLEMAN",
+    "parent": "DAERAH ISTIMEWA YOGYAKARTA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3471",
+    "city_name": "KOTA YOGYAKARTA",
+    "parent": "DAERAH ISTIMEWA YOGYAKARTA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "DAERAH ISTIMEWA YOGYAKARTA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.530642",
+  "name": "DAERAH ISTIMEWA YOGYAKARTA",
+  "province_name": "DAERAH ISTIMEWA YOGYAKARTA",
+  "region": "34",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3515",
+    "city_name": "SIDOARJO",
+    "parent": "JAWA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3578",
+    "city_name": "KOTA SURABAYA",
+    "parent": "JAWA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.559951",
+  "name": "JAWA TIMUR I",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3513",
+    "city_name": "PROBOLINGGO",
+    "parent": "JAWA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3514",
+    "city_name": "PASURUAN",
+    "parent": "JAWA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3574",
+    "city_name": "KOTA PROBOLINGGO",
+    "parent": "JAWA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3575",
+    "city_name": "KOTA PASURUAN",
+    "parent": "JAWA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.579831",
+  "name": "JAWA TIMUR II",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "3510",
+    "city_name": "BANYUWANGI",
+    "parent": "JAWA TIMUR III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3511",
+    "city_name": "BONDOWOSO",
+    "parent": "JAWA TIMUR III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3512",
+    "city_name": "SITUBONDO",
+    "parent": "JAWA TIMUR III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.615548",
+  "name": "JAWA TIMUR III",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3508",
+    "city_name": "LUMAJANG",
+    "parent": "JAWA TIMUR IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3509",
+    "city_name": "JEMBER",
+    "parent": "JAWA TIMUR IV",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR IV",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.642609",
+  "name": "JAWA TIMUR IV",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3507",
+    "city_name": "MALANG",
+    "parent": "JAWA TIMUR V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3573",
+    "city_name": "KOTA MALANG",
+    "parent": "JAWA TIMUR V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3579",
+    "city_name": "KOTA BATU",
+    "parent": "JAWA TIMUR V",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR V",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.664923",
+  "name": "JAWA TIMUR V",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "3504",
+    "city_name": "TULUNGAGUNG",
+    "parent": "JAWA TIMUR VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3505",
+    "city_name": "BLITAR",
+    "parent": "JAWA TIMUR VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3506",
+    "city_name": "KEDIRI",
+    "parent": "JAWA TIMUR VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3571",
+    "city_name": "KOTA KEDIRI",
+    "parent": "JAWA TIMUR VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3572",
+    "city_name": "KOTA BLITAR",
+    "parent": "JAWA TIMUR VI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR VI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.692237",
+  "name": "JAWA TIMUR VI",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3501",
+    "city_name": "PACITAN",
+    "parent": "JAWA TIMUR VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3502",
+    "city_name": "PONOROGO",
+    "parent": "JAWA TIMUR VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3503",
+    "city_name": "TRENGGALEK",
+    "parent": "JAWA TIMUR VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3520",
+    "city_name": "MAGETAN",
+    "parent": "JAWA TIMUR VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3521",
+    "city_name": "NGAWI",
+    "parent": "JAWA TIMUR VII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR VII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.721937",
+  "name": "JAWA TIMUR VII",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3516",
+    "city_name": "MOJOKERTO",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3517",
+    "city_name": "JOMBANG",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3518",
+    "city_name": "NGANJUK",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3519",
+    "city_name": "MADIUN",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3576",
+    "city_name": "KOTA MOJOKERTO",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3577",
+    "city_name": "KOTA MADIUN",
+    "parent": "JAWA TIMUR VIII",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR VIII",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.756784",
+  "name": "JAWA TIMUR VIII",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3522",
+    "city_name": "BOJONEGORO",
+    "parent": "JAWA TIMUR IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3523",
+    "city_name": "TUBAN",
+    "parent": "JAWA TIMUR IX",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR IX",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.789448",
+  "name": "JAWA TIMUR IX",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3524",
+    "city_name": "LAMONGAN",
+    "parent": "JAWA TIMUR X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3525",
+    "city_name": "GRESIK",
+    "parent": "JAWA TIMUR X",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR X",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.811607",
+  "name": "JAWA TIMUR X",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "3526",
+    "city_name": "BANGKALAN",
+    "parent": "JAWA TIMUR XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3527",
+    "city_name": "SAMPANG",
+    "parent": "JAWA TIMUR XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3528",
+    "city_name": "PAMEKASAN",
+    "parent": "JAWA TIMUR XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3529",
+    "city_name": "SUMENEP",
+    "parent": "JAWA TIMUR XI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "JAWA TIMUR XI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.835289",
+  "name": "JAWA TIMUR XI",
+  "province_name": "JAWA TIMUR",
+  "region": "35",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3601",
+    "city_name": "PANDEGLANG",
+    "parent": "BANTEN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3602",
+    "city_name": "LEBAK",
+    "parent": "BANTEN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.867532",
+  "name": "BANTEN I",
+  "province_name": "BANTEN",
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "3604",
+    "city_name": "SERANG",
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3672",
+    "city_name": "KOTA CILEGON",
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3673",
+    "city_name": "KOTA SERANG",
+    "parent": "BANTEN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.894068",
+  "name": "BANTEN II",
+  "province_name": "BANTEN",
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 10,
+  "cities": [
+   {
+    "city": "3603",
+    "city_name": "TANGERANG",
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3671",
+    "city_name": "KOTA TANGERANG",
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "3674",
+    "city_name": "KOTA TANGERANG SELATAN",
+    "parent": "BANTEN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BANTEN III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.918002",
+  "name": "BANTEN III",
+  "province_name": "BANTEN",
+  "region": "36",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "5101",
+    "city_name": "JEMBRANA",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5102",
+    "city_name": "TABANAN",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5103",
+    "city_name": "BADUNG",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5104",
+    "city_name": "GIANYAR",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5105",
+    "city_name": "KLUNGKUNG",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5106",
+    "city_name": "BANGLI",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5107",
+    "city_name": "KARANGASEM",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5108",
+    "city_name": "BULELENG",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5171",
+    "city_name": "KOTA DENPASAR",
+    "parent": "BALI",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "BALI",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:05.941629",
+  "name": "BALI",
+  "province_name": "BALI",
+  "region": "51",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "5204",
+    "city_name": "SUMBAWA",
+    "parent": "NUSA TENGGARA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5205",
+    "city_name": "DOMPU",
+    "parent": "NUSA TENGGARA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5206",
+    "city_name": "BIMA",
+    "parent": "NUSA TENGGARA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5207",
+    "city_name": "SUMBAWA BARAT",
+    "parent": "NUSA TENGGARA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5272",
+    "city_name": "KOTA BIMA",
+    "parent": "NUSA TENGGARA BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "NUSA TENGGARA BARAT I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.015721",
+  "name": "NUSA TENGGARA BARAT I",
+  "province_name": "NUSA TENGGARA BARAT",
+  "region": "52",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "5201",
+    "city_name": "LOMBOK BARAT",
+    "parent": "NUSA TENGGARA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5202",
+    "city_name": "LOMBOK TENGAH",
+    "parent": "NUSA TENGGARA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5203",
+    "city_name": "LOMBOK TIMUR",
+    "parent": "NUSA TENGGARA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5208",
+    "city_name": "LOMBOK UTARA",
+    "parent": "NUSA TENGGARA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5271",
+    "city_name": "KOTA MATARAM",
+    "parent": "NUSA TENGGARA BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "NUSA TENGGARA BARAT II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.049838",
+  "name": "NUSA TENGGARA BARAT II",
+  "province_name": "NUSA TENGGARA BARAT",
+  "region": "52",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "5305",
+    "city_name": "ALOR",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5306",
+    "city_name": "FLORES TIMUR",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5307",
+    "city_name": "SIKKA",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5308",
+    "city_name": "ENDE",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5309",
+    "city_name": "NGADA",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5310",
+    "city_name": "MANGGARAI",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5313",
+    "city_name": "LEMBATA",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5315",
+    "city_name": "MANGGARAI BARAT",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5316",
+    "city_name": "NAGEKEO",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5319",
+    "city_name": "MANGGARAI TIMUR",
+    "parent": "NUSA TENGGARA TIMUR I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "NUSA TENGGARA TIMUR I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.083075",
+  "name": "NUSA TENGGARA TIMUR I",
+  "province_name": "NUSA TENGGARA TIMUR",
+  "region": "53",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "5301",
+    "city_name": "KUPANG",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5302",
+    "city_name": "TIMOR TENGAH SELATAN",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5303",
+    "city_name": "TIMOR TENGAH UTARA",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5304",
+    "city_name": "BELU",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5311",
+    "city_name": "SUMBA TIMUR",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5312",
+    "city_name": "SUMBA BARAT",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5314",
+    "city_name": "ROTE NDAO",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5317",
+    "city_name": "SUMBA TENGAH",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5318",
+    "city_name": "SUMBA BARAT DAYA",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5320",
+    "city_name": "SABU RAIJUA",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5321",
+    "city_name": "MALAKA",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "5371",
+    "city_name": "KOTA KUPANG",
+    "parent": "NUSA TENGGARA TIMUR II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "NUSA TENGGARA TIMUR II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.130343",
+  "name": "NUSA TENGGARA TIMUR II",
+  "province_name": "NUSA TENGGARA TIMUR",
+  "region": "53",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "6101",
+    "city_name": "SAMBAS",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6102",
+    "city_name": "MEMPAWAH",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6104",
+    "city_name": "KETAPANG",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6107",
+    "city_name": "BENGKAYANG",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6108",
+    "city_name": "LANDAK",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6111",
+    "city_name": "KAYONG UTARA",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6112",
+    "city_name": "KUBU RAYA",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6171",
+    "city_name": "KOTA PONTIANAK",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6172",
+    "city_name": "KOTA SINGKAWANG",
+    "parent": "KALIMANTAN BARAT I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN BARAT I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.184754",
+  "name": "KALIMANTAN BARAT I",
+  "province_name": "KALIMANTAN BARAT",
+  "region": "61",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 4,
+  "cities": [
+   {
+    "city": "6103",
+    "city_name": "SANGGAU",
+    "parent": "KALIMANTAN BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6105",
+    "city_name": "SINTANG",
+    "parent": "KALIMANTAN BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6106",
+    "city_name": "KAPUAS HULU",
+    "parent": "KALIMANTAN BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6109",
+    "city_name": "SEKADAU",
+    "parent": "KALIMANTAN BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6110",
+    "city_name": "MELAWI",
+    "parent": "KALIMANTAN BARAT II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN BARAT II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.226009",
+  "name": "KALIMANTAN BARAT II",
+  "province_name": "KALIMANTAN BARAT",
+  "region": "61",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "6201",
+    "city_name": "KOTAWARINGIN BARAT",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6202",
+    "city_name": "KOTAWARINGIN TIMUR",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6203",
+    "city_name": "KAPUAS",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6204",
+    "city_name": "BARITO SELATAN",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6205",
+    "city_name": "BARITO UTARA",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6206",
+    "city_name": "KATINGAN",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6207",
+    "city_name": "SERUYAN",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6208",
+    "city_name": "SUKAMARA",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6209",
+    "city_name": "LAMANDAU",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6210",
+    "city_name": "GUNUNG MAS",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6211",
+    "city_name": "PULANG PISAU",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6212",
+    "city_name": "MURUNG RAYA",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6213",
+    "city_name": "BARITO TIMUR",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6271",
+    "city_name": "KOTA PALANGKARAYA",
+    "parent": "KALIMANTAN TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN TENGAH",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.255744",
+  "name": "KALIMANTAN TENGAH",
+  "province_name": "KALIMANTAN TENGAH",
+  "region": "62",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "6303",
+    "city_name": "BANJAR",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6304",
+    "city_name": "BARITO KUALA",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6305",
+    "city_name": "TAPIN",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6306",
+    "city_name": "HULU SUNGAI SELATAN",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6307",
+    "city_name": "HULU SUNGAI TENGAH",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6308",
+    "city_name": "HULU SUNGAI UTARA",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6309",
+    "city_name": "TABALONG",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6311",
+    "city_name": "BALANGAN",
+    "parent": "KALIMANTAN SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN SELATAN I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.320405",
+  "name": "KALIMANTAN SELATAN I",
+  "province_name": "KALIMANTAN SELATAN",
+  "region": "63",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 5,
+  "cities": [
+   {
+    "city": "6301",
+    "city_name": "TANAH LAUT",
+    "parent": "KALIMANTAN SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6302",
+    "city_name": "KOTABARU",
+    "parent": "KALIMANTAN SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6310",
+    "city_name": "TANAH BUMBU",
+    "parent": "KALIMANTAN SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6371",
+    "city_name": "KOTA BANJARMASIN",
+    "parent": "KALIMANTAN SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6372",
+    "city_name": "KOTA BANJARBARU",
+    "parent": "KALIMANTAN SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN SELATAN II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.359434",
+  "name": "KALIMANTAN SELATAN II",
+  "province_name": "KALIMANTAN SELATAN",
+  "region": "63",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "6401",
+    "city_name": "PASER",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6402",
+    "city_name": "KUTAI KARTANEGARA",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6403",
+    "city_name": "BERAU",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6407",
+    "city_name": "KUTAI BARAT",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6408",
+    "city_name": "KUTAI TIMUR",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6409",
+    "city_name": "PENAJAM PASER UTARA",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6411",
+    "city_name": "MAHAKAM ULU",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6471",
+    "city_name": "KOTA BALIKPAPAN",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6472",
+    "city_name": "KOTA SAMARINDA",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6474",
+    "city_name": "KOTA BONTANG",
+    "parent": "KALIMANTAN TIMUR",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN TIMUR",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.395227",
+  "name": "KALIMANTAN TIMUR",
+  "province_name": "KALIMANTAN TIMUR",
+  "region": "64",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "6501",
+    "city_name": "BULUNGAN",
+    "parent": "KALIMANTAN UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6502",
+    "city_name": "MALINAU",
+    "parent": "KALIMANTAN UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6503",
+    "city_name": "NUNUKAN",
+    "parent": "KALIMANTAN UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6504",
+    "city_name": "TANA TIDUNG",
+    "parent": "KALIMANTAN UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "6571",
+    "city_name": "KOTA TARAKAN",
+    "parent": "KALIMANTAN UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "KALIMANTAN UTARA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.454834",
+  "name": "KALIMANTAN UTARA",
+  "province_name": "KALIMANTAN UTARA",
+  "region": "65",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "7101",
+    "city_name": "BOLAANG MONGONDOW",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7102",
+    "city_name": "MINAHASA",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7103",
+    "city_name": "KEPULAUAN SANGIHE",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7104",
+    "city_name": "KEPULAUAN TALAUD",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7105",
+    "city_name": "MINAHASA SELATAN",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7106",
+    "city_name": "MINAHASA UTARA",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7107",
+    "city_name": "MINAHASA TENGGARA",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7108",
+    "city_name": "BOLAANG MONGONDOW UTARA",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7109",
+    "city_name": "KEPULAUAN SIAU TAGULANDANG BIARO",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7110",
+    "city_name": "BOLAANG MONGONDOW TIMUR",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7111",
+    "city_name": "BOLAANG MONGONDOW SELATAN",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7171",
+    "city_name": "KOTA MANADO",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7172",
+    "city_name": "KOTA BITUNG",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7173",
+    "city_name": "KOTA TOMOHON",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7174",
+    "city_name": "KOTA KOTAMOBAGU",
+    "parent": "SULAWESI UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI UTARA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.483056",
+  "name": "SULAWESI UTARA",
+  "province_name": "SULAWESI UTARA",
+  "region": "71",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "7201",
+    "city_name": "BANGGAI",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7202",
+    "city_name": "POSO",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7203",
+    "city_name": "DONGGALA",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7204",
+    "city_name": "TOLI TOLI",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7205",
+    "city_name": "BUOL",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7206",
+    "city_name": "MOROWALI",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7207",
+    "city_name": "BANGGAI KEPULAUAN",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7208",
+    "city_name": "PARIGI MOUTONG",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7209",
+    "city_name": "TOJO UNA UNA",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7210",
+    "city_name": "SIGI",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7211",
+    "city_name": "BANGGAI LAUT",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7212",
+    "city_name": "MOROWALI UTARA",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7271",
+    "city_name": "KOTA PALU",
+    "parent": "SULAWESI TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI TENGAH",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.544041",
+  "name": "SULAWESI TENGAH",
+  "province_name": "SULAWESI TENGAH",
+  "region": "72",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 8,
+  "cities": [
+   {
+    "city": "7301",
+    "city_name": "KEPULAUAN SELAYAR",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7303",
+    "city_name": "BANTAENG",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7304",
+    "city_name": "JENEPONTO",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7305",
+    "city_name": "TAKALAR",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7306",
+    "city_name": "GOWA",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7371",
+    "city_name": "KOTA MAKASSAR",
+    "parent": "SULAWESI SELATAN I",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI SELATAN I",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.599175",
+  "name": "SULAWESI SELATAN I",
+  "province_name": "SULAWESI SELATAN",
+  "region": "73",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 9,
+  "cities": [
+   {
+    "city": "7302",
+    "city_name": "BULUKUMBA",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7307",
+    "city_name": "SINJAI",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7308",
+    "city_name": "BONE",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7309",
+    "city_name": "MAROS",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7310",
+    "city_name": "PANGKAJENE KEPULAUAN",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7311",
+    "city_name": "BARRU",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7312",
+    "city_name": "SOPPENG",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7313",
+    "city_name": "WAJO",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7372",
+    "city_name": "KOTA PARE PARE",
+    "parent": "SULAWESI SELATAN II",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI SELATAN II",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.644469",
+  "name": "SULAWESI SELATAN II",
+  "province_name": "SULAWESI SELATAN",
+  "region": "73",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 7,
+  "cities": [
+   {
+    "city": "7314",
+    "city_name": "SIDENRENG RAPPANG",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7315",
+    "city_name": "PINRANG",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7316",
+    "city_name": "ENREKANG",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7317",
+    "city_name": "LUWU",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7318",
+    "city_name": "TANA TORAJA",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7322",
+    "city_name": "LUWU UTARA",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7324",
+    "city_name": "LUWU TIMUR",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7326",
+    "city_name": "TORAJA UTARA",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7373",
+    "city_name": "KOTA PALOPO",
+    "parent": "SULAWESI SELATAN III",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI SELATAN III",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.684699",
+  "name": "SULAWESI SELATAN III",
+  "province_name": "SULAWESI SELATAN",
+  "region": "73",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 6,
+  "cities": [
+   {
+    "city": "7401",
+    "city_name": "KOLAKA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7402",
+    "city_name": "KONAWE",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7403",
+    "city_name": "MUNA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7404",
+    "city_name": "BUTON",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7405",
+    "city_name": "KONAWE SELATAN",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7406",
+    "city_name": "BOMBANA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7407",
+    "city_name": "WAKATOBI",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7408",
+    "city_name": "KOLAKA UTARA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7409",
+    "city_name": "KONAWE UTARA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7410",
+    "city_name": "BUTON UTARA",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7411",
+    "city_name": "KOLAKA TIMUR",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7412",
+    "city_name": "KONAWE KEPULAUAN",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7413",
+    "city_name": "MUNA BARAT",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7414",
+    "city_name": "BUTON TENGAH",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7415",
+    "city_name": "BUTON SELATAN",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7471",
+    "city_name": "KOTA KENDARI",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7472",
+    "city_name": "KOTA BAU BAU",
+    "parent": "SULAWESI TENGGARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI TENGGARA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.726934",
+  "name": "SULAWESI TENGGARA",
+  "province_name": "SULAWESI TENGGARA",
+  "region": "74",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "7501",
+    "city_name": "GORONTALO",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7502",
+    "city_name": "BOALEMO",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7503",
+    "city_name": "BONE BOLANGO",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7504",
+    "city_name": "POHUWATO",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7505",
+    "city_name": "GORONTALO UTARA",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7571",
+    "city_name": "KOTA GORONTALO",
+    "parent": "GORONTALO",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "GORONTALO",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.801778",
+  "name": "GORONTALO",
+  "province_name": "GORONTALO",
+  "region": "75",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 4,
+  "cities": [
+   {
+    "city": "7601",
+    "city_name": "PASANGKAYU",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7602",
+    "city_name": "MAMUJU",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7603",
+    "city_name": "MAMASA",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7604",
+    "city_name": "POLEWALI MANDAR",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7605",
+    "city_name": "MAJENE",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "7606",
+    "city_name": "MAMUJU TENGAH",
+    "parent": "SULAWESI BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "SULAWESI BARAT",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.835400",
+  "name": "SULAWESI BARAT",
+  "province_name": "SULAWESI BARAT",
+  "region": "76",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 4,
+  "cities": [
+   {
+    "city": "8101",
+    "city_name": "MALUKU TENGAH",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8102",
+    "city_name": "MALUKU TENGGARA",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8103",
+    "city_name": "KEPULAUAN TANIMBAR",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8104",
+    "city_name": "BURU",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8105",
+    "city_name": "SERAM BAGIAN TIMUR",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8106",
+    "city_name": "SERAM BAGIAN BARAT",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8107",
+    "city_name": "KEPULAUAN ARU",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8108",
+    "city_name": "MALUKU BARAT DAYA",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8109",
+    "city_name": "BURU SELATAN",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8171",
+    "city_name": "KOTA AMBON",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8172",
+    "city_name": "KOTA TUAL",
+    "parent": "MALUKU",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "MALUKU",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.869539",
+  "name": "MALUKU",
+  "province_name": "MALUKU",
+  "region": "81",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "8201",
+    "city_name": "HALMAHERA BARAT",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8202",
+    "city_name": "HALMAHERA TENGAH",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8203",
+    "city_name": "HALMAHERA UTARA",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8204",
+    "city_name": "HALMAHERA SELATAN",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8205",
+    "city_name": "KEPULAUAN SULA",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8206",
+    "city_name": "HALMAHERA TIMUR",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8207",
+    "city_name": "PULAU MOROTAI",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8208",
+    "city_name": "PULAU TALIABU",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8271",
+    "city_name": "KOTA TERNATE",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "8272",
+    "city_name": "KOTA TIDORE KEPULAUAN",
+    "parent": "MALUKU UTARA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "MALUKU UTARA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.930944",
+  "name": "MALUKU UTARA",
+  "province_name": "MALUKU UTARA",
+  "region": "82",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9103",
+    "city_name": "JAYAPURA",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9105",
+    "city_name": "KEPULAUAN YAPEN",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9106",
+    "city_name": "BIAK NUMFOR",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9110",
+    "city_name": "SARMI",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9111",
+    "city_name": "KEEROM",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9115",
+    "city_name": "WAROPEN",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9119",
+    "city_name": "SUPIORI",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9120",
+    "city_name": "MAMBERAMO RAYA",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9171",
+    "city_name": "KOTA JAYAPURA",
+    "parent": "PAPUA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:06.972444",
+  "name": "PAPUA",
+  "province_name": "PAPUA",
+  "region": "91",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9202",
+    "city_name": "MANOKWARI",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9203",
+    "city_name": "FAK FAK",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9206",
+    "city_name": "TELUK BINTUNI",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9207",
+    "city_name": "TELUK WONDAMA",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9208",
+    "city_name": "KAIMANA",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9211",
+    "city_name": "MANOKWARI SELATAN",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9212",
+    "city_name": "PEGUNUNGAN ARFAK",
+    "parent": "PAPUA BARAT",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA BARAT",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:07.021709",
+  "name": "PAPUA BARAT",
+  "province_name": "PAPUA BARAT",
+  "region": "92",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9301",
+    "city_name": "MERAUKE",
+    "parent": "PAPUA SELATAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9302",
+    "city_name": "BOVEN DIGOEL",
+    "parent": "PAPUA SELATAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9303",
+    "city_name": "MAPPI",
+    "parent": "PAPUA SELATAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9304",
+    "city_name": "ASMAT",
+    "parent": "PAPUA SELATAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA SELATAN",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:07.070334",
+  "name": "PAPUA SELATAN",
+  "province_name": "PAPUA SELATAN",
+  "region": "93",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9401",
+    "city_name": "NABIRE",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9402",
+    "city_name": "PUNCAK JAYA",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9403",
+    "city_name": "PANIAI",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9404",
+    "city_name": "MIMIKA",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9405",
+    "city_name": "PUNCAK",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9406",
+    "city_name": "DOGIYAI",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9407",
+    "city_name": "INTAN JAYA",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9408",
+    "city_name": "DEIYAI",
+    "parent": "PAPUA TENGAH",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA TENGAH",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:07.150636",
+  "name": "PAPUA TENGAH",
+  "province_name": "PAPUA TENGAH",
+  "region": "94",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9501",
+    "city_name": "JAYAWIJAYA",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9502",
+    "city_name": "PEGUNUNGAN BINTANG",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9503",
+    "city_name": "YAHUKIMO",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9504",
+    "city_name": "TOLIKARA",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9505",
+    "city_name": "MAMBERAMO TENGAH",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9506",
+    "city_name": "YALIMO",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9507",
+    "city_name": "LANNY JAYA",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9508",
+    "city_name": "NDUGA",
+    "parent": "PAPUA PEGUNUNGAN",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA PEGUNUNGAN",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:07.201925",
+  "name": "PAPUA PEGUNUNGAN",
+  "province_name": "PAPUA PEGUNUNGAN",
+  "region": "95",
+  "standard": 1
+ },
+ {
+  "chair_allocation": 3,
+  "cities": [
+   {
+    "city": "9601",
+    "city_name": "SORONG",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9604",
+    "city_name": "SORONG SELATAN",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9605",
+    "city_name": "RAJA AMPAT",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9609",
+    "city_name": "TAMBRAUW",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9610",
+    "city_name": "MAYBRAT",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   },
+   {
+    "city": "9671",
+    "city_name": "KOTA SORONG",
+    "parent": "PAPUA BARAT DAYA",
+    "parentfield": "cities",
+    "parenttype": "Dapil DPR RI"
+   }
+  ],
+  "dapil_category": "DPR RI",
+  "dapil_name": "PAPUA BARAT DAYA",
+  "docstatus": 0,
+  "doctype": "Dapil DPR RI",
+  "election_year": "2024",
+  "modified": "2024-09-14 14:01:07.245027",
+  "name": "PAPUA BARAT DAYA",
+  "province_name": "PAPUA BARAT DAYA",
+  "region": "96",
   "standard": 1
  }
 ]

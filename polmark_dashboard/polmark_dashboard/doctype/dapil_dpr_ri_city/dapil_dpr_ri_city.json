@@ -6,31 +6,31 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "region",
+  "city",
   "city_name"
  ],
  "fields": [
   {
+   "fetch_from": "city.region_name",
+   "fieldname": "city_name",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "City Name"
+  },
+  {
    "allow_in_quick_entry": 1,
-   "fieldname": "region",
+   "fieldname": "city",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "City",
    "options": "Region",
    "reqd": 1
-  },
-  {
-   "fetch_from": "region.name1",
-   "fieldname": "city_name",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "City Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-09-13 14:40:34.916208",
+ "modified": "2024-09-13 18:00:19.759632",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Dapil DPR RI City",

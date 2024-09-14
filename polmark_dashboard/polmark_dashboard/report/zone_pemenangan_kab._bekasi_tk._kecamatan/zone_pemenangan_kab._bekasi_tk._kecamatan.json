@@ -1,0 +1,60 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "jml_penduduk",
+   "fieldtype": "Int",
+   "label": "Penduduk",
+   "width": 0
+  },
+  {
+   "fieldname": "jml_kk",
+   "fieldtype": "Int",
+   "label": "KK",
+   "width": 0
+  },
+  {
+   "fieldname": "jml_pemilih_2024",
+   "fieldtype": "Int",
+   "label": "Pemilih 2024",
+   "width": 0
+  }
+ ],
+ "creation": "2024-09-13 17:09:56.515404",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "prov",
+   "fieldtype": "Data",
+   "label": "Provinsi",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letterhead": null,
+ "modified": "2024-09-13 17:26:40.000375",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "Zone Pemenangan Kab. Bekasi tk. Kecamatan",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Zona Pemenangan",
+ "report_name": "Zone Pemenangan Kab. Bekasi tk. Kecamatan",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Polmark Dashboard Manager"
+  }
+ ]
+}

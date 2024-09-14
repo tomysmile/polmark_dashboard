@@ -53,11 +53,11 @@
   {
    "fieldname": "cities",
    "fieldtype": "Table",
-   "label": "City",
+   "label": "Cities",
    "options": "Dapil DPR RI City"
   },
   {
-   "fetch_from": "region.name1",
+   "fetch_from": "region.region_name",
    "fieldname": "province_name",
    "fieldtype": "Read Only",
    "hidden": 1,
@@ -82,7 +82,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-13 16:03:39.188645",
+ "modified": "2024-09-14 14:02:40.088863",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Dapil DPR RI",
