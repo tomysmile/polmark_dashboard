@@ -22,11 +22,6 @@ fixtures = [
     }, {
         "doctype": "Custom HTML Block"
     }, {
-        "doctype": "Document Category",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
         "doctype": "Region",
         "filters": [
             ["standard", "=", 1]
@@ -37,7 +32,24 @@ fixtures = [
             ["standard", "=", 1]
         ]
     }, {
+        "doctype": "Dapil Category",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
         "doctype": "Dapil DPR RI",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
+        "doctype": "Dapil DPR RI City"
+    }, {
+        "doctype": "Document Category",
+        "filters": [
+            ["standard", "=", 1]
+        ]
+    }, {
+        "doctype": "Election Organisation",
         "filters": [
             ["standard", "=", 1]
         ]
@@ -52,7 +64,7 @@ fixtures = [
             ["standard", "=", 1]
         ]
     }, {
-        "doctype": "Election Zone",
+        "doctype": "Zona Pemenangan",
         "filters": [
             ["standard", "=", 1]
         ]

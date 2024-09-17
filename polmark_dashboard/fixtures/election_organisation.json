@@ -1,0 +1,20 @@
+[
+ {
+  "description": "Panitia pengawasan pelaksanaan pemilu",
+  "docstatus": 0,
+  "doctype": "Election Organisation",
+  "modified": "2024-09-09 18:47:10.439182",
+  "name": "9fomjmvp9s",
+  "organisation_name": "Panwas",
+  "standard": 1
+ },
+ {
+  "description": "Lembaga independen tingkat daerah yang bertanggung jawab untuk mengatur dan menyelenggarakan pemilihan umum dan pemilihan kepala daerah. KPUD bertugas mulai dari penyusunan jadwal, pendaftaran calon, pemungutan suara, hingga penghitungan hasil.",
+  "docstatus": 0,
+  "doctype": "Election Organisation",
+  "modified": "2024-09-09 18:46:55.890327",
+  "name": "9ddnr6k2v5",
+  "organisation_name": "KPUD",
+  "standard": 1
+ }
+]
