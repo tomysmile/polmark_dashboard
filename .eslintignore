@@ -1,0 +1,8 @@
+polmark_dashboard/public/js/lib/*
+polmark_dashboard/public/js/polmark_dashboard/misc/tests/*
+polmark_dashboard/public/js/polmark_dashboard/views/test_runner.js
+polmark_dashboard/core/doctype/doctype/boilerplate/*
+polmark_dashboard/core/doctype/report/boilerplate/*
+polmark_dashboard/public/js/polmark_dashboard/class.js
+polmark_dashboard/templates/includes/*
+polmark_dashboard/www/website_script.js
