@@ -6675,6 +6675,7 @@
       "type": "Kabupaten",
       "code": "3216",
       "level": 3,
+      "dapil_dpr_ri": "JAWA BARAT VII",
       "parent_name": "JAWA BARAT",
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
@@ -6691,7 +6692,16 @@
       },
       "p_city": {
         "$oid": "6320271b975d447ce930555b"
-      }
+      },
+      "cde": 988138,
+      "pemilih_per_kk": 3.062,
+      "t_kk": 928017,
+      "t_pemilih": 2053546,
+      "t_pemilih_laki": 10357,
+      "t_pemilih_muda":  1197710,
+      "t_pemilih_perempuan": 1025985,
+      "t_pemilih_tua": 855836,
+      "t_penduduk": 2880280
     },
     "geometry": {
       "type": "Polygon",

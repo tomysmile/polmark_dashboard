@@ -23,6 +23,7 @@ def build_geojson(data):
                 "parent_name": region.get("parent_name"),
                 "parent_type": region.get("parent_type"),
                 "data_source": region.get("data_source"),
+                "dapil_dpr_ri": region.get("dapil_dpr_ri"),
                 "color": region.get("color"),
                 "jml_kec": region.get("jml_kec"),
                 "jml_kel": region.get("jml_kel"),

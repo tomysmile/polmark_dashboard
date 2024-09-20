@@ -36,7 +36,10 @@ def insert_to_database(doctype, file_path):
         parent_name = properties.get("parent_name")
         parent_type = properties.get("parent_type")
         parent_code = properties.get("parent_code")
+        dapil_dpr_ri = properties.get("dapil_dpr_ri")
 
+        jml_pend_2020 = properties.get("jml_pend_2020")
+        luas_km2 = properties.get("luas_km2")
         jml_kk = properties.get("t_kk")
         jml_cde = properties.get("cde")
         jml_dpt_2024 = properties.get("t_pemilih")
@@ -47,10 +50,10 @@ def insert_to_database(doctype, file_path):
         jml_pend = properties.get("t_penduduk")
         zonasi = properties.get("zonasi")
 
-        if parent_code:
-            parent_code = parent_code
+        if region_code and len(region_code) > 2:
+            parent_code = region_code[:-2]
         else:
-            parent_code = region_code[:2]
+            parent_code = 1
 
         doc = frappe.get_doc({
             "doctype": doctype,
@@ -62,7 +65,10 @@ def insert_to_database(doctype, file_path):
             "parent_code": parent_code,
             "parent_name": parent_name,
             "parent_type": parent_type,
+            "dapil_dpr_ri": dapil_dpr_ri,
             "geometry": geojson_str,
+            "jml_pend_2020": jml_pend_2020,
+            "luas_km2": luas_km2,
             "jml_kec": jml_kecamatan,
             "jml_kel": jml_kelurahan,
             "jml_desa": jml_desa,
@@ -70,7 +76,7 @@ def insert_to_database(doctype, file_path):
             "color": color,
             "jml_kk": jml_kk,
             "jml_cde": jml_cde,
-            "jml_dpt_2024": jml_dpt_2024,
+            "jml_dpt": jml_dpt_2024,
             "jml_dpt_perkk": jml_dpt_perkk,
             "jml_dpt_perempuan": jml_dpt_perempuan,
             "jml_dpt_laki": jml_dpt_laki,
@@ -86,34 +92,34 @@ def insert_to_database(doctype, file_path):
 
 def import_province_data():
     file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_provinsi.json')
-    doctype = "Region Province"
+    doctype = "Region 2024"
 
     # execute the function
     insert_to_database(doctype, file_path)
     print("GeoJSON Provinces data imported successfully!")
 
 
-def import_city_data():
+def import_city_of_jawabarat_data():
     file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_city_of_jawa_barat.json')
-    doctype = "Region City"
+    doctype = "Region 2024"
 
     # execute the function
     insert_to_database(doctype, file_path)
     print("GeoJSON City data imported successfully!")
 
 
-def import_district_data():
-    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_kecamatan_bekasi.json')
-    doctype = "Region District"
+def import_district_of_bekasi_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_kec_bekasi.json')
+    doctype = "Region 2024"
 
     # execute the function
     insert_to_database(doctype, file_path)
     print("GeoJSON District data imported successfully!")
 
 
-def import_subdistrict_data():
-    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_desa_bekasi.json')
-    doctype = "Region Subdistrict"
+def import_subdistrict_of_bekasi_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_keldesa_bekasi.json')
+    doctype = "Region 2024"
 
     # execute the function
     insert_to_database(doctype, file_path)
