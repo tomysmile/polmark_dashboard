@@ -183,14 +183,14 @@ async function loadGeoJson(map, code, level) {
                 <h3 class="popup-title">${feature.properties.name}</h3>
                 <ul class="popup-info">
                     <li><i class="fas fa-landmark"></i> <span class="popup-label">Dapil DPR RI:</span> ${feature.properties.dapil_dpr_ri}</li>
-                    <li><i class="fas fa-landmark"></i> <span class="popup-label">Jumlah TPS:</span> ${feature.properties.jml_tps}</li>
-                    <li><i class="fas fa-users"></i> <span class="popup-label">Jumlah Penduduk:</span> ${feature.properties.jml_pend}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah KK:</span> ${feature.properties.jml_kk}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah CDE:</span> ${feature.properties.jml_cde}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih:</span> ${feature.properties.jml_dpt}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih per-KK:</span> ${feature.properties.jml_dpt_perkk}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih Perempuan:</span> ${feature.properties.jml_dpt_perempuan}</li>
-                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih Muda:</span> ${feature.properties.jml_dpt_muda}</li>
+                    <li><i class="fas fa-landmark"></i> <span class="popup-label">TPS:</span> ${feature.properties.jml_tps}</li>
+                    <li><i class="fas fa-users"></i> <span class="popup-label">Penduduk:</span> ${feature.properties.jml_pend}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">KK:</span> ${feature.properties.jml_kk}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">CDE:</span> ${feature.properties.jml_cde}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih:</span> ${feature.properties.jml_dpt}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih per-KK:</span> ${feature.properties.jml_dpt_perkk}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih Perempuan:</span> ${feature.properties.jml_dpt_perempuan}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih Muda:</span> ${feature.properties.jml_dpt_muda}</li>
                     <li><i class="fas fa-map-marker-alt"></i> <span class="popup-label">Zonasi:</span> ${feature.properties.zonasi}</li>
                 </ul>
             </div>
