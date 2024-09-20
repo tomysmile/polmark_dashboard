@@ -51,3 +51,63 @@
 .leaflet-control-custom:hover {
   background-color: #f4f4f4;
 }
+
+.popup-content {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  max-width: 250px;
+  /* Controls the width of the popup */
+}
+
+.popup-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0056b3;
+  /* Blue color for the title */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.popup-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-info li {
+  margin-bottom: 8px;
+}
+
+.popup-label {
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  min-width: 120px;
+  /* Ensures labels align */
+}
+
+.popup-info li span {
+  color: #555;
+  /* Softer color for the values */
+}
+
+.popup-content li:last-child {
+  margin-bottom: 0;
+  /* Removes extra spacing at the bottom */
+}
+
+.popup-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.popup-info li i {
+  color: #0056b3;
+  margin-right: 5px;
+}

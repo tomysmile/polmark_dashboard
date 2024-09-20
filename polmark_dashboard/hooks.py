@@ -83,7 +83,7 @@ fixtures = [
 # ------------------
 
 app_include_css = [
-    "polmark_dashboard.bundle.css",
+    "polmark_dashboard.bundle.css"
 ]
 
 # include js, css files in header of desk.html

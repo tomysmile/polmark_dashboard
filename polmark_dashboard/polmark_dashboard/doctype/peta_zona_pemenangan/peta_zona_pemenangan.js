@@ -72,13 +72,28 @@ function initializeMap(frm) {
 	loadGeoJson(map, region_code, region_level);
 }
 
+function getColor(zonasi) {
+	switch (zonasi) {
+		case "ZONA 1":
+			return "#FF9999"; // Light Red
+		case "ZONA 2":
+			return "#99FF99"; // Light Green
+		case "ZONA 3":
+			return "#9999FF"; // Light Blue
+		case "ZONA 4":
+			return "#FFFF99"; // Light Yellow
+		default:
+			return "#CCCCCC"; // Default gray for unknown zonasi
+	}
+}
+
 function applyStyle(feature) {
 	return {
-		color: feature.properties.color, // Use color from the GeoJSON
-		weight: 2, // Border thickness
-		opacity: 1, // Border opacity
-		fillOpacity: 0.5, // Fill opacity
-		fillColor: feature.properties.color, // Fill color from the GeoJSON
+		fillColor: getColor(feature.properties.zonasi),
+		weight: 2,
+		opacity: 1,
+		color: "white", // Border color
+		fillOpacity: 0.7, // Opacity of the fill color
 	};
 }
 
@@ -157,23 +172,29 @@ async function loadGeoJson(map, code, level) {
               </div>`,
 						});
 
-						// L.marker(centroid, {
-						// 	icon: L.divIcon({
-						// 		className: "city-label",
-						// 		html: feature.properties.name,
-						// 		iconSize: [50, 20],
-						// 	}),
-						// }).addTo(map);
-
 						L.marker(centroid, { icon: markerLabel }).addTo(map);
 					} else {
 						console.error("Invalid centroid for feature:", feature.properties.name);
 					}
 
-					// Bind a popup to each city with additional info
-					layer.bindPopup(
-						`<strong>${feature.properties.name}</strong><br>TPS: ${feature.properties.jml_tps}`
-					);
+					// Bind a popup to display the information
+					layer.bindPopup(`
+            <div class="popup-content">
+                <h3 class="popup-title">${feature.properties.name}</h3>
+                <ul class="popup-info">
+                    <li><i class="fas fa-landmark"></i> <span class="popup-label">Dapil DPR RI:</span> ${feature.properties.dapil_dpr_ri}</li>
+                    <li><i class="fas fa-landmark"></i> <span class="popup-label">Jumlah TPS:</span> ${feature.properties.jml_tps}</li>
+                    <li><i class="fas fa-users"></i> <span class="popup-label">Jumlah Penduduk:</span> ${feature.properties.jml_pend}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah KK:</span> ${feature.properties.jml_kk}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah CDE:</span> ${feature.properties.jml_cde}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih:</span> ${feature.properties.jml_dpt}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih per-KK:</span> ${feature.properties.jml_dpt_perkk}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih Perempuan:</span> ${feature.properties.jml_dpt_perempuan}</li>
+                    <li><i class="fas fa-user-check"></i> <span class="popup-label">Jumlah Pemilih Muda:</span> ${feature.properties.jml_dpt_muda}</li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span class="popup-label">Zonasi:</span> ${feature.properties.zonasi}</li>
+                </ul>
+            </div>
+          `);
 
 					// Zoom into the city when clicked
 					// layer.on("click", function (e) {
