@@ -5,7 +5,7 @@
   justify-content: center;
   background-color: yellow;
   /* Yellow background */
-  padding: 5px 10px;
+  padding: 2px 4px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   /* Add a slight shadow for better visibility */
@@ -23,7 +23,7 @@
 
 /* Styling for the text inside the label */
 .peta-label-text {
-  font-size: 16px;
+  font-size: 8px;
   /* Larger font size */
   font-weight: bold;
   color: black;

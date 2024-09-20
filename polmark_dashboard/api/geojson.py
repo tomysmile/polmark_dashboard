@@ -94,3 +94,18 @@ def get_subdistricts(district_id):
     )
     geojson = build_geojson(regions)
     return geojson
+
+
+@frappe.whitelist(allow_guest=True)
+def get_geojson_data(region=None):
+    # Fetch GeoJSON data based on the region (province, city, etc.)
+    filters = {}
+
+    if region:
+        filters = {"parent_code": region}
+    else:
+        filters = {"parent_code": "1"}  # show indonesia map
+
+    regions = frappe.get_all("Region 2024", filters=filters, fields=["*"])
+    geojson = build_geojson(regions)
+    return geojson

@@ -25,8 +25,8 @@ frappe.ui.form.on("Peta Zona Pemenangan", {
 	onload: function (frm) {
 		$(document).ready(function () {
 			if (!frm.is_new()) {
-        // Hide the Save button
-        frm.disable_save();
+				// Hide the Save button
+				frm.disable_save();
 				// Initialize and render the map
 				initializeMap(frm);
 			}
@@ -45,6 +45,7 @@ const getAuthToken = {
 let previousBounds = null;
 let previousZoomLevel = null;
 let region_code = null;
+let region_level = null;
 
 function initializeMap(frm) {
 	// Check if the map container already exists
@@ -53,7 +54,8 @@ function initializeMap(frm) {
 		return;
 	}
 
-	region_code = frm.doc.parent_code;
+	region_code = frm.doc.region;
+	region_level = frm.doc.level;
 
 	// Set up the map inside the Doctype form
 	var mapContainer = frm.fields_dict["map_html"].$wrapper.html(
@@ -67,30 +69,7 @@ function initializeMap(frm) {
 		attribution: "© OpenStreetMap contributors",
 	}).addTo(map);
 
-	// loadProvinces(map);
-	fetchCities(region_code, map);
-
-	// Add Back Button
-	const backButton = L.control({ position: "topright" });
-	backButton.onAdd = function () {
-		const button = L.DomUtil.create(
-			"button",
-			"leaflet-bar leaflet-control leaflet-control-custom"
-		);
-		button.innerHTML = "Back";
-		button.style.backgroundColor = "white";
-		button.style.width = "60px";
-		button.style.height = "30px";
-		button.onclick = function () {
-			if (previousBounds) {
-				map.fitBounds(previousBounds);
-				map.setZoom(previousZoomLevel);
-				previousBounds = null; // Clear previous bounds after use
-			}
-		};
-		return button;
-	};
-	backButton.addTo(map);
+	loadGeoJson(map, region_code, region_level);
 }
 
 function applyStyle(feature) {
@@ -103,79 +82,129 @@ function applyStyle(feature) {
 	};
 }
 
-async function loadProvinces(map) {
+// Function to calculate the centroid for a Polygon (in case some features are Polygons)
+function getCentroid(coordinates) {
+	let totalLat = 0,
+		totalLng = 0,
+		totalPoints = 0;
+
+	// Assuming the coordinates array is a Polygon: [ [ [lng, lat], [lng, lat], ... ] ]
+	coordinates[0].forEach(function (coord) {
+		totalLng += coord[0];
+		totalLat += coord[1];
+		totalPoints++;
+	});
+
+	if (totalPoints === 0) {
+		return null; // Invalid case, no points in the polygon
+	}
+
+	return [totalLat / totalPoints, totalLng / totalPoints]; // Centroid in [lat, lng] format
+}
+
+function getMultiPolygonCentroid(coordinates) {
+	let totalLat = 0,
+		totalLng = 0,
+		totalPoints = 0;
+
+	// Loop through each Polygon in the MultiPolygon
+	coordinates.forEach(function (polygon) {
+		polygon[0].forEach(function (coord) {
+			totalLng += coord[0]; // Longitude
+			totalLat += coord[1]; // Latitude
+			totalPoints++;
+		});
+	});
+
+	if (totalPoints === 0) {
+		return null; // Invalid case, no points in the polygons
+	}
+
+	return [totalLat / totalPoints, totalLng / totalPoints]; // Centroid in [lat, lng] format
+}
+
+async function loadGeoJson(map, code, level) {
+	const url = `/api/method/polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
+
 	try {
-		const url = `/api/method/polmark_dashboard.api.geojson.get_provinces?province_id=${region_code}`;
-		const response = await fetch(url, getAuthToken);
+		const response = await fetch(url);
 		const data = await response.json();
 
-		L.geoJSON(data.message, {
-			style: applyStyle,
-			onEachFeature: (feature, layer) => onEachFeatureProvince(feature, layer, map),
-		}).addTo(map);
+		if (data.message) {
+			var geoJson = data.message;
+			map.fitBounds(L.geoJSON(geoJson).getBounds());
+
+			// Add GeoJSON layer and display city names in the center
+			var geoLayer = L.geoJSON(geoJson, {
+				style: applyStyle,
+				onEachFeature: function (feature, layer) {
+					var centroid;
+
+					// Check if it's a MultiPolygon
+					if (feature.geometry.type === "MultiPolygon") {
+						centroid = getMultiPolygonCentroid(feature.geometry.coordinates);
+					} else if (feature.geometry.type === "Polygon") {
+						centroid = getCentroid(feature.geometry.coordinates);
+					}
+
+					// Ensure centroid is valid before adding marker
+					if (centroid) {
+						// Add city name label in the center
+						const markerLabel = L.divIcon({
+							className: "province-label",
+							html: `<div class="peta-label-content">
+              <span class="peta-label-text">${feature.properties.name}</span>
+              </div>`,
+						});
+
+						// L.marker(centroid, {
+						// 	icon: L.divIcon({
+						// 		className: "city-label",
+						// 		html: feature.properties.name,
+						// 		iconSize: [50, 20],
+						// 	}),
+						// }).addTo(map);
+
+						L.marker(centroid, { icon: markerLabel }).addTo(map);
+					} else {
+						console.error("Invalid centroid for feature:", feature.properties.name);
+					}
+
+					// Bind a popup to each city with additional info
+					layer.bindPopup(
+						`<strong>${feature.properties.name}</strong><br>TPS: ${feature.properties.jml_tps}`
+					);
+
+					// Zoom into the city when clicked
+					// layer.on("click", function (e) {
+					// 	var regionName = feature.properties.name;
+					// 	if (regionName === "Jakarta") {
+					// 		zoomToCity(map, "Jakarta");
+					// 	}
+					// });
+				},
+			}).addTo(map);
+		}
 	} catch (error) {
-		console.error("Error loading provinces:", error);
+		console.error("Error loading geojson:", error);
 	}
 }
 
-function onEachFeatureProvince(feature, layer, map) {
-	layer.on({
-		click: function () {
-			previousBounds = map.getBounds();
-			previousZoomLevel = map.getZoom();
-			const provinceId = feature.properties.region_code; // Replace with your actual ID property
-			fetchCities(provinceId, map);
-		},
-	});
-}
-
-async function fetchCities(provinceId, map) {
-	try {
-		const url = `/api/method/polmark_dashboard.api.geojson.get_cities?province_id=${provinceId}`;
-		const response = await fetch(url, getAuthToken);
-		const cityData = await response.json();
-
-		// Clear previous layers
-		map.eachLayer(function (layer) {
-			if (layer instanceof L.GeoJSON) {
-				map.removeLayer(layer);
+function zoomToCity(map, city) {
+	frappe.call({
+		method: "your_app_name.your_module_name.api.get_geojson_data",
+		args: { region: city },
+		callback: function (r) {
+			if (r.message) {
+				var cityGeoJson = r.message;
+				map.eachLayer(function (layer) {
+					if (layer instanceof L.GeoJSON) {
+						map.removeLayer(layer); // Remove previous layers
+					}
+				});
+				L.geoJSON(cityGeoJson).addTo(map);
+				map.fitBounds(L.geoJSON(cityGeoJson).getBounds());
 			}
-		});
-
-		// Add cities to the map
-		const geojsonLayer = L.geoJSON(cityData.message, {
-			style: applyStyle,
-			onEachFeature: (feature, layer) => onEachFeatureCity(feature, layer, map),
-		}).addTo(map);
-
-		// Zoom to the city level
-		previousBounds = map.getBounds();
-		previousZoomLevel = map.getZoom();
-		const bounds = L.geoJSON(cityData.message).getBounds();
-		map.fitBounds(bounds);
-	} catch (error) {
-		console.error("Error fetching cities:", error);
-	}
-}
-
-function onEachFeatureCity(feature, layer, map) {
-	let labelText = feature.properties.name;
-
-	// Calculate the center of the feature's bounds
-	const markerCenter = layer.getBounds().getCenter();
-	const markerLabel = L.divIcon({
-		className: "province-label",
-		html: `<div class="peta-label-content">
-    <span class="peta-label-text">${labelText}</span>
-    </div>`,
-	});
-
-	// Add a label at the center of the feature
-	L.marker(markerCenter, { icon: markerLabel }).addTo(map);
-
-	layer.on({
-		click: function () {
-			// Handle click event for cities if needed
 		},
 	});
 }

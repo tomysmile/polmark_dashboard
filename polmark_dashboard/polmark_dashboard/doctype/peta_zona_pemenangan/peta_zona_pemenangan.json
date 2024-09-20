@@ -7,11 +7,12 @@
  "field_order": [
   "title",
   "region",
+  "standard",
   "column_break_ymnv",
   "slug",
+  "region_type",
   "level_code",
   "parent_code",
-  "standard",
   "section_break_khsy",
   "map_html"
  ],
@@ -69,11 +70,18 @@
   {
    "fieldname": "column_break_ymnv",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "region.region_type",
+   "fieldname": "region_type",
+   "fieldtype": "Read Only",
+   "label": "Region Type"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-20 17:03:22.521106",
+ "modified": "2024-09-20 19:09:10.908071",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Peta Zona Pemenangan",
