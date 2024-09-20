@@ -50,10 +50,13 @@ def insert_to_database(doctype, file_path):
         jml_pend = properties.get("t_penduduk")
         zonasi = properties.get("zonasi")
 
-        if region_code and len(region_code) > 2:
-            parent_code = region_code[:-2]
+        if parent_code:
+            parent_code = parent_code
         else:
-            parent_code = 1
+            if region_code and len(region_code) > 2:
+                parent_code = region_code[:-2]
+            else:
+                parent_code = 1
 
         doc = frappe.get_doc({
             "doctype": doctype,
