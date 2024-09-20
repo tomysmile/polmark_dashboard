@@ -6,6 +6,13 @@ app_email = "tomysmile@gmail.com"
 app_license = "mit"
 # required_apps = []
 
+# Define the API route
+doc_events = {
+    "*": {
+        "get_provinces": "polmark_dashboard.api.geojson.get_provinces",
+    }
+}
+
 fixtures = [
     {
         "doctype": "Role",
@@ -74,6 +81,10 @@ fixtures = [
 
 # Includes in <head>
 # ------------------
+
+app_include_css = [
+    "polmark_dashboard.bundle.css",
+]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/polmark_dashboard/css/polmark_dashboard.css"

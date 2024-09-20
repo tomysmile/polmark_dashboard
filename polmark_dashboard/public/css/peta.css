@@ -1,0 +1,53 @@
+/* General label styling */
+.peta-label-content {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  /* Yellow background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Add a slight shadow for better visibility */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+/* Styling for the icon inside the label */
+.peta-label-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  /* Space between the icon and text */
+}
+
+/* Styling for the text inside the label */
+.peta-label-text {
+  font-size: 16px;
+  /* Larger font size */
+  font-weight: bold;
+  color: black;
+  /* Black text to contrast with yellow background */
+}
+
+.label-tooltip {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 12px;
+  color: black;
+}
+
+.leaflet-control-custom {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.leaflet-control-custom:hover {
+  background-color: #f4f4f4;
+}

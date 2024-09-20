@@ -4,15 +4,10 @@ import json
 import os
 
 
-def import_properties_data():
-    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_province.json')
-
+def insert_to_database(doctype, file_path):
     # Check if the file exists
     if not os.path.exists(file_path):
         frappe.throw(f"File not found: {file_path}")
-
-    # Custom Doctype name
-    doctype = "Region Province"
 
     # Load the GeoJSON data from the file
     with open(file_path, "r") as json_file:
@@ -24,11 +19,11 @@ def import_properties_data():
 
     # Loop through each feature (province) in the GeoJSON
     for item in data:
-        data_source = item["data_source"]
-        jml_kecamatan = item["t_district"]
-        jml_kelurahan = item["t_sub_district_kelurahan"]
-        jml_desa = item["t_sub_district_desa"]
-        jml_tps = item["t_tps"]
+        data_source = item.get("data_source")
+        jml_kecamatan = item.get("t_district")
+        jml_kelurahan = item.get("t_sub_district_kelurahan")
+        jml_desa = item.get("t_sub_district_desa")
+        jml_tps = item.get("t_tps")
         geojson_str = json.dumps(item.get('feature'))
 
         # Extract the `properties` from the `feature` field
@@ -37,9 +32,25 @@ def import_properties_data():
         region_type = properties.get("type")
         region_code = properties.get("code")
         level = properties.get("level")
+        color = properties.get("color")
         parent_name = properties.get("parent_name")
         parent_type = properties.get("parent_type")
-        color = properties.get("color")
+        parent_code = properties.get("parent_code")
+
+        jml_kk = properties.get("t_kk")
+        jml_cde = properties.get("cde")
+        jml_dpt_2024 = properties.get("t_pemilih")
+        jml_dpt_perkk = properties.get("pemilih_per_kk")
+        jml_dpt_perempuan = properties.get("t_pemilih_perempuan")
+        jml_dpt_laki = properties.get("t_pemilih_laki")
+        jml_dpt_muda = properties.get("t_pemilih_muda")
+        jml_pend = properties.get("t_penduduk")
+        zonasi = properties.get("zonasi")
+
+        if parent_code:
+            parent_code = parent_code
+        else:
+            parent_code = region_code[:2]
 
         doc = frappe.get_doc({
             "doctype": doctype,
@@ -48,6 +59,7 @@ def import_properties_data():
             "region_type": region_type,
             "level": level,
             "data_source": data_source,
+            "parent_code": parent_code,
             "parent_name": parent_name,
             "parent_type": parent_type,
             "geometry": geojson_str,
@@ -55,10 +67,54 @@ def import_properties_data():
             "jml_kel": jml_kelurahan,
             "jml_desa": jml_desa,
             "jml_tps": jml_tps,
-            "color": color
+            "color": color,
+            "jml_kk": jml_kk,
+            "jml_cde": jml_cde,
+            "jml_dpt_2024": jml_dpt_2024,
+            "jml_dpt_perkk": jml_dpt_perkk,
+            "jml_dpt_perempuan": jml_dpt_perempuan,
+            "jml_dpt_laki": jml_dpt_laki,
+            "jml_dpt_muda": jml_dpt_muda,
+            "jml_pend": jml_pend,
+            "zonasi": zonasi
         })
         doc.insert()
 
     # Commit the transaction
     frappe.db.commit()
+
+
+def import_province_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_provinsi.json')
+    doctype = "Region Province"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
     print("GeoJSON Provinces data imported successfully!")
+
+
+def import_city_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_city_of_jawa_barat.json')
+    doctype = "Region City"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
+    print("GeoJSON City data imported successfully!")
+
+
+def import_district_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_kecamatan_bekasi.json')
+    doctype = "Region District"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
+    print("GeoJSON District data imported successfully!")
+
+
+def import_subdistrict_data():
+    file_path = frappe.get_app_path('polmark_dashboard', 'public', 'data', 'region_desa_bekasi.json')
+    doctype = "Region Subdistrict"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
+    print("GeoJSON Subdistrict data imported successfully!")

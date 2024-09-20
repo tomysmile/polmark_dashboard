@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-09-19 11:52:32.289158",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region_code",
+  "region_name",
+  "region_type",
+  "level",
+  "column_break_setg",
+  "parent_code",
+  "parent_name",
+  "parent_type",
+  "data_source",
+  "section_break_nkgf",
+  "geometry",
+  "section_break_ygvg",
+  "jml_kec",
+  "jml_kel",
+  "jml_desa",
+  "jml_tps",
+  "jml_kk",
+  "column_break_kfkb",
+  "jml_dpt_2024",
+  "jml_dpt_perkk",
+  "jml_dpt_perempuan",
+  "jml_dpt_laki",
+  "jml_dpt_muda",
+  "jml_cde",
+  "column_break_mywz",
+  "jml_pend",
+  "zonasi",
+  "jml_pend_2020",
+  "luas_km2",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "region_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Level"
+  },
+  {
+   "fieldname": "column_break_setg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Code"
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Name"
+  },
+  {
+   "fieldname": "parent_type",
+   "fieldtype": "Data",
+   "label": "Parent Type"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Data",
+   "label": "Data Source"
+  },
+  {
+   "fieldname": "section_break_nkgf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "geometry",
+   "fieldtype": "JSON",
+   "label": "Geometry"
+  },
+  {
+   "fieldname": "section_break_ygvg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jml_kec",
+   "fieldtype": "Int",
+   "label": "Jumlah Kecamatan"
+  },
+  {
+   "fieldname": "jml_kel",
+   "fieldtype": "Int",
+   "label": "Jumlah Kelurahan"
+  },
+  {
+   "fieldname": "jml_desa",
+   "fieldtype": "Int",
+   "label": "Jumlah Desa"
+  },
+  {
+   "fieldname": "jml_tps",
+   "fieldtype": "Int",
+   "label": "Jumlah TPS"
+  },
+  {
+   "fieldname": "column_break_kfkb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_kk",
+   "fieldtype": "Int",
+   "label": "Jumlah KK"
+  },
+  {
+   "fieldname": "jml_dpt_2024",
+   "fieldtype": "Int",
+   "label": "Jumlah DPT 2024"
+  },
+  {
+   "fieldname": "jml_dpt_perempuan",
+   "fieldtype": "Int",
+   "label": "Jumlah Pemilih Perempuan"
+  },
+  {
+   "fieldname": "jml_dpt_laki",
+   "fieldtype": "Int",
+   "label": "Jumlah Pemilih Laki-laki"
+  },
+  {
+   "fieldname": "jml_dpt_muda",
+   "fieldtype": "Int",
+   "label": "Jumlah Pemilih Muda"
+  },
+  {
+   "fieldname": "column_break_mywz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_pend",
+   "fieldtype": "Int",
+   "label": "Jumlah Penduduk"
+  },
+  {
+   "fieldname": "zonasi",
+   "fieldtype": "Data",
+   "label": "Zonasi"
+  },
+  {
+   "fieldname": "jml_pend_2020",
+   "fieldtype": "Int",
+   "label": "Jumlah Populasi 2020"
+  },
+  {
+   "fieldname": "luas_km2",
+   "fieldtype": "Float",
+   "label": "Luas KM2"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "jml_dpt_perkk",
+   "fieldtype": "Float",
+   "label": "Jumlah Pemilih PerKK"
+  },
+  {
+   "fieldname": "jml_cde",
+   "fieldtype": "Int",
+   "label": "Jumlah CDE"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-19 15:02:50.144842",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "Region Subdistrict",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "region_name",
+ "track_changes": 1
+}
