@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"zTPRj3wHcL\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Kota Bandung-00\",\"col\":12}}]",
- "creation": "2024-09-08 13:05:51.582875",
+ "creation": "2024-09-13 15:27:32.388175",
  "custom_blocks": [
   {
    "custom_block_name": "Block Pendampingan Kota Bandung-00",
@@ -17,86 +17,8 @@
  "indicator_color": "",
  "is_hidden": 0,
  "label": "xKota Bandung",
- "links": [
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Activity Log",
-   "link_count": 0,
-   "link_to": "Activity Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Access Log",
-   "link_count": 0,
-   "link_to": "Access Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Role Permissions Manager",
-   "link_count": 0,
-   "link_to": "permission-manager",
-   "link_type": "Page",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "User Permissions",
-   "link_count": 0,
-   "link_to": "User Permission",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Role Permission for Page and Report",
-   "link_count": 0,
-   "link_to": "Role Permission for Page and Report",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "User",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Permitted Documents For User",
-   "link_count": 0,
-   "link_to": "Permitted Documents For User",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "DocShare",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Document Share Report",
-   "link_count": 0,
-   "link_to": "Document Share Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2024-09-08 16:52:02.479830",
+ "links": [],
+ "modified": "2024-09-21 18:00:35.460238",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "xKota Bandung",

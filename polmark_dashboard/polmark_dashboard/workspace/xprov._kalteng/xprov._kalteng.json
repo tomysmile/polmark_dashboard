@@ -1,0 +1,35 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"E71X_OdVC1\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Block Pendampingan Prov. Kalteng-00\",\"col\":12}}]",
+ "creation": "2024-09-13 15:27:31.980270",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Block Pendampingan Prov. Kalteng-00",
+   "label": "Block Pendampingan Prov. Kalteng-00"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "menu",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "xProv. Kalteng",
+ "links": [],
+ "modified": "2024-09-21 18:01:07.311941",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "xProv. Kalteng",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "xPendampingan 2024",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 7.0,
+ "shortcuts": [],
+ "title": "xProv. Kalteng"
+}
