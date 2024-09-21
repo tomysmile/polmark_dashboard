@@ -27,30 +27,17 @@ frappe.ui.form.on("Peta Zona Pemenangan", {
 			if (!frm.is_new()) {
 				// Hide the Save button
 				frm.disable_save();
-				// Initialize and render the map
-				initializeMap(frm);
+
+				// Initialize the map and other functionalities after the tabs are rendered
+				setTimeout(() => {
+					initializeLeafletMap(frm);
+				}, 0);
 			}
 		});
 	},
 });
 
-const getAuthToken = {
-	method: "GET",
-	headers: {
-		Authorization: "token cd754cb9cb11245:bcfbb763644ab54",
-		"Content-Type": "application/json",
-	},
-};
-
-let previousBounds = null;
-let previousZoomLevel = null;
-let region_code = null;
-let region_level = null;
-// Stack to hold previous views
-var previousViews = [];
-var cityZoomLevel = 10; // Define your city zoom level
-
-// Province marker array to store references
+// Marker array to store references
 let provinceMarkers = [];
 let provinceLayer = null;
 let cityMarkers = [];
@@ -63,39 +50,50 @@ let indonesiaDefaultView = [-2.5489, 118.0149];
 let provinceDefaultView = [];
 let cityDefaultView = [];
 
-function initializeMap(frm) {
+let locationLabel;
+
+function initializeLeafletMap(frm) {
 	// Check if the map container already exists
 	if (!frm.fields_dict["map_html"] || !frm.fields_dict["map_html"].$wrapper) {
 		console.error("Map container not found.");
 		return;
 	}
 
-	region_code = frm.doc.region;
-	region_level = frm.doc.level_code;
-
 	// Set up the map inside the Doctype form
-	frm.fields_dict["map_html"].$wrapper.html(
-		'<div id="leaflet_map" style="height: 600px;"></div>'
-	);
+	frm.fields_dict["map_html"].$wrapper.html(`
+    <div id="map-container" style="position: relative;">
+      <div id="leaflet-map" style="height: 600px;"></div>
+    </div>
+  `);
 
 	// Initialize Leaflet map
-	const map = L.map("leaflet_map").setView(indonesiaDefaultView, 5); // Center on Indonesia
+	const map = L.map("leaflet-map").setView(indonesiaDefaultView, 5); // Center on Indonesia
 
 	L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		attribution: "© OpenStreetMap contributors",
 	}).addTo(map);
 
-	// Create back button control
-	var backButton = L.control({ position: "topright" });
+	region_code = frm.doc.region;
+	region_level = frm.doc.level_code;
+	region_name = frm.doc.region_name;
 
+  // Create label
+  locationLabel = L.control({ position: "topright" });
+	locationLabel.onAdd = function (map) {
+		let div = L.DomUtil.create("div", "location-label");
+		div.innerHTML = `<h2>${region_name}</h2>`; // Default label for Indonesia
+		return div; // Return the created DOM element
+	};
+	locationLabel.addTo(map);
+
+	// Create back button control
+	let backButton = L.control({ position: "topright" });
 	backButton.onAdd = function (map) {
-		var div = L.DomUtil.create("div", "back-button");
+		let div = L.DomUtil.create("div", "back-button");
 		div.innerHTML = '<button type="button">Back</button>';
 		div.onclick = function () {
-			// zoomBack(); // Navigate back
-
 			if (region_level === "3") {
-				fetchProvinces(map, region_code, provinceMarkers);
+				fetchProvinces(frm, map, region_code, provinceMarkers);
 			}
 
 			map.setView(provinceDefaultView, 5); // Reset zoom to provinces
@@ -106,6 +104,7 @@ function initializeMap(frm) {
 	};
 
 	backButton.addTo(map);
+
 	document.querySelector(".back-button").style.display = "none"; // Hide on load
 
 	// Add fullscreen control to the map
@@ -123,13 +122,11 @@ function initializeMap(frm) {
 
 	map.on("moveend", function () {
 		let center = map.getCenter();
-		// console.log("New center coordinates:", center.lat, center.lng);
 	});
 
 	// Initial load of map
-	// loadGeoJson(map, region_code, region_level);
 	if (region_level === "3") {
-		fetchProvinces(map, region_code, provinceMarkers);
+		fetchProvinces(frm, map, region_code, provinceMarkers);
 	}
 }
 
@@ -200,7 +197,7 @@ function getMultiPolygonCentroid(coordinates) {
 }
 
 function showLabelMarker(map, feature) {
-  var centroid;
+	var centroid;
 
 	// Check if it's a MultiPolygon
 	if (feature.geometry.type === "MultiPolygon") {
@@ -209,7 +206,7 @@ function showLabelMarker(map, feature) {
 		centroid = getCentroid(feature.geometry.coordinates);
 	}
 
-  // Ensure centroid is valid before adding marker
+	// Ensure centroid is valid before adding marker
 	if (centroid) {
 		// Add city name label in the center
 		const markerLabel = L.divIcon({
@@ -246,6 +243,116 @@ function showPopup(layer, feature) {
   `);
 }
 
+function renderTable(frm, level, data) {
+	let table = '<div class="table-responsive">';
+	table +=
+		'<table class="table table-bordered table-striped table-hover table-sm" style="width: 100%;">';
+	table += "<thead><tr>";
+
+	if (level == 2) {
+		table += `
+              <th>KD PROV</th>
+              <th>PROV</th>
+              <th>DAPIL DPRRI</th>
+              <th>KD KABKOTA</th>
+              <th>KABKOTA</th>
+          `;
+	} else if (level == 3) {
+		table += `
+              <th>KD PROV</th>
+              <th>PROV</th>
+              <th>DAPIL DPRRI</th>
+              <th>KD KABKOTA</th>
+              <th>KABKOTA</th>
+              <th>KD KEC</th>
+              <th>KEC</th>
+          `;
+	} else if (level == 4) {
+		table += `
+              <th>KD PROV</th>
+              <th>PROV</th>
+              <th>DAPIL DPRRI</th>
+              <th>KD KABKOTA</th>
+              <th>KABKOTA</th>
+              <th>KD KEC</th>
+              <th>KEC</th>
+              <th>KD DESA</th>
+              <th>DESA</th>
+          `;
+	}
+
+	table += `
+          <th>STATUS</th>
+          <th>LEVEL</th>
+          <th>PEND</th>
+          <th>KK</th>
+          <th>PEMILIH 2024</th>
+          <th>CDE</th>
+          <th>PEMILIH /KK</th>
+          <th>PEMILIH PEREMPUAN</th>
+          <th>PEMILIH MUDA</th>
+          <th>ZONASI</th>
+        `;
+
+	table += "</tr></thead><tbody>";
+
+	// Populate the table with data
+	data.forEach((item) => {
+		table += "<tr>";
+
+		if (level == 2) {
+			table += `
+                <td>${item.kd_provinsi}</td>
+                <td>${item.provinsi}</td>
+                <td>${item.dapil_dpr_ri}</td>
+                <td>${item.kd_kokab}</td>
+                <td>${item.kokab}</td>
+            `;
+		} else if (level == 3) {
+			table += `
+                <td>${item.kd_provinsi}</td>
+                <td>${item.provinsi}</td>
+                <td>${item.dapil_dpr_ri}</td>
+                <td>${item.kd_kokab}</td>
+                <td>${item.kokab}</td>
+                <td>${item.kd_kec}</td>
+                <td>${item.kecamatan}</td>
+            `;
+		} else if (level == 4) {
+			table += `
+                <td>${item.kd_provinsi}</td>
+                <td>${item.provinsi}</td>
+                <td>${item.dapil_dpr_ri}</td>
+                <td>${item.kd_kokab}</td>
+                <td>${item.kokab}</td>
+                <td>${item.kd_kec}</td>
+                <td>${item.kecamatan}</td>
+                <td>${item.kd_kel}</td>
+                <td>${item.kelurahan}</td>
+            `;
+		}
+
+		table += `
+            <td>${item.region_type}</td>
+            <td>${item.level}</td>
+            <td>${item.jml_pend}</td>
+            <td>${item.jml_kk}</td>
+            <td>${item.jml_dpt}</td>
+            <td>${item.jml_cde}</td>
+            <td>${item.jml_dpt_perkk}</td>
+            <td>${item.jml_dpt_perempuan}</td>
+            <td>${item.jml_dpt_muda}</td>
+            <td>${item.zonasi}</td>
+            </tr>
+          `;
+	});
+
+	table += "</tbody></table></div>";
+
+	// Insert the table into the HTML field
+	frm.fields_dict.data_table_wrapper.$wrapper.html(table);
+}
+
 function fetchGeoJsonData(endpoint, params = {}) {
 	return new Promise((resolve, reject) => {
 		frappe.call({
@@ -265,7 +372,7 @@ function fetchGeoJsonData(endpoint, params = {}) {
 	});
 }
 
-function fetchProvinces(map, code, provinceMarkers) {
+function fetchProvinces(frm, map, code, provinceMarkers) {
 	cityMarkers.forEach((marker) => {
 		map.removeLayer(marker);
 	});
@@ -289,10 +396,15 @@ function fetchProvinces(map, code, provinceMarkers) {
 				return;
 			}
 
+			console.log("geojson province: ", geoJson);
+
+			let parentName = "";
+
 			provinceLayer = L.geoJSON(geoJson, {
 				style: applyStyle,
 				onEachFeature: function (feature, layer) {
-					// showPopup(layer, feature);
+					// get region parent name
+					parentName = feature.properties.parent_name;
 
 					// Store province markers and icons in an array
 					let marker = L.marker(layer.getBounds().getCenter(), {
@@ -308,7 +420,7 @@ function fetchProvinces(map, code, provinceMarkers) {
 					provinceMarkers.push(marker);
 
 					layer.on("click", function () {
-						fetchCities(map, feature.properties.region_code, provinceMarkers);
+						fetchCities(frm, map, feature.properties.region_code, provinceMarkers);
 					});
 				},
 			}).addTo(map);
@@ -323,6 +435,13 @@ function fetchProvinces(map, code, provinceMarkers) {
 			}
 
 			provinceDefaultView = map.getCenter();
+
+			// render tabular data
+			fetchTableData(frm, currentLevel, code);
+
+			if (locationLabel && locationLabel.getContainer()) {
+				locationLabel.getContainer().innerHTML = `<h2>${parentName}</h2>`;
+			}
 		})
 		.catch((error) => {
 			console.error("Error fetching provinces:", error);
@@ -330,8 +449,7 @@ function fetchProvinces(map, code, provinceMarkers) {
 		});
 }
 
-// Function to fetch and render cities based on province ID
-function fetchCities(map, code, provinceMarkers) {
+function fetchCities(frm, map, code, provinceMarkers) {
 	// Remove all province markers from the map
 	provinceMarkers.forEach((marker) => {
 		map.removeLayer(marker);
@@ -348,9 +466,15 @@ function fetchCities(map, code, provinceMarkers) {
 	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
 	fetchGeoJsonData(url)
 		.then((geoJson) => {
+			console.log("geojson city: ", geoJson);
+
+			let parentName = "";
 			cityLayer = L.geoJSON(geoJson, {
 				style: applyStyle,
 				onEachFeature: function (feature, layer) {
+					// get region parent name
+					parentName = feature.properties.parent_name;
+
 					// Custom events for cities
 					let marker = L.marker(layer.getBounds().getCenter(), {
 						icon: L.divIcon({
@@ -364,7 +488,7 @@ function fetchCities(map, code, provinceMarkers) {
 					// Add marker to the array
 					cityMarkers.push(marker);
 
-          showPopup(layer, feature);
+					showPopup(layer, feature);
 				},
 			}).addTo(map);
 
@@ -373,6 +497,29 @@ function fetchCities(map, code, provinceMarkers) {
 			document.querySelector(".back-button").style.display = "block"; // Show back button
 
 			cityDefaultView = map.getCenter();
+
+			// render tabular data
+			fetchTableData(frm, currentLevel, code);
+
+			if (locationLabel && locationLabel.getContainer()) {
+				locationLabel.getContainer().innerHTML = `<h2>${parentName}</h2>`;
+			}
 		})
 		.catch((error) => console.error("Error fetching cities:", error));
+}
+
+function fetchTableData(frm, level, region) {
+	const url = `polmark_dashboard.api.tabular.get_tabular_data?region=${region}`;
+	frappe.call({
+		method: url,
+		args: {
+			// any parameters you need to pass
+		},
+		callback: function (response) {
+			if (response.message) {
+				data = response.message;
+				renderTable(frm, level, data);
+			}
+		},
+	});
 }

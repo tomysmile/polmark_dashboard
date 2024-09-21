@@ -16,6 +16,18 @@
   "parent_name",
   "parent_type",
   "data_source",
+  "section_break_mumf",
+  "provinsi",
+  "kd_provinsi",
+  "column_break_ftih",
+  "kokab",
+  "kd_kokab",
+  "column_break_fqdv",
+  "kecamatan",
+  "kd_kec",
+  "column_break_fdbc",
+  "kelurahan",
+  "kd_kel",
   "section_break_ygvg",
   "jml_kec",
   "column_break_hxvq",
@@ -234,11 +246,67 @@
   {
    "fieldname": "column_break_wzlj",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mumf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "provinsi",
+   "fieldtype": "Data",
+   "label": "Provinsi"
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Data",
+   "label": "Kecamatan"
+  },
+  {
+   "fieldname": "column_break_ftih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fqdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fdbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kokab",
+   "fieldtype": "Data",
+   "label": "Kota / Kabupaten"
+  },
+  {
+   "fieldname": "kd_provinsi",
+   "fieldtype": "Read Only",
+   "label": "Kode Provinsi"
+  },
+  {
+   "fieldname": "kd_kokab",
+   "fieldtype": "Read Only",
+   "label": "Kode Kokab"
+  },
+  {
+   "fieldname": "kd_kec",
+   "fieldtype": "Read Only",
+   "label": "Kode Kec"
+  },
+  {
+   "fieldname": "kd_kel",
+   "fieldtype": "Read Only",
+   "label": "Kode Kel"
+  },
+  {
+   "fieldname": "kelurahan",
+   "fieldtype": "Data",
+   "label": "Kelurahan / Desa"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-20 20:08:29.244363",
+ "modified": "2024-09-21 14:19:51.957774",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region 2024",

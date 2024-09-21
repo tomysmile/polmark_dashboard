@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93044e7"
   },
-  "name": "KAB. BANDUNG",
+  "name": "BANDUNG",
   "type": "Kabupaten",
   "code": "3204",
   "level": 3,
@@ -23,7 +23,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93044e7"
   },
-  "p_city_name": "KAB. BANDUNG",
+  "p_city_name": "BANDUNG",
   "t_district": 31,
   "t_sub_district": 280,
   "t_sub_district_kelurahan": 10,
@@ -3285,7 +3285,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930562e"
   },
-  "name": "KAB. BANDUNG BARAT",
+  "name": "BANDUNG BARAT",
   "type": "Kabupaten",
   "code": "3217",
   "level": 3,
@@ -3306,7 +3306,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930562e"
   },
-  "p_city_name": "KAB. BANDUNG BARAT",
+  "p_city_name": "BANDUNG BARAT",
   "t_district": 16,
   "t_sub_district": 165,
   "t_sub_district_kelurahan": 0,
@@ -6640,7 +6640,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930555b"
   },
-  "name": "KAB. BEKASI",
+  "name": "BEKASI",
   "type": "Kabupaten",
   "code": "3216",
   "level": 3,
@@ -6661,7 +6661,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930555b"
   },
-  "p_city_name": "KAB. BEKASI",
+  "p_city_name": "BEKASI",
   "t_district": 23,
   "t_sub_district": 187,
   "t_sub_district_kelurahan": 7,
@@ -9637,7 +9637,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9303fd0"
   },
-  "name": "KAB. BOGOR",
+  "name": "BOGOR",
   "type": "Kabupaten",
   "code": "3201",
   "level": 3,
@@ -9658,7 +9658,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9303fd0"
   },
-  "p_city_name": "KAB. BOGOR",
+  "p_city_name": "BOGOR",
   "t_district": 40,
   "t_sub_district": 435,
   "t_sub_district_kelurahan": 19,
@@ -14550,7 +14550,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930498b"
   },
-  "name": "KAB. CIAMIS",
+  "name": "CIAMIS",
   "type": "Kabupaten",
   "code": "3207",
   "level": 3,
@@ -14571,7 +14571,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930498b"
   },
-  "p_city_name": "KAB. CIAMIS",
+  "p_city_name": "CIAMIS",
   "t_district": 27,
   "t_sub_district": 265,
   "t_sub_district_kelurahan": 7,
@@ -18281,7 +18281,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930435e"
   },
-  "name": "KAB. CIANJUR",
+  "name": "CIANJUR",
   "type": "Kabupaten",
   "code": "3203",
   "level": 3,
@@ -18302,7 +18302,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930435e"
   },
-  "p_city_name": "KAB. CIANJUR",
+  "p_city_name": "CIANJUR",
   "t_district": 32,
   "t_sub_district": 360,
   "t_sub_district_kelurahan": 6,
@@ -23264,7 +23264,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9304c49"
   },
-  "name": "KAB. CIREBON",
+  "name": "CIREBON",
   "type": "Kabupaten",
   "code": "3209",
   "level": 3,
@@ -23285,7 +23285,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9304c49"
   },
-  "p_city_name": "KAB. CIREBON",
+  "p_city_name": "CIREBON",
   "t_district": 40,
   "t_sub_district": 424,
   "t_sub_district_kelurahan": 12,
@@ -26243,7 +26243,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930461f"
   },
-  "name": "KAB. GARUT",
+  "name": "GARUT",
   "type": "Kabupaten",
   "code": "3205",
   "level": 3,
@@ -26264,7 +26264,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930461f"
   },
-  "p_city_name": "KAB. GARUT",
+  "p_city_name": "GARUT",
   "t_district": 42,
   "t_sub_district": 442,
   "t_sub_district_kelurahan": 21,
@@ -30078,7 +30078,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93050bc"
   },
-  "name": "KAB. INDRAMAYU",
+  "name": "INDRAMAYU",
   "type": "Kabupaten",
   "code": "3212",
   "level": 3,
@@ -30099,7 +30099,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93050bc"
   },
-  "p_city_name": "KAB. INDRAMAYU",
+  "p_city_name": "INDRAMAYU",
   "t_district": 31,
   "t_sub_district": 317,
   "t_sub_district_kelurahan": 8,
@@ -33237,7 +33237,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305407"
   },
-  "name": "KAB. KARAWANG",
+  "name": "KARAWANG",
   "type": "Kabupaten",
   "code": "3215",
   "level": 3,
@@ -33258,7 +33258,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305407"
   },
-  "p_city_name": "KAB. KARAWANG",
+  "p_city_name": "KARAWANG",
   "t_district": 30,
   "t_sub_district": 309,
   "t_sub_district_kelurahan": 12,
@@ -36460,7 +36460,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9304ab0"
   },
-  "name": "KAB. KUNINGAN",
+  "name": "KUNINGAN",
   "type": "Kabupaten",
   "code": "3208",
   "level": 3,
@@ -36481,7 +36481,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9304ab0"
   },
-  "p_city_name": "KAB. KUNINGAN",
+  "p_city_name": "KUNINGAN",
   "t_district": 32,
   "t_sub_district": 376,
   "t_sub_district_kelurahan": 15,
@@ -38731,7 +38731,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9304e1a"
   },
-  "name": "KAB. MAJALENGKA",
+  "name": "MAJALENGKA",
   "type": "Kabupaten",
   "code": "3210",
   "level": 3,
@@ -38752,7 +38752,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9304e1a"
   },
-  "p_city_name": "KAB. MAJALENGKA",
+  "p_city_name": "MAJALENGKA",
   "t_district": 26,
   "t_sub_district": 343,
   "t_sub_district_kelurahan": 13,
@@ -41434,7 +41434,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93056e4"
   },
-  "name": "KAB. PANGANDARAN",
+  "name": "PANGANDARAN",
   "type": "Kabupaten",
   "code": "3218",
   "level": 3,
@@ -41455,7 +41455,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93056e4"
   },
-  "p_city_name": "KAB. PANGANDARAN",
+  "p_city_name": "PANGANDARAN",
   "t_district": 10,
   "t_sub_district": 93,
   "t_sub_district_kelurahan": 0,
@@ -44149,7 +44149,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305335"
   },
-  "name": "KAB. PURWAKARTA",
+  "name": "PURWAKARTA",
   "type": "Kabupaten",
   "code": "3214",
   "level": 3,
@@ -44170,7 +44170,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305335"
   },
-  "p_city_name": "KAB. PURWAKARTA",
+  "p_city_name": "PURWAKARTA",
   "t_district": 17,
   "t_sub_district": 192,
   "t_sub_district_kelurahan": 9,
@@ -46316,7 +46316,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305219"
   },
-  "name": "KAB. SUBANG",
+  "name": "SUBANG",
   "type": "Kabupaten",
   "code": "3213",
   "level": 3,
@@ -46337,7 +46337,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305219"
   },
-  "p_city_name": "KAB. SUBANG",
+  "p_city_name": "SUBANG",
   "t_district": 30,
   "t_sub_district": 253,
   "t_sub_district_kelurahan": 8,
@@ -49675,7 +49675,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93041ac"
   },
-  "name": "KAB. SUKABUMI",
+  "name": "SUKABUMI",
   "type": "Kabupaten",
   "code": "3202",
   "level": 3,
@@ -49696,7 +49696,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93041ac"
   },
-  "p_city_name": "KAB. SUKABUMI",
+  "p_city_name": "SUKABUMI",
   "t_district": 47,
   "t_sub_district": 386,
   "t_sub_district_kelurahan": 5,
@@ -54192,7 +54192,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9304f8c"
   },
-  "name": "KAB. SUMEDANG",
+  "name": "SUMEDANG",
   "type": "Kabupaten",
   "code": "3211",
   "level": 3,
@@ -54213,7 +54213,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9304f8c"
   },
-  "p_city_name": "KAB. SUMEDANG",
+  "p_city_name": "SUMEDANG",
   "t_district": 26,
   "t_sub_district": 277,
   "t_sub_district_kelurahan": 7,
@@ -56923,7 +56923,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9304804"
   },
-  "name": "KAB. TASIKMALAYA",
+  "name": "TASIKMALAYA",
   "type": "Kabupaten",
   "code": "3206",
   "level": 3,
@@ -56944,7 +56944,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9304804"
   },
-  "p_city_name": "KAB. TASIKMALAYA",
+  "p_city_name": "TASIKMALAYA",
   "t_district": 39,
   "t_sub_district": 351,
   "t_sub_district_kelurahan": 0,
@@ -61258,7 +61258,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93057c0"
   },
-  "name": "KOTA BANDUNG",
+  "name": "BANDUNG",
   "type": "Kota",
   "code": "3273",
   "level": 3,
@@ -61279,7 +61279,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93057c0"
   },
-  "p_city_name": "KOTA BANDUNG",
+  "p_city_name": "BANDUNG",
   "t_district": 30,
   "t_sub_district": 151,
   "t_sub_district_kelurahan": 151,
@@ -61289,7 +61289,7 @@
     "type": "Feature",
     "properties": {
       "color": "#66B688",
-      "name": "KOTA BANDUNG",
+      "name": "BANDUNG",
       "type": "Kota",
       "code": "3273",
       "level": 3,
@@ -61297,7 +61297,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA BANDUNG",
+      "p_city_name": "BANDUNG",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -62081,7 +62081,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305985"
   },
-  "name": "KOTA BANJAR",
+  "name": "BANJAR",
   "type": "Kota",
   "code": "3279",
   "level": 3,
@@ -62102,7 +62102,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305985"
   },
-  "p_city_name": "KOTA BANJAR",
+  "p_city_name": "BANJAR",
   "t_district": 4,
   "t_sub_district": 25,
   "t_sub_district_kelurahan": 9,
@@ -62112,7 +62112,7 @@
     "type": "Feature",
     "properties": {
       "color": "#9466EA",
-      "name": "KOTA BANJAR",
+      "name": "BANJAR",
       "type": "Kota",
       "code": "3279",
       "level": 3,
@@ -62120,7 +62120,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA BANJAR",
+      "p_city_name": "BANJAR",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -62996,7 +62996,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305892"
   },
-  "name": "KOTA BEKASI",
+  "name": "BEKASI",
   "type": "Kota",
   "code": "3275",
   "level": 3,
@@ -63017,7 +63017,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305892"
   },
-  "p_city_name": "KOTA BEKASI",
+  "p_city_name": "BEKASI",
   "t_district": 12,
   "t_sub_district": 56,
   "t_sub_district_kelurahan": 56,
@@ -63027,7 +63027,7 @@
     "type": "Feature",
     "properties": {
       "color": "#6F1087",
-      "name": "KOTA BEKASI",
+      "name": "BEKASI",
       "type": "Kota",
       "code": "3275",
       "level": 3,
@@ -63035,7 +63035,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA BEKASI",
+      "p_city_name": "BEKASI",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -64383,7 +64383,7 @@
   "_id": {
     "$oid": "6320271b975d447ce930574c"
   },
-  "name": "KOTA BOGOR",
+  "name": "BOGOR",
   "type": "Kota",
   "code": "3271",
   "level": 3,
@@ -64404,7 +64404,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce930574c"
   },
-  "p_city_name": "KOTA BOGOR",
+  "p_city_name": "BOGOR",
   "t_district": 6,
   "t_sub_district": 68,
   "t_sub_district_kelurahan": 68,
@@ -64414,7 +64414,7 @@
     "type": "Feature",
     "properties": {
       "color": "#9C471F",
-      "name": "KOTA BOGOR",
+      "name": "BOGOR",
       "type": "Kota",
       "code": "3271",
       "level": 3,
@@ -64422,7 +64422,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA BOGOR",
+      "p_city_name": "BOGOR",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -65166,7 +65166,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305922"
   },
-  "name": "KOTA CIMAHI",
+  "name": "CIMAHI",
   "type": "Kota",
   "code": "3277",
   "level": 3,
@@ -65187,7 +65187,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305922"
   },
-  "p_city_name": "KOTA CIMAHI",
+  "p_city_name": "CIMAHI",
   "t_district": 3,
   "t_sub_district": 15,
   "t_sub_district_kelurahan": 15,
@@ -65197,7 +65197,7 @@
     "type": "Feature",
     "properties": {
       "color": "#4F59CE",
-      "name": "KOTA CIMAHI",
+      "name": "CIMAHI",
       "type": "Kota",
       "code": "3277",
       "level": 3,
@@ -65205,7 +65205,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA CIMAHI",
+      "p_city_name": "CIMAHI",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -65677,7 +65677,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305876"
   },
-  "name": "KOTA CIREBON",
+  "name": "CIREBON",
   "type": "Kota",
   "code": "3274",
   "level": 3,
@@ -65698,7 +65698,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305876"
   },
-  "p_city_name": "KOTA CIREBON",
+  "p_city_name": "CIREBON",
   "t_district": 5,
   "t_sub_district": 22,
   "t_sub_district_kelurahan": 22,
@@ -65708,7 +65708,7 @@
     "type": "Feature",
     "properties": {
       "color": "#024C9D",
-      "name": "KOTA CIREBON",
+      "name": "CIREBON",
       "type": "Kota",
       "code": "3274",
       "level": 3,
@@ -65716,7 +65716,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA CIREBON",
+      "p_city_name": "CIREBON",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -66188,7 +66188,7 @@
   "_id": {
     "$oid": "6320271b975d447ce93058d7"
   },
-  "name": "KOTA DEPOK",
+  "name": "DEPOK",
   "type": "Kota",
   "code": "3276",
   "level": 3,
@@ -66209,7 +66209,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce93058d7"
   },
-  "p_city_name": "KOTA DEPOK",
+  "p_city_name": "DEPOK",
   "t_district": 11,
   "t_sub_district": 63,
   "t_sub_district_kelurahan": 63,
@@ -66219,7 +66219,7 @@
     "type": "Feature",
     "properties": {
       "color": "#522B80",
-      "name": "KOTA DEPOK",
+      "name": "DEPOK",
       "type": "Kota",
       "code": "3276",
       "level": 3,
@@ -66227,7 +66227,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA DEPOK",
+      "p_city_name": "DEPOK",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -67467,7 +67467,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305797"
   },
-  "name": "KOTA SUKABUMI",
+  "name": "SUKABUMI",
   "type": "Kota",
   "code": "3272",
   "level": 3,
@@ -67488,7 +67488,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305797"
   },
-  "p_city_name": "KOTA SUKABUMI",
+  "p_city_name": "SUKABUMI",
   "t_district": 7,
   "t_sub_district": 33,
   "t_sub_district_kelurahan": 33,
@@ -67498,7 +67498,7 @@
     "type": "Feature",
     "properties": {
       "color": "#6F0708",
-      "name": "KOTA SUKABUMI",
+      "name": "SUKABUMI",
       "type": "Kota",
       "code": "3272",
       "level": 3,
@@ -67506,7 +67506,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA SUKABUMI",
+      "p_city_name": "SUKABUMI",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
@@ -68082,7 +68082,7 @@
   "_id": {
     "$oid": "6320271b975d447ce9305935"
   },
-  "name": "KOTA TASIKMALAYA",
+  "name": "TASIKMALAYA",
   "type": "Kota",
   "code": "3278",
   "level": 3,
@@ -68103,7 +68103,7 @@
   "p_city": {
     "$oid": "6320271b975d447ce9305935"
   },
-  "p_city_name": "KOTA TASIKMALAYA",
+  "p_city_name": "TASIKMALAYA",
   "t_district": 10,
   "t_sub_district": 69,
   "t_sub_district_kelurahan": 69,
@@ -68113,7 +68113,7 @@
     "type": "Feature",
     "properties": {
       "color": "#F94406",
-      "name": "KOTA TASIKMALAYA",
+      "name": "TASIKMALAYA",
       "type": "Kota",
       "code": "3278",
       "level": 3,
@@ -68121,7 +68121,7 @@
       "parent_type": "Provinsi",
       "p_country_name": "INDONESIA",
       "p_province_name": "JAWA BARAT",
-      "p_city_name": "KOTA TASIKMALAYA",
+      "p_city_name": "TASIKMALAYA",
       "parent": {
         "$oid": "6320271b975d447ce9303fcf"
       },
