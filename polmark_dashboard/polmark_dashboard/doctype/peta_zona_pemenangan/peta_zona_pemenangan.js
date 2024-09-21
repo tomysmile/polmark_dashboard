@@ -62,7 +62,7 @@ function initializeLeafletMap(frm) {
 	// Set up the map inside the Doctype form
 	frm.fields_dict["map_html"].$wrapper.html(`
     <div id="map-container" style="position: relative;">
-      <div id="leaflet-map" style="height: 600px;"></div>
+      <div id="leaflet-map" style="height: 100vh;"></div>
     </div>
   `);
 

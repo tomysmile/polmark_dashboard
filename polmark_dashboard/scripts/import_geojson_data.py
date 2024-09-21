@@ -29,7 +29,7 @@ def insert_to_database(doctype, file_path):
 
         # Extract the `properties` from the `feature` field
         properties = item.get("feature", {}).get("properties", {})
-        province_name = properties.get("name")
+        region_name = properties.get("name")
         region_type = properties.get("type")
         region_code = properties.get("code")
         level = properties.get("level")
@@ -59,6 +59,11 @@ def insert_to_database(doctype, file_path):
             kd_provinsi = region_code[:2]
             kokab = properties.get("p_city_name")
             kd_kokab = region_code
+
+            if region_type == "Kabupaten":
+                if "Kabupaten " not in region_name and "KAB. " not in region_name and "Kab. " not in region_name:
+                    region_name = "KAB. " + region_name
+
         # kecamatan / district
         elif level == 4:
             province = properties.get("p_province_name")
@@ -102,7 +107,7 @@ def insert_to_database(doctype, file_path):
             {
                 "doctype": doctype,
                 "region_code": region_code,
-                "region_name": province_name,
+                "region_name": region_name,
                 "region_type": region_type,
                 "level": level,
                 "data_source": data_source,

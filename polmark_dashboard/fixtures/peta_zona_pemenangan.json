@@ -3,14 +3,14 @@
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan",
   "level_code": "3",
-  "modified": "2024-09-20 18:18:33.267130",
-  "name": "peta-zona-kab-bekasi",
+  "modified": "2024-09-21 17:17:53.414143",
+  "name": "peta-zona-pemenangan-kab-bekasi",
   "parent_code": "32",
   "region": "3216",
   "region_name": "BEKASI",
   "region_type": "Kabupaten",
-  "slug": "peta-zona-kab-bekasi",
+  "slug": "peta-zona-pemenangan-kab-bekasi",
   "standard": 1,
-  "title": "Peta Zona Kab. Bekasi"
+  "title": "Peta Zona Pemenangan Kab. Bekasi"
  }
 ]

@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:region_code",
  "creation": "2024-09-20 17:13:26.769129",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -63,7 +64,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "region_name",
@@ -313,10 +315,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-21 16:48:36.913905",
+ "modified": "2024-09-21 17:04:31.054742",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region 2024",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
