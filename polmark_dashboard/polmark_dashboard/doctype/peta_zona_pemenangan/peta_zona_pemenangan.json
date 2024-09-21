@@ -64,7 +64,6 @@
    "fetch_from": "region.level",
    "fieldname": "level_code",
    "fieldtype": "Read Only",
-   "hidden": 1,
    "label": "Level Code"
   },
   {
@@ -81,7 +80,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-20 19:09:10.908071",
+ "modified": "2024-09-21 11:35:21.770079",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Peta Zona Pemenangan",

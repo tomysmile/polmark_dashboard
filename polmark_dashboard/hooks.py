@@ -17,65 +17,27 @@ fixtures = [
     {
         "doctype": "Role",
         "filters": [
-           ["name", "in", ["Polmark Dashboard Manager", "Polmark Dashboard User"]]
-        ]
-    }, {
+            ["name", "in", ["Polmark Dashboard Manager", "Polmark Dashboard User"]]
+        ],
+    },
+    {
         "doctype": "Role Profile",
         "filters": [
             ["name", "in", ["Polmark Dashboard Manager", "Polmark Dashboard User"]]
-        ]
-    }, {
-        "doctype": "Workspace"
-    }, {
-        "doctype": "Custom HTML Block"
-    }, {
-        "doctype": "Region",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Region Type",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Dapil Category",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Dapil DPR RI",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Dapil DPR RI City"
-    }, {
-        "doctype": "Document Category",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Election Organisation",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "News Site",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Organisation Structure Position",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }, {
-        "doctype": "Zona Pemenangan",
-        "filters": [
-            ["standard", "=", 1]
-        ]
-    }
+        ],
+    },
+    {"doctype": "Workspace"},
+    {"doctype": "Custom HTML Block"},
+    {"doctype": "Region", "filters": [["standard", "=", 1]]},
+    {"doctype": "Region Type", "filters": [["standard", "=", 1]]},
+    {"doctype": "Dapil Category", "filters": [["standard", "=", 1]]},
+    {"doctype": "Dapil DPR RI", "filters": [["standard", "=", 1]]},
+    {"doctype": "Dapil DPR RI City"},
+    {"doctype": "Document Category", "filters": [["standard", "=", 1]]},
+    {"doctype": "Election Organisation", "filters": [["standard", "=", 1]]},
+    {"doctype": "News Site", "filters": [["standard", "=", 1]]},
+    {"doctype": "Organisation Structure Position", "filters": [["standard", "=", 1]]},
+    {"doctype": "Zona Pemenangan", "filters": [["standard", "=", 1]]},
 ]
 
 
@@ -83,8 +45,11 @@ fixtures = [
 # ------------------
 
 app_include_css = [
-    "polmark_dashboard.bundle.css"
+    "polmark_dashboard.bundle.css",
+    "/assets/polmark_dashboard/css/leaflet.fullscreen/leaflet.fullscreen.css",
 ]
+
+app_include_js = ["/assets/polmark_dashboard/js/Leaflet.fullscreen.min.js"]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/polmark_dashboard/css/polmark_dashboard.css"
@@ -303,4 +268,3 @@ app_include_css = [
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

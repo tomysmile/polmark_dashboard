@@ -111,3 +111,25 @@
   color: #0056b3;
   margin-right: 5px;
 }
+
+.back-button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.back-button button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  /* Change to desired color */
+}
+
+.leaflet-control-fullscreen-button {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+}
