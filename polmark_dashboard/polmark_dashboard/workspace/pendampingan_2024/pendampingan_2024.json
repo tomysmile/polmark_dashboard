@@ -16,12 +16,12 @@
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
- "label": "xPendampingan 2024",
+ "label": "Pendampingan 2024",
  "links": [],
- "modified": "2024-09-21 18:00:54.808599",
+ "modified": "2024-09-21 18:08:49.157793",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "xPendampingan 2024",
+ "name": "Pendampingan 2024",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -31,5 +31,5 @@
  "roles": [],
  "sequence_id": 4.0,
  "shortcuts": [],
- "title": "xPendampingan 2024"
+ "title": "Pendampingan 2024"
 }

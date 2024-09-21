@@ -1803,7 +1803,7 @@
    {
     "custom_block_name": "Block Pendampingan Kota Bogor-00",
     "label": "Block Pendampingan Kota Bogor-00",
-    "parent": "xKota Bogor",
+    "parent": "Kota Bogor",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -1815,20 +1815,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKota Bogor",
+  "label": "Kota Bogor",
   "links": [],
-  "modified": "2024-09-21 18:01:01.358008",
+  "modified": "2024-09-21 18:09:44.476459",
   "module": "Polmark Dashboard",
-  "name": "xKota Bogor",
+  "name": "Kota Bogor",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 11.0,
   "shortcuts": [],
-  "title": "xKota Bogor"
+  "title": "Kota Bogor"
  },
  {
   "charts": [],
@@ -1837,7 +1837,7 @@
    {
     "custom_block_name": "Block Pendampingan Prov. Kalteng-00",
     "label": "Block Pendampingan Prov. Kalteng-00",
-    "parent": "xProv. Kalteng",
+    "parent": "Prov. Kalteng",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -1849,20 +1849,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xProv. Kalteng",
+  "label": "Prov. Kalteng",
   "links": [],
-  "modified": "2024-09-21 18:01:07.311941",
+  "modified": "2024-09-21 18:09:14.096432",
   "module": "Polmark Dashboard",
-  "name": "xProv. Kalteng",
+  "name": "Prov. Kalteng",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 7.0,
   "shortcuts": [],
-  "title": "xProv. Kalteng"
+  "title": "Prov. Kalteng"
  },
  {
   "charts": [],
@@ -1875,11 +1875,11 @@
   "icon": "project",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xPILEG 2024",
+  "label": "PILEG 2024",
   "links": [],
-  "modified": "2024-09-21 17:59:32.264021",
+  "modified": "2024-09-21 18:08:25.590093",
   "module": "Polmark Dashboard",
-  "name": "xPILEG 2024",
+  "name": "PILEG 2024",
   "number_cards": [],
   "parent_page": "",
   "public": 1,
@@ -1888,7 +1888,7 @@
   "roles": [],
   "sequence_id": 1.0,
   "shortcuts": [],
-  "title": "xPILEG 2024"
+  "title": "PILEG 2024"
  },
  {
   "charts": [],
@@ -1901,11 +1901,11 @@
   "icon": "project",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xPILPRES 2024",
+  "label": "PILPRES 2024",
   "links": [],
-  "modified": "2024-09-21 17:59:40.664296",
+  "modified": "2024-09-21 18:08:36.658926",
   "module": "Polmark Dashboard",
-  "name": "xPILPRES 2024",
+  "name": "PILPRES 2024",
   "number_cards": [],
   "parent_page": "",
   "public": 1,
@@ -1914,7 +1914,7 @@
   "roles": [],
   "sequence_id": 2.0,
   "shortcuts": [],
-  "title": "xPILPRES 2024"
+  "title": "PILPRES 2024"
  },
  {
   "charts": [],
@@ -1923,7 +1923,7 @@
    {
     "custom_block_name": "Block Pendampingan-00",
     "label": "Block Pendampingan-00",
-    "parent": "xPendampingan 2024",
+    "parent": "Pendampingan 2024",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -1935,11 +1935,11 @@
   "icon": "projects",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xPendampingan 2024",
+  "label": "Pendampingan 2024",
   "links": [],
-  "modified": "2024-09-21 18:00:54.808599",
+  "modified": "2024-09-21 18:08:49.157793",
   "module": "Polmark Dashboard",
-  "name": "xPendampingan 2024",
+  "name": "Pendampingan 2024",
   "number_cards": [],
   "parent_page": "",
   "public": 1,
@@ -1948,7 +1948,7 @@
   "roles": [],
   "sequence_id": 4.0,
   "shortcuts": [],
-  "title": "xPendampingan 2024"
+  "title": "Pendampingan 2024"
  },
  {
   "charts": [],
@@ -1957,7 +1957,7 @@
    {
     "custom_block_name": "Block Pendampingan Kota Bekasi-00",
     "label": "Block Pendampingan Kota Bekasi-00",
-    "parent": "xKota Bekasi",
+    "parent": "Kota Bekasi",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -1969,20 +1969,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKota Bekasi",
+  "label": "Kota Bekasi",
   "links": [],
-  "modified": "2024-09-21 18:00:28.959629",
+  "modified": "2024-09-21 18:09:29.082929",
   "module": "Polmark Dashboard",
-  "name": "xKota Bekasi",
+  "name": "Kota Bekasi",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 9.0,
   "shortcuts": [],
-  "title": "xKota Bekasi"
+  "title": "Kota Bekasi"
  },
  {
   "charts": [],
@@ -1991,7 +1991,7 @@
    {
     "custom_block_name": "Block Pendampingan Prov. Jawa Barat-00",
     "label": "Block Pendampingan Prov. Jawa Barat-00",
-    "parent": "xProv. Jawa Barat",
+    "parent": "Prov. Jawa Barat",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2003,20 +2003,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xProv. Jawa Barat",
+  "label": "Prov. Jawa Barat",
   "links": [],
-  "modified": "2024-09-21 17:59:59.321382",
+  "modified": "2024-09-21 18:08:59.170822",
   "module": "Polmark Dashboard",
-  "name": "xProv. Jawa Barat",
+  "name": "Prov. Jawa Barat",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 5.0,
   "shortcuts": [],
-  "title": "xProv. Jawa Barat"
+  "title": "Prov. Jawa Barat"
  },
  {
   "charts": [],
@@ -2025,7 +2025,7 @@
    {
     "custom_block_name": "Block Pendampingan Kab.Bekasi-00",
     "label": "Block Pendampingan Kab.Bekasi-00",
-    "parent": "xKab. Bekasi",
+    "parent": "Kab. Bekasi",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2037,20 +2037,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKab. Bekasi",
+  "label": "Kab. Bekasi",
   "links": [],
-  "modified": "2024-09-21 18:00:22.598182",
+  "modified": "2024-09-21 18:09:20.871597",
   "module": "Polmark Dashboard",
-  "name": "xKab. Bekasi",
+  "name": "Kab. Bekasi",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 8.0,
   "shortcuts": [],
-  "title": "xKab. Bekasi"
+  "title": "Kab. Bekasi"
  },
  {
   "charts": [],
@@ -2059,7 +2059,7 @@
    {
     "custom_block_name": "Block Pendampingan Prov. Sumut-00",
     "label": "Block Pendampingan Prov. Sumut-00",
-    "parent": "xProv. Sumut",
+    "parent": "Prov. Sumut",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2071,20 +2071,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xProv. Sumut",
+  "label": "Prov. Sumut",
   "links": [],
-  "modified": "2024-09-21 18:00:16.153512",
+  "modified": "2024-09-21 18:09:06.930816",
   "module": "Polmark Dashboard",
-  "name": "xProv. Sumut",
+  "name": "Prov. Sumut",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 6.0,
   "shortcuts": [],
-  "title": "xProv. Sumut"
+  "title": "Prov. Sumut"
  },
  {
   "charts": [],
@@ -2093,7 +2093,7 @@
    {
     "custom_block_name": "Block Pendampingan Kota Bandung-00",
     "label": "Block Pendampingan Kota Bandung-00",
-    "parent": "xKota Bandung",
+    "parent": "Kota Bandung",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2105,20 +2105,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKota Bandung",
+  "label": "Kota Bandung",
   "links": [],
-  "modified": "2024-09-21 18:00:35.460238",
+  "modified": "2024-09-21 18:09:36.328384",
   "module": "Polmark Dashboard",
-  "name": "xKota Bandung",
+  "name": "Kota Bandung",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 10.0,
   "shortcuts": [],
-  "title": "xKota Bandung"
+  "title": "Kota Bandung"
  },
  {
   "charts": [],
@@ -2127,7 +2127,7 @@
    {
     "custom_block_name": "Block Pendampingan Kota Balikpapan-00",
     "label": "Block Pendampingan Kota Balikpapan-00",
-    "parent": "xKota Balikpapan",
+    "parent": "Kota Balikpapan",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2139,20 +2139,20 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKota Balikpapan",
+  "label": "Kota Balikpapan",
   "links": [],
-  "modified": "2024-09-21 18:00:41.582013",
+  "modified": "2024-09-21 18:09:51.430207",
   "module": "Polmark Dashboard",
-  "name": "xKota Balikpapan",
+  "name": "Kota Balikpapan",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 12.0,
   "shortcuts": [],
-  "title": "xKota Balikpapan"
+  "title": "Kota Balikpapan"
  },
  {
   "charts": [],
@@ -2161,7 +2161,7 @@
    {
     "custom_block_name": "Block Informasi Umum-00",
     "label": "Block Informasi Umum-00",
-    "parent": "xInformasi Umum",
+    "parent": "Informasi Umum",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2173,11 +2173,11 @@
   "icon": "projects",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xInformasi Umum",
+  "label": "Informasi Umum",
   "links": [],
-  "modified": "2024-09-21 18:00:09.154960",
+  "modified": "2024-09-21 18:08:42.810871",
   "module": "Polmark Dashboard",
-  "name": "xInformasi Umum",
+  "name": "Informasi Umum",
   "number_cards": [],
   "parent_page": "",
   "public": 1,
@@ -2186,7 +2186,7 @@
   "roles": [],
   "sequence_id": 3.0,
   "shortcuts": [],
-  "title": "xInformasi Umum"
+  "title": "Informasi Umum"
  },
  {
   "charts": [],
@@ -2871,7 +2871,7 @@
    {
     "custom_block_name": "Block Pendampingan Kota Medan-00",
     "label": "Block Pendampingan Kota Medan-00",
-    "parent": "xKota Medan",
+    "parent": "Kota Medan",
     "parentfield": "custom_blocks",
     "parenttype": "Workspace"
    }
@@ -2883,19 +2883,19 @@
   "icon": "menu",
   "indicator_color": "",
   "is_hidden": 0,
-  "label": "xKota Medan",
+  "label": "Kota Medan",
   "links": [],
-  "modified": "2024-09-21 18:00:47.831656",
+  "modified": "2024-09-21 18:09:58.121137",
   "module": "Polmark Dashboard",
-  "name": "xKota Medan",
+  "name": "Kota Medan",
   "number_cards": [],
-  "parent_page": "xPendampingan 2024",
+  "parent_page": "Pendampingan 2024",
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
   "sequence_id": 13.0,
   "shortcuts": [],
-  "title": "xKota Medan"
+  "title": "Kota Medan"
  }
 ]

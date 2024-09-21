@@ -16,12 +16,12 @@
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
- "label": "xInformasi Umum",
+ "label": "Informasi Umum",
  "links": [],
- "modified": "2024-09-21 18:00:09.154960",
+ "modified": "2024-09-21 18:08:42.810871",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "xInformasi Umum",
+ "name": "Informasi Umum",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -31,5 +31,5 @@
  "roles": [],
  "sequence_id": 3.0,
  "shortcuts": [],
- "title": "xInformasi Umum"
+ "title": "Informasi Umum"
 }
