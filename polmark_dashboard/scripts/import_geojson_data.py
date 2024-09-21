@@ -135,6 +135,7 @@ def insert_to_database(doctype, file_path):
                 "jml_dpt_muda": jml_dpt_muda,
                 "jml_pend": jml_pend,
                 "zonasi": zonasi,
+                "standard": 1
             }
         )
         doc.insert()

@@ -30,6 +30,7 @@ fixtures = [
     {"doctype": "Custom HTML Block"},
     {"doctype": "Region", "filters": [["standard", "=", 1]]},
     {"doctype": "Region Type", "filters": [["standard", "=", 1]]},
+    {"doctype": "Region 2024", "filters": [["standard", "=", 1]]},
     {"doctype": "Dapil Category", "filters": [["standard", "=", 1]]},
     {"doctype": "Dapil DPR RI", "filters": [["standard", "=", 1]]},
     {"doctype": "Dapil DPR RI City"},
@@ -38,6 +39,7 @@ fixtures = [
     {"doctype": "News Site", "filters": [["standard", "=", 1]]},
     {"doctype": "Organisation Structure Position", "filters": [["standard", "=", 1]]},
     {"doctype": "Zona Pemenangan", "filters": [["standard", "=", 1]]},
+    {"doctype": "Peta Zona Pemenangan", "filters": [["standard", "=", 1]]}
 ]
 
 

@@ -108,21 +108,21 @@
   "standard": 1
  },
  {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Organisation Structure Position",
-  "modified": "2024-09-09 12:20:19.126979",
-  "name": "Anggota Umum",
-  "sequence_number": 14,
-  "standard": 1
- },
- {
   "description": "Pimpinan utama dalam tim, bertanggung jawab atas strategi keseluruhan dan pengambilan keputusan.",
   "docstatus": 0,
   "doctype": "Organisation Structure Position",
   "modified": "2024-09-09 11:44:19.909369",
   "name": "Ketua Tim Pemenangan",
   "sequence_number": 1,
+  "standard": 1
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Organisation Structure Position",
+  "modified": "2024-09-09 12:20:19.126979",
+  "name": "Anggota Umum",
+  "sequence_number": 14,
   "standard": 1
  }
 ]

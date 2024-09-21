@@ -11,6 +11,7 @@
   "region_type",
   "level",
   "dapil_dpr_ri",
+  "standard",
   "column_break_setg",
   "parent_code",
   "parent_name",
@@ -302,11 +303,17 @@
    "fieldname": "kelurahan",
    "fieldtype": "Data",
    "label": "Kelurahan / Desa"
+  },
+  {
+   "default": "0",
+   "fieldname": "standard",
+   "fieldtype": "Check",
+   "label": "Standard"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-21 14:19:51.957774",
+ "modified": "2024-09-21 16:48:36.913905",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region 2024",
