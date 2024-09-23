@@ -1,4 +1,4 @@
-/* ../../../../tmp/tmp-2655677-wGyO70yh2BIo/polmark_dashboard/polmark_dashboard/public/css/polmark_dashboard.bundle.css */
+/* ../../../../tmp/tmp-2941339-E0IrkjZa3DYh/polmark_dashboard/polmark_dashboard/public/css/polmark_dashboard.bundle.css */
 .leaflet-pane,
 .leaflet-tile,
 .leaflet-marker-icon,
@@ -680,7 +680,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 .back-button {
   top: 10px;
-  left: 5%;
+  left: 10px;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
@@ -701,7 +701,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .location-label {
   top: 10px;
   bottom: 25px;
-  left: 5%;
+  left: 10px;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.8);
   padding: 10px;
@@ -713,6 +713,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .location-label h2 {
   margin: 0;
   font-size: 16px;
+}
+#databox-tooltip {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+#tooltip-table th,
+#tooltip-table td {
+  padding: 5px;
+}
+.info.legend {
+  background: white;
+  padding: 6px 8px;
+  font-size: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.info.legend i {
+  width: 18px;
+  height: 18px;
+  float: right;
+  margin-left: 8px;
+  opacity: 0.7;
 }
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
@@ -8720,4 +8745,4 @@ svg.leaflet-image-layer.leaflet-interactive path {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2024 Fonticons, Inc.
  */
-/*# sourceMappingURL=polmark_dashboard.bundle.A7FWQG4V.css.map */
+/*# sourceMappingURL=polmark_dashboard.bundle.S6HN5KYU.css.map */

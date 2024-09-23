@@ -62,9 +62,84 @@ function initializeLeafletMap(frm) {
 	// Set up the map inside the Doctype form
 	frm.fields_dict["map_html"].$wrapper.html(`
     <div id="map-container" style="position: relative;">
-      <div id="leaflet-map" style="height: 100vh;"></div>
+      	<div id="leaflet-map" style="height: 80vh;">
+	  		<div id="databox-tooltip" style="position:absolute; bottom:25px; right:18px; padding:10px; background-color:white; border:1px solid #ccc; display:none; z-index:1000;">
+                <table id="tooltip-table" style="border-collapse: collapse; width: 100%;">
+                    <tbody>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Kode Wilayah</th>
+                            <td id="area-code" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Nama</th>
+                            <td id="area-name" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Status</th>
+                            <td id="area-status" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Level</th>
+                            <td id="level" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Dapil DPR RI</th>
+                            <td id="dapil-dprri" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr id="row-number-of-kec" style="display:none;">
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kecamatan</th>
+                            <td id="number-of-kec" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr id="row-number-of-kel" style="display:none;">
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kelurahan</th>
+                            <td id="number-of-kel" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr id="row-number-of-desa" style="display:none;">
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Desa</th>
+                            <td id="number-of-desa" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml TPS</th>
+                            <td id="jml-tps" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Penduduk</th>
+                            <td id="jml-pend" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">KK</th>
+                            <td id="jml-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih 2024</th>
+                            <td id="jml-dpt-2024" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">CDE</th>
+                            <td id="jml-cde" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih /KK</th>
+                            <td id="jml-pemilih-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Perempuan</th>
+                            <td id="jml-pemilih-perempuan" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Muda</th>
+                            <td id="jml-pemilih-muda" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+						<tr>
+                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Zonasi</th>
+                            <td id="zonasi" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		</div>
     </div>
-  `);
+  	`);
 
 	// Initialize Leaflet map
 	const map = L.map("leaflet-map").setView(indonesiaDefaultView, 5); // Center on Indonesia
@@ -77,8 +152,8 @@ function initializeLeafletMap(frm) {
 	region_level = frm.doc.level_code;
 	region_name = frm.doc.region_name;
 
-  // Create label
-  locationLabel = L.control({ position: "topright" });
+	// Create label
+	locationLabel = L.control({ position: "topright" });
 	locationLabel.onAdd = function (map) {
 		let div = L.DomUtil.create("div", "location-label");
 		div.innerHTML = `<h2>${region_name}</h2>`; // Default label for Indonesia
@@ -124,25 +199,23 @@ function initializeLeafletMap(frm) {
 		let center = map.getCenter();
 	});
 
+	// Add the legend to the map
+	addLegend(map);
+
 	// Initial load of map
 	if (region_level === "3") {
 		fetchProvinces(frm, map, region_code, provinceMarkers);
 	}
 }
 
-function getColor(zonasi) {
-	switch (zonasi) {
-		case "ZONA 1":
-			return "#FF9999"; // Light Red
-		case "ZONA 2":
-			return "#99FF99"; // Light Green
-		case "ZONA 3":
-			return "#9999FF"; // Light Blue
-		case "ZONA 4":
-			return "#FFFF99"; // Light Yellow
-		default:
-			return "#CCCCCC"; // Default gray for unknown zonasi
-	}
+function getColor(zone) {
+	return zone === "ZONA 1"
+		? "#ff9999" // Light Red for zone 1
+		: zone === "ZONA 2"
+		? "#ffff99" // Light Yellow for zone 2
+		: zone === "ZONA 3"
+		? "#99ff99" // Light Green for zone 3
+		: "#ffffff"; // Default color (white) for undefined zones
 }
 
 function applyStyle(feature) {
@@ -241,6 +314,38 @@ function showPopup(layer, feature) {
         </ul>
     </div>
   `);
+}
+
+// Function to style each area (e.g., based on some property)
+function styleArea(feature) {
+	return {
+		fillColor: getColor(feature.properties.color), // Color based on property
+		weight: 1,
+		opacity: 1,
+		color: "white",
+		fillOpacity: 0.7,
+	};
+}
+
+// Function to add the legend control to the map
+function addLegend(map) {
+	let legend = L.control({ position: "bottomleft" });
+
+	legend.onAdd = function (map) {
+		let div = L.DomUtil.create("div", "info legend"),
+			zones = ["ZONA 1", "ZONA 2", "ZONA 3"], // Zones 1, 2, 3
+			labels = [];
+
+		// Loop through the zones and create a label for each
+		for (let i = 0; i < zones.length; i++) {
+			labels.push('<i style="background:' + getColor(zones[i]) + '"></i> ' + zones[i]);
+		}
+
+		div.innerHTML = labels.join("<br>");
+		return div;
+	};
+
+	legend.addTo(map);
 }
 
 function renderTable(frm, level, data) {
@@ -420,7 +525,89 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 					provinceMarkers.push(marker);
 
 					layer.on("click", function () {
+						// Hide the tooltip
+						let tooltip = document.getElementById("databox-tooltip");
+						tooltip.style.display = "none";
+
 						fetchCities(frm, map, feature.properties.region_code, provinceMarkers);
+					});
+
+					layer.on("mouseover", function (e) {
+						// Show the tooltip
+						let tooltip = document.getElementById("databox-tooltip");
+						tooltip.style.display = "block";
+
+						// Dynamically set the tooltip background color based on the zone
+						if (feature.properties.zonasi === "ZONA 1") {
+							tooltip.style.backgroundColor = 'rgba(255, 102, 102, 0.8)';  // Light red for Zone 1
+						} else if (feature.properties.zonasi === "ZONA 2") {
+							tooltip.style.backgroundColor = 'rgba(255, 255, 102, 0.8)';  // Light yellow for Zone 2
+						} else if (feature.properties.zonasi === "ZONA 3") {
+							tooltip.style.backgroundColor = 'rgba(153, 255, 153, 0.8)';  // Light green for Zone 3
+						}
+
+						// Populate the tooltip with data from the GeoJSON
+						document.getElementById("area-code").textContent =
+							feature.properties.region_code;
+						document.getElementById("area-name").textContent =
+							feature.properties.region_name;
+						document.getElementById("area-status").textContent =
+							feature.properties.region_type;
+						document.getElementById("level").textContent = feature.properties.level;
+						document.getElementById("dapil-dprri").textContent =
+							feature.properties.dapil_dpr_ri;
+						document.getElementById("jml-pend").textContent =
+							feature.properties.jml_pend;
+						document.getElementById("jml-kk").textContent = feature.properties.jml_kk;
+						document.getElementById("jml-dpt-2024").textContent =
+							feature.properties.jml_dpt;
+						document.getElementById("jml-cde").textContent =
+							feature.properties.jml_cde;
+						document.getElementById("jml-pemilih-kk").textContent =
+							feature.properties.jml_dpt_perkk;
+						document.getElementById("jml-pemilih-perempuan").textContent =
+							feature.properties.jml_dpt_perempuan;
+						document.getElementById("jml-pemilih-muda").textContent =
+							feature.properties.jml_dpt_muda;
+						document.getElementById("jml-tps").textContent =
+							feature.properties.jml_tps;
+						document.getElementById("zonasi").textContent = feature.properties.zonasi;
+
+						if (feature.properties.level === 4) {
+							document.getElementById("row-number-of-kel").style.display =
+								"table-row";
+							document.getElementById("number-of-kel").textContent =
+								feature.properties.jml_kel;
+							document.getElementById("row-number-of-desa").style.display =
+								"table-row";
+							document.getElementById("number-of-desa").textContent =
+								feature.properties.jml_desa;
+							document.getElementById("row-number-of-kec").style.display = "none";
+						} else if (feature.properties.level === 5) {
+							document.getElementById("row-number-of-kec").style.display = "none";
+							document.getElementById("row-number-of-kel").style.display = "none";
+							document.getElementById("row-number-of-desa").style.display = "none";
+						}
+
+						// Optional: Highlight the hovered province area
+						e.target.setStyle({
+							weight: 3,
+							color: "#666",
+							fillOpacity: 0.7,
+						});
+					});
+
+					layer.on("mouseout", function (e) {
+						// Hide the tooltip
+						let tooltip = document.getElementById("databox-tooltip");
+						tooltip.style.display = "none";
+
+						// Reset style
+						e.target.setStyle({
+							weight: 1,
+							color: "#3388ff",
+							fillOpacity: 0.5,
+						});
 					});
 				},
 			}).addTo(map);
