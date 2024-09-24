@@ -63,6 +63,11 @@ let provinceDefaultView = [],
 	districtDefaultView = [],
 	subDistrictDefaultView = [];
 
+const CONST_PROVINCE_LEVEL = 2,
+	CONST_CITY_LEVEL = 3,
+	CONST_DISTRICT_LEVEL = 4,
+	CONST_SUBDISTRICT_LEVEL = 5;
+
 let locationLabel;
 let areLabelsVisible = true;
 
@@ -227,15 +232,23 @@ function addShowHideLayer(map) {
 		// Add the event handler for the button click
 		div.onclick = function () {
 			if (areLabelsVisible) {
-				if (parseInt(currentMapLevel) === 2) map.removeLayer(provinceMarkersGroup);
-				else if (parseInt(currentMapLevel) === 3) map.removeLayer(cityMarkersGroup);
-				else if (parseInt(currentMapLevel) === 4) map.removeLayer(districtMarkersGroup);
-				else if (parseInt(currentMapLevel) === 5) map.removeLayer(subDistrictMarkersGroup);
+				if (parseInt(currentMapLevel) === CONST_PROVINCE_LEVEL)
+					map.removeLayer(provinceMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_CITY_LEVEL)
+					map.removeLayer(cityMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_DISTRICT_LEVEL)
+					map.removeLayer(districtMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_SUBDISTRICT_LEVEL)
+					map.removeLayer(subDistrictMarkersGroup);
 			} else {
-				if (parseInt(currentMapLevel) === 2) map.addLayer(provinceMarkersGroup);
-				else if (parseInt(currentMapLevel) === 3) map.addLayer(cityMarkersGroup);
-				else if (parseInt(currentMapLevel) === 4) map.addLayer(districtMarkersGroup);
-				else if (parseInt(currentMapLevel) === 5) map.addLayer(subDistrictMarkersGroup);
+				if (parseInt(currentMapLevel) === CONST_PROVINCE_LEVEL)
+					map.addLayer(provinceMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_CITY_LEVEL)
+					map.addLayer(cityMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_DISTRICT_LEVEL)
+					map.addLayer(districtMarkersGroup);
+				else if (parseInt(currentMapLevel) === CONST_SUBDISTRICT_LEVEL)
+					map.addLayer(subDistrictMarkersGroup);
 			}
 			// map.removeLayer(cityMarkersGroup);
 			areLabelsVisible = !areLabelsVisible; // Toggle the state
@@ -407,13 +420,13 @@ function showDataTooltip(data) {
 	document.getElementById("jml-tps").textContent = data.jml_tps;
 	document.getElementById("zonasi").textContent = data.zonasi;
 
-	if (data.level === 4) {
+	if (parseInt(data.level) === CONST_DISTRICT_LEVEL) {
 		document.getElementById("row-number-of-kel").style.display = "table-row";
 		document.getElementById("number-of-kel").textContent = data.jml_kel;
 		document.getElementById("row-number-of-desa").style.display = "table-row";
 		document.getElementById("number-of-desa").textContent = data.jml_desa;
 		document.getElementById("row-number-of-kec").style.display = "none";
-	} else if (data.level === 5) {
+	} else if (parseInt(data.level) === CONST_SUBDISTRICT_LEVEL) {
 		document.getElementById("row-number-of-kec").style.display = "none";
 		document.getElementById("row-number-of-kel").style.display = "none";
 		document.getElementById("row-number-of-desa").style.display = "none";
@@ -431,7 +444,7 @@ function renderTable(frm, level, data) {
 		'<table class="table table-bordered table-striped table-hover table-sm" style="width: 100%;">';
 	table += "<thead><tr>";
 
-	if (level == 2) {
+	if (parseInt(level) == CONST_PROVINCE_LEVEL) {
 		table += `
               <th>KD PROV</th>
               <th>PROV</th>
@@ -439,7 +452,7 @@ function renderTable(frm, level, data) {
               <th>KD KABKOTA</th>
               <th>KABKOTA</th>
           `;
-	} else if (level == 3) {
+	} else if (parseInt(level) == CONST_CITY_LEVEL) {
 		table += `
               <th>KD PROV</th>
               <th>PROV</th>
@@ -449,7 +462,7 @@ function renderTable(frm, level, data) {
               <th>KD KEC</th>
               <th>KEC</th>
           `;
-	} else if (level == 4) {
+	} else if (parseInt(level) == CONST_DISTRICT_LEVEL) {
 		table += `
               <th>KD PROV</th>
               <th>PROV</th>
@@ -482,7 +495,7 @@ function renderTable(frm, level, data) {
 	data.forEach((item) => {
 		table += "<tr>";
 
-		if (level == 2) {
+		if (parseInt(level) == CONST_PROVINCE_LEVEL) {
 			table += `
                 <td>${item.kd_provinsi}</td>
                 <td>${item.provinsi}</td>
@@ -490,7 +503,7 @@ function renderTable(frm, level, data) {
                 <td>${item.kd_kokab}</td>
                 <td>${item.kokab}</td>
             `;
-		} else if (level == 3) {
+		} else if (parseInt(level) == CONST_CITY_LEVEL) {
 			table += `
                 <td>${item.kd_provinsi}</td>
                 <td>${item.provinsi}</td>
@@ -500,7 +513,7 @@ function renderTable(frm, level, data) {
                 <td>${item.kd_kec}</td>
                 <td>${item.kecamatan}</td>
             `;
-		} else if (level == 4) {
+		} else if (parseInt(level) == CONST_DISTRICT_LEVEL) {
 			table += `
                 <td>${item.kd_provinsi}</td>
                 <td>${item.provinsi}</td>
@@ -605,13 +618,13 @@ function fetchGeoJsonDataByRegion({
 
 			// console.log("geojson: ", geoJson);
 
-			if (parseInt(level) === 2) {
+			if (parseInt(level) === CONST_PROVINCE_LEVEL) {
 				provinceDefaultView = map.getCenter();
-			} else if (parseInt(level) === 3) {
+			} else if (parseInt(level) === CONST_CITY_LEVEL) {
 				cityDefaultView = map.getCenter();
-			} else if (parseInt(level) === 4) {
+			} else if (parseInt(level) === CONST_DISTRICT_LEVEL) {
 				districtDefaultView = map.getCenter();
-			} else if (parseInt(level) === 5) {
+			} else if (parseInt(level) === CONST_SUBDISTRICT_LEVEL) {
 				subDistrictDefaultView = map.getCenter();
 			}
 
@@ -638,7 +651,7 @@ function fetchGeoJsonDataByRegion({
 					layer.on("click", () => {
 						currentMapLevel = parseInt(feature.properties.level);
 
-						if (currentMapLevel < 5) {
+						if (currentMapLevel < CONST_SUBDISTRICT_LEVEL) {
 							document.getElementById("databox-tooltip").style.display = "none";
 							fetchGeoJsonDataByRegion({
 								frm: frm,
