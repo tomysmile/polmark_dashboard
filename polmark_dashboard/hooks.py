@@ -39,7 +39,8 @@ fixtures = [
     {"doctype": "News Site", "filters": [["standard", "=", 1]]},
     {"doctype": "Organisation Structure Position", "filters": [["standard", "=", 1]]},
     {"doctype": "Zona Pemenangan", "filters": [["standard", "=", 1]]},
-    {"doctype": "Peta Zona Pemenangan", "filters": [["standard", "=", 1]]}
+    {"doctype": "Peta Zona Pemenangan", "filters": [["standard", "=", 1]]},
+    {"doctype": "Peta Zona Pemenangan Kab Bekasi", "filters": [["standard", "=", 1]]}
 ]
 
 

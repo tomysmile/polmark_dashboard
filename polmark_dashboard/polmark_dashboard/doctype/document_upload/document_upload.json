@@ -110,7 +110,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "make_attachments_public": 1,
- "modified": "2024-09-21 17:11:45.139199",
+ "modified": "2024-09-24 15:44:04.763124",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Document Upload",
@@ -156,7 +156,5 @@
  "sort_order": "DESC",
  "states": [],
  "title_field": "title",
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }
