@@ -226,8 +226,6 @@ function addShowHideLayer(map) {
 
 		// Add the event handler for the button click
 		div.onclick = function () {
-			console.log("areLabelsVisible: ", areLabelsVisible);
-			console.log("currentMapLevel: ", currentMapLevel);
 			if (areLabelsVisible) {
 				if (parseInt(currentMapLevel) === 2) map.removeLayer(provinceMarkersGroup);
 				else if (parseInt(currentMapLevel) === 3) map.removeLayer(cityMarkersGroup);
