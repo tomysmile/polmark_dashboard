@@ -31,16 +31,43 @@ const indonesiaDefaultView = [-2.5489, 118.0149];
 let provinceMarkers = [],
 	cityMarkers = [],
 	districtMarkers = [];
-let provinceLayer = null,
-	cityLayer = null,
-	districtLayer = null;
-let currentLevel = 0;
-let provinceDefaultView = [],
-	cityDefaultView = [];
-let locationLabel;
 
-function initializeLeafletMap(frm) {
-	const mapWrapper = frm.fields_dict["map_html"]?.$wrapper;
+let provinceMarkersGroup = null,
+	cityMarkersGroup = null,
+	districtMarkersGroup = null,
+	subDistrictMarkersGroup = null;
+
+let osmLayer = null,
+	provinceLayer = null,
+	cityLayer = null,
+	districtLayer = null,
+	subDistrictLayer = null;
+
+let currentMapLevel = 0,
+	currentRegionName,
+	currentRegionType,
+	currentRegionCode;
+
+let parentMapLevel = 0,
+	parentRegionName,
+	parentRegionType,
+	parentRegionCode;
+
+let defaultRegionType = null,
+	defaultRegionCode = null,
+	defaultRegionName = null,
+	defaultMapLevel = 0;
+
+let provinceDefaultView = [],
+	cityDefaultView = [],
+	districtDefaultView = [],
+	subDistrictDefaultView = [];
+
+let locationLabel;
+let areLabelsVisible = true;
+
+function initializeLeafletMap(frmInstance) {
+	const mapWrapper = frmInstance.fields_dict["map_html"]?.$wrapper;
 	if (!mapWrapper) {
 		console.error("Map container not found.");
 		return;
@@ -58,23 +85,70 @@ function initializeLeafletMap(frm) {
   	`);
 
 	// Initialize Leaflet map
-	const map = L.map("leaflet-map").setView(indonesiaDefaultView, 5);
+	const mapInstance = L.map("leaflet-map").setView(indonesiaDefaultView, 5);
 
-	L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	osmLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		attribution: "© OpenStreetMap contributors",
-	}).addTo(map);
+	}).addTo(mapInstance);
 
-	const { region, level_code, region_type, region_name } = frm.doc;
+	const { region, level_code, region_type, region_name } = frmInstance.doc;
 
-	addFullScreenControl(map);
-	addBackButton(map, frm, region);
-	addLegend(map);
-	addMapTitleLabel(map, `${region_type} ${region_name}`);
+	defaultMapLevel = parseInt(level_code);
+	defaultRegionType = region_type;
+	defaultRegionName = region_name;
+	defaultRegionCode = region;
+	currentMapLevel = parseInt(level_code);
+
+	provinceMarkersGroup = L.layerGroup();
+	cityMarkersGroup = L.layerGroup();
+	districtMarkersGroup = L.layerGroup();
+	subDistrictMarkersGroup = L.layerGroup();
+
+	provinceMarkersGroup.name = "Province";
+	cityMarkersGroup.name = "City";
+	districtMarkersGroup.name = "District";
+	subDistrictMarkersGroup.name = "SubDistrict";
+
+	addFullScreenControl(mapInstance);
+	addBackButton(mapInstance, frmInstance, region, level_code);
+	addLegend(mapInstance);
+	addMapTitleLabel(mapInstance, `${region_type} ${region_name}`);
+	addShowHideLayer(mapInstance);
 
 	// Initial load of map
-	if (level_code === "3") {
-		fetchProvinces(frm, map, region, provinceMarkers);
-	}
+	fetchGeoJsonDataByRegion({
+		frm: frmInstance,
+		map: mapInstance,
+		markersGroup: getMarkersGroup(level_code),
+		level: parseInt(level_code),
+		regionCode: region,
+		regionName: region_name,
+		regionType: region_type,
+		zoomLevel: 5,
+		defaultView: getDefaultMapView(level_code),
+	});
+}
+
+function getMarkersGroup(level) {
+	const markerGroups = {
+		2: provinceMarkersGroup,
+		3: cityMarkersGroup,
+		4: districtMarkersGroup,
+		5: subDistrictMarkersGroup,
+	};
+
+	return markerGroups[parseInt(level)];
+}
+
+function getDefaultMapView(level) {
+	const defaultViews = {
+		2: indonesiaDefaultView,
+		3: cityDefaultView,
+		4: districtDefaultView,
+		5: subDistrictDefaultView,
+	};
+
+	return defaultViews[parseInt(level)];
 }
 
 function addFullScreenControl(map) {
@@ -99,30 +173,92 @@ function setLocationLabel(name) {
 	}
 }
 
-function addBackButton(map, frm, region) {
+function addBackButton(mapInstance, frmInstance, regionCode, regionLevel) {
 	const backButton = L.control({ position: "topleft" });
 	backButton.onAdd = () => {
 		const div = L.DomUtil.create("div", "back-button");
 		div.innerHTML = '<button type="button">Back</button>';
 		div.style.display = "none";
 		div.onclick = () => {
-			fetchProvinces(frm, map, region, provinceMarkers);
-			map.setView(provinceDefaultView, 5);
+			fetchGeoJsonDataByRegion({
+				frm: frmInstance,
+				map: mapInstance,
+				markersGroup: getMarkersGroup(regionLevel),
+				level: parseInt(regionLevel),
+				regionCode: regionCode,
+				regionType: parentRegionType,
+				zoomLevel: 5,
+				defaultView: getDefaultMapView(regionLevel),
+			});
+
+			mapInstance.setView(getDefaultMapView(regionLevel), 5);
+
 			div.style.display = "none";
 		};
 		return div;
 	};
-	backButton.addTo(map);
+	backButton.addTo(mapInstance);
+}
+
+// Function to add the legend control to the map
+function addLegend(map) {
+	const legend = L.control({ position: "bottomleft" });
+	legend.onAdd = () => {
+		const div = L.DomUtil.create("div", "info legend");
+		const zones = ["ZONA 1", "ZONA 2", "ZONA 3"];
+		div.innerHTML = zones
+			.map((zone) => `<i style="background:${getColor(zone)}"></i> ${zone}`)
+			.join("<br>");
+		return div;
+	};
+	legend.addTo(map);
+}
+
+function addShowHideLayer(map) {
+	const showHideLabelControl = L.control({ position: "topleft" });
+	showHideLabelControl.onAdd = () => {
+		const div = L.DomUtil.create("div", "leaflet-bar leaflet-control leaflet-control-custom");
+		// Add some style and text to the control button
+		div.innerHTML = `<i class="fas fa-map-marker-alt"></i>`;
+		div.style.backgroundColor = "white";
+		div.style.padding = "5px";
+		div.style.cursor = "pointer";
+
+		// Add the event handler for the button click
+		div.onclick = function () {
+			console.log("areLabelsVisible: ", areLabelsVisible);
+			console.log("currentMapLevel: ", currentMapLevel);
+			if (areLabelsVisible) {
+				if (parseInt(currentMapLevel) === 2) map.removeLayer(provinceMarkersGroup);
+				else if (parseInt(currentMapLevel) === 3) map.removeLayer(cityMarkersGroup);
+				else if (parseInt(currentMapLevel) === 4) map.removeLayer(districtMarkersGroup);
+				else if (parseInt(currentMapLevel) === 5) map.removeLayer(subDistrictMarkersGroup);
+			} else {
+				if (parseInt(currentMapLevel) === 2) map.addLayer(provinceMarkersGroup);
+				else if (parseInt(currentMapLevel) === 3) map.addLayer(cityMarkersGroup);
+				else if (parseInt(currentMapLevel) === 4) map.addLayer(districtMarkersGroup);
+				else if (parseInt(currentMapLevel) === 5) map.addLayer(subDistrictMarkersGroup);
+			}
+			// map.removeLayer(cityMarkersGroup);
+			areLabelsVisible = !areLabelsVisible; // Toggle the state
+		};
+
+		return div;
+	};
+	showHideLabelControl.addTo(map);
+}
+
+function resetMarkerGroup() {
+	provinceMarkersGroup.clearLayers();
+	cityMarkersGroup.clearLayers();
+	districtMarkersGroup.clearLayers();
+	subDistrictMarkersGroup.clearLayers();
 }
 
 function createDataTooltip() {
 	return `<div id="databox-tooltip" style="position:absolute; bottom:25px; right:18px; padding:10px; background-color:white; border:1px solid #ccc; display:none; z-index:1000;">
 		<table id="tooltip-table" style="border-collapse: collapse; width: 100%;">
 			<tbody>
-				<tr>
-					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Kode Wilayah</th>
-					<td id="area-code" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-				</tr>
 				<tr>
 					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Nama</th>
 					<td id="area-name" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
@@ -256,7 +392,9 @@ function showLabelMarker(map, feature) {
 }
 
 function showDataTooltip(data) {
-	document.getElementById("area-code").textContent = data.region_code;
+	let tooltip = document.getElementById("databox-tooltip");
+	tooltip.style.display = "block";
+
 	document.getElementById("area-name").textContent = data.region_name;
 	document.getElementById("area-status").textContent = data.region_type;
 	document.getElementById("level").textContent = data.level;
@@ -284,18 +422,9 @@ function showDataTooltip(data) {
 	}
 }
 
-// Function to add the legend control to the map
-function addLegend(map) {
-	const legend = L.control({ position: "bottomleft" });
-	legend.onAdd = () => {
-		const div = L.DomUtil.create("div", "info legend");
-		const zones = ["ZONA 1", "ZONA 2", "ZONA 3"];
-		div.innerHTML = zones
-			.map((zone) => `<i style="background:${getColor(zone)}"></i> ${zone}`)
-			.join("<br>");
-		return div;
-	};
-	legend.addTo(map);
+function hideDataTooltip() {
+	let tooltip = document.getElementById("databox-tooltip");
+	tooltip.style.display = "none";
 }
 
 function renderTable(frm, level, data) {
@@ -437,60 +566,97 @@ function fetchTableData(frm, level, region) {
 	});
 }
 
-function fetchProvinces(frm, map, code, provinceMarkers) {
-	cityMarkers.forEach((marker) => map.removeLayer(marker));
-	cityMarkers = [];
+function fetchGeoJsonDataByRegion({
+	frm,
+	map,
+	markersGroup,
+	level,
+	regionCode,
+	regionType,
+	zoomLevel = 5,
+	defaultView = indonesiaDefaultView,
+}) {
+	// Clear existing layers
 	map.eachLayer((layer) => {
-		if (layer instanceof L.GeoJSON) map.removeLayer(layer);
+		if (layer instanceof L.GeoJSON || layer instanceof L.Marker) map.removeLayer(layer);
 	});
 
-	currentLevel = 3;
-	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
+	resetMarkerGroup();
+
+	if (!frm || !map || !regionCode) {
+		throw new Error("Missing required parameters.");
+	}
+
+	if (zoomLevel < 0 || zoomLevel > 20) {
+		console.error("Zoom level must be between 0 and 20.");
+		zoomLevel = 5;
+	}
+
+	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${regionCode}`;
+
+	parentMapLevel = level;
+	currentMapLevel = parseInt(level);
 
 	fetchGeoJsonData(url)
 		.then((geoJson) => {
 			if (!geoJson || geoJson.features.length === 0) {
-				console.error("No valid province data found");
+				console.error(`No valid ${regionType} data found`);
 				map.setView(indonesiaDefaultView, 5);
 				return;
 			}
 
-			// console.log("geojson province: ", geoJson);
+			// console.log("geojson: ", geoJson);
 
-			let parentName = "";
-			let parentType = "";
+			if (parseInt(level) === 2) {
+				provinceDefaultView = map.getCenter();
+			} else if (parseInt(level) === 3) {
+				cityDefaultView = map.getCenter();
+			} else if (parseInt(level) === 4) {
+				districtDefaultView = map.getCenter();
+			} else if (parseInt(level) === 5) {
+				subDistrictDefaultView = map.getCenter();
+			}
 
-			provinceLayer = L.geoJSON(geoJson, {
+			if (parseInt(level) > defaultMapLevel) {
+				document.querySelector(".back-button").style.display = "block";
+			}
+
+			const layerGroup = L.geoJSON(geoJson, {
 				style: applyStyle,
 				onEachFeature: function (feature, layer) {
-					parentName = feature.properties.parent_name;
-					parentType = feature.properties.parent_type;
+					parentRegionType = feature.properties.parent_type;
+					parentRegionName = feature.properties.parent_name;
+					parentRegionCode = feature.properties.parent_code;
 
-					// Store province markers and icons in an array
 					const marker = L.marker(layer.getBounds().getCenter(), {
 						icon: L.divIcon({
-							className: "province-label",
+							className: `${regionType}-label`,
 							html: `<div class="peta-label-content"><span class="peta-label-text">${feature.properties.name}</span></div>`,
 						}),
-					}).addTo(map);
+					});
 
-					// Add marker to the array
-					provinceMarkers.push(marker);
+					markersGroup.addLayer(marker);
 
 					layer.on("click", () => {
-						document.getElementById("databox-tooltip").style.display = "none";
-						fetchCities(frm, map, feature.properties.region_code, provinceMarkers);
+						currentMapLevel = parseInt(feature.properties.level);
+
+						if (currentMapLevel < 5) {
+							document.getElementById("databox-tooltip").style.display = "none";
+							fetchGeoJsonDataByRegion({
+								frm: frm,
+								map: map,
+								markersGroup: getMarkersGroup(currentMapLevel),
+								level: parseInt(currentMapLevel),
+								regionCode: feature.properties.region_code,
+								zoomLevel: 5,
+								defaultView: getDefaultMapView(currentMapLevel),
+							});
+						}
 					});
 
 					layer.on("mouseover", function (e) {
-						// Show the tooltip
-						let tooltip = document.getElementById("databox-tooltip");
-						tooltip.style.display = "block";
-
-						// Populate the tooltip with data from the GeoJSON
 						showDataTooltip(feature.properties);
 
-						// Optional: Highlight the hovered province area
 						e.target.setStyle({
 							weight: 3,
 							color: "#666",
@@ -499,11 +665,8 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 					});
 
 					layer.on("mouseout", function (e) {
-						// Hide the tooltip
-						let tooltip = document.getElementById("databox-tooltip");
-						tooltip.style.display = "none";
+						hideDataTooltip();
 
-						// Reset style
 						e.target.setStyle({
 							weight: 1,
 							color: "#3388ff",
@@ -513,109 +676,21 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 				},
 			}).addTo(map);
 
-			// Fit the map to the bounds of the provinces layer
-			let bounds = provinceLayer.getBounds();
+			markersGroup.addTo(map);
+
+			const bounds = layerGroup.getBounds();
 			if (bounds.isValid()) {
-				map.fitBounds(bounds); // Fit map to the provinces' bounds
+				map.fitBounds(bounds);
 			} else {
 				console.error("Bounds are not valid");
-				map.setView(indonesiaDefaultView, 5); // Set default view if bounds are invalid
+				map.setView(defaultView, 5);
 			}
 
-			provinceDefaultView = map.getCenter();
-
-			// render tabular data
-			fetchTableData(frm, currentLevel, code);
-
-			setLocationLabel(`${parentType} ${parentName}`);
+			fetchTableData(frm, currentMapLevel, parentRegionCode);
+			setLocationLabel(`${parentRegionType} ${parentRegionName}`);
 		})
 		.catch((error) => {
-			console.error("Error fetching provinces:", error);
-			map.setView(indonesiaDefaultView, 5); // Set default view on error
+			console.error(`Error fetching ${regionType}:`, error);
+			map.setView(defaultView, 5);
 		});
-}
-
-function fetchCities(frm, map, code, provinceMarkers) {
-	provinceMarkers.forEach((marker) => map.removeLayer(marker));
-	provinceMarkers = [];
-	map.eachLayer((layer) => {
-		if (layer instanceof L.GeoJSON) map.removeLayer(layer);
-	});
-
-	currentLevel = 4;
-	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
-
-	fetchGeoJsonData(url)
-		.then((geoJson) => {
-			if (!geoJson || geoJson.features.length === 0) {
-				console.error("No valid city data found");
-				map.setView(provinceDefaultView, 5);
-				return;
-			}
-
-			// console.log("geojson city: ", geoJson);
-
-			let parentName = "";
-			let parentType = "";
-
-			cityLayer = L.geoJSON(geoJson, {
-				style: applyStyle,
-				onEachFeature: function (feature, layer) {
-					parentName = feature.properties.parent_name;
-					parentType = feature.properties.parent_type;
-
-					const marker = L.marker(layer.getBounds().getCenter(), {
-						icon: L.divIcon({
-							className: "city-label",
-							html: `<div class="peta-label-content"><span class="peta-label-text">${feature.properties.name}</span></div>`,
-						}),
-					}).addTo(map);
-
-					// Add marker to the array
-					cityMarkers.push(marker);
-
-					layer.on("click", () => {
-						document.getElementById("databox-tooltip").style.display = "none";
-					});
-
-					layer.on("mouseover", function (e) {
-						// Show the tooltip
-						let tooltip = document.getElementById("databox-tooltip");
-						tooltip.style.display = "block";
-
-						// Populate the tooltip with data from the GeoJSON
-						showDataTooltip(feature.properties);
-
-						// Optional: Highlight the hovered province area
-						e.target.setStyle({
-							weight: 3,
-							color: "#666",
-							fillOpacity: 0.7,
-						});
-					});
-
-					layer.on("mouseout", function (e) {
-						// Hide the tooltip
-						let tooltip = document.getElementById("databox-tooltip");
-						tooltip.style.display = "none";
-
-						// Reset style
-						e.target.setStyle({
-							weight: 1,
-							color: "#3388ff",
-							fillOpacity: 0.5,
-						});
-					});
-				},
-			}).addTo(map);
-
-			map.fitBounds(cityLayer.getBounds());
-			document.querySelector(".back-button").style.display = "block"; // Show back button
-
-			cityDefaultView = map.getCenter();
-
-			fetchTableData(frm, currentLevel, code);
-			setLocationLabel(`${parentType} ${parentName}`);
-		})
-		.catch((error) => console.error("Error fetching cities:", error));
 }
