@@ -2,16 +2,10 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Peta Zona Pemenangan", {
-	refresh: function (frm) {
-		if (!frm.is_new()) {
-			// If the document is already saved, show the specific field(s)
-			frm.set_df_property("map_html", "hidden", 0); // Show the field
-		} else {
-			// If it's a new document, hide the field(s)
-			frm.set_df_property("map_html", "hidden", 1); // Hide the field
-		}
+	refresh(frm) {
+		frm.set_df_property("map_html", "hidden", frm.is_new() ? 1 : 0);
 	},
-	title: function (frm) {
+	title(frm) {
 		if (frm.doc.title) {
 			frm.set_value(
 				"slug",
@@ -23,199 +17,188 @@ frappe.ui.form.on("Peta Zona Pemenangan", {
 		}
 	},
 	onload: function (frm) {
-		$(document).ready(function () {
+		$(document).ready(() => {
 			if (!frm.is_new()) {
-				// Hide the Save button
 				frm.disable_save();
-
-				// Initialize the map and other functionalities after the tabs are rendered
-				setTimeout(() => {
-					initializeLeafletMap(frm);
-				}, 0);
+				setTimeout(() => initializeLeafletMap(frm), 0);
 			}
 		});
 	},
 });
 
-// Marker array to store references
-let provinceMarkers = [];
-let provinceLayer = null;
-let cityMarkers = [];
-let cityLayer = null;
-let districtMarkers = [];
-let districtLayer = null;
+const indonesiaDefaultView = [-2.5489, 118.0149];
 
+let provinceMarkers = [],
+	cityMarkers = [],
+	districtMarkers = [];
+let provinceLayer = null,
+	cityLayer = null,
+	districtLayer = null;
 let currentLevel = 0;
-let indonesiaDefaultView = [-2.5489, 118.0149];
-let provinceDefaultView = [];
-let cityDefaultView = [];
-
+let provinceDefaultView = [],
+	cityDefaultView = [];
 let locationLabel;
 
 function initializeLeafletMap(frm) {
-	// Check if the map container already exists
-	if (!frm.fields_dict["map_html"] || !frm.fields_dict["map_html"].$wrapper) {
+	const mapWrapper = frm.fields_dict["map_html"]?.$wrapper;
+	if (!mapWrapper) {
 		console.error("Map container not found.");
 		return;
 	}
 
 	// Set up the map inside the Doctype form
-	frm.fields_dict["map_html"].$wrapper.html(`
-    <div id="map-container" style="position: relative;">
-      	<div id="leaflet-map" style="height: 80vh;">
-	  		<div id="databox-tooltip" style="position:absolute; bottom:25px; right:18px; padding:10px; background-color:white; border:1px solid #ccc; display:none; z-index:1000;">
-                <table id="tooltip-table" style="border-collapse: collapse; width: 100%;">
-                    <tbody>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Kode Wilayah</th>
-                            <td id="area-code" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Nama</th>
-                            <td id="area-name" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Status</th>
-                            <td id="area-status" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Level</th>
-                            <td id="level" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Dapil DPR RI</th>
-                            <td id="dapil-dprri" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr id="row-number-of-kec" style="display:none;">
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kecamatan</th>
-                            <td id="number-of-kec" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr id="row-number-of-kel" style="display:none;">
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kelurahan</th>
-                            <td id="number-of-kel" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr id="row-number-of-desa" style="display:none;">
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Desa</th>
-                            <td id="number-of-desa" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml TPS</th>
-                            <td id="jml-tps" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Penduduk</th>
-                            <td id="jml-pend" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">KK</th>
-                            <td id="jml-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih 2024</th>
-                            <td id="jml-dpt-2024" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">CDE</th>
-                            <td id="jml-cde" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih /KK</th>
-                            <td id="jml-pemilih-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Perempuan</th>
-                            <td id="jml-pemilih-perempuan" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Muda</th>
-                            <td id="jml-pemilih-muda" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-						<tr>
-                            <th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Zonasi</th>
-                            <td id="zonasi" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+	const dataTooltipArea = createDataTooltip();
+
+	mapWrapper.html(`
+		<div id="map-container" style="position: relative;">
+			<div id="leaflet-map" style="height: 80vh;">
+				${dataTooltipArea}
+			</div>
 		</div>
-    </div>
   	`);
 
 	// Initialize Leaflet map
-	const map = L.map("leaflet-map").setView(indonesiaDefaultView, 5); // Center on Indonesia
+	const map = L.map("leaflet-map").setView(indonesiaDefaultView, 5);
 
 	L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 		attribution: "© OpenStreetMap contributors",
 	}).addTo(map);
 
-	region_code = frm.doc.region;
-	region_level = frm.doc.level_code;
-	region_name = frm.doc.region_name;
+	const { region, level_code, region_type, region_name } = frm.doc;
 
-	// Create label
-	locationLabel = L.control({ position: "topright" });
-	locationLabel.onAdd = function (map) {
-		let div = L.DomUtil.create("div", "location-label");
-		div.innerHTML = `<h2>${region_name}</h2>`; // Default label for Indonesia
-		return div; // Return the created DOM element
-	};
-	locationLabel.addTo(map);
-
-	// Create back button control
-	let backButton = L.control({ position: "topright" });
-	backButton.onAdd = function (map) {
-		let div = L.DomUtil.create("div", "back-button");
-		div.innerHTML = '<button type="button">Back</button>';
-		div.onclick = function () {
-			if (region_level === "3") {
-				fetchProvinces(frm, map, region_code, provinceMarkers);
-			}
-
-			map.setView(provinceDefaultView, 5); // Reset zoom to provinces
-			div.style.display = "none"; // Hide back button
-		};
-		div.style.display = "none"; // Initially hidden
-		return div;
-	};
-
-	backButton.addTo(map);
-
-	document.querySelector(".back-button").style.display = "none"; // Hide on load
-
-	// Add fullscreen control to the map
-	map.addControl(new L.Control.Fullscreen());
-
-	// Event triggered when the map enters fullscreen
-	map.on("enterFullscreen", function () {
-		console.log("Entered fullscreen mode");
-	});
-
-	// Event triggered when the map exits fullscreen
-	map.on("exitFullscreen", function () {
-		console.log("Exited fullscreen mode");
-	});
-
-	map.on("moveend", function () {
-		let center = map.getCenter();
-	});
-
-	// Add the legend to the map
+	addFullScreenControl(map);
+	addBackButton(map, frm, region);
 	addLegend(map);
+	addMapTitleLabel(map, `${region_type} ${region_name}`);
 
 	// Initial load of map
-	if (region_level === "3") {
-		fetchProvinces(frm, map, region_code, provinceMarkers);
+	if (level_code === "3") {
+		fetchProvinces(frm, map, region, provinceMarkers);
 	}
 }
 
+function addFullScreenControl(map) {
+	map.addControl(new L.Control.Fullscreen());
+	map.on("enterFullscreen", () => console.log("Entered fullscreen mode"));
+	map.on("exitFullscreen", () => console.log("Exited fullscreen mode"));
+}
+
+function addMapTitleLabel(map, name) {
+	locationLabel = L.control({ position: "topcenter" });
+	locationLabel.onAdd = function (map) {
+		let div = L.DomUtil.create("div", "location-label-container");
+		div.innerHTML = `<span class="map-title">${name}</span>`;
+		return div;
+	};
+	locationLabel.addTo(map);
+}
+
+function setLocationLabel(name) {
+	if (locationLabel && locationLabel.getContainer()) {
+		locationLabel.getContainer().innerHTML = `<span class="map-title">${name}</span>`;
+	}
+}
+
+function addBackButton(map, frm, region) {
+	const backButton = L.control({ position: "topleft" });
+	backButton.onAdd = () => {
+		const div = L.DomUtil.create("div", "back-button");
+		div.innerHTML = '<button type="button">Back</button>';
+		div.style.display = "none";
+		div.onclick = () => {
+			fetchProvinces(frm, map, region, provinceMarkers);
+			map.setView(provinceDefaultView, 5);
+			div.style.display = "none";
+		};
+		return div;
+	};
+	backButton.addTo(map);
+}
+
+function createDataTooltip() {
+	return `<div id="databox-tooltip" style="position:absolute; bottom:25px; right:18px; padding:10px; background-color:white; border:1px solid #ccc; display:none; z-index:1000;">
+		<table id="tooltip-table" style="border-collapse: collapse; width: 100%;">
+			<tbody>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Kode Wilayah</th>
+					<td id="area-code" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Nama</th>
+					<td id="area-name" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Status</th>
+					<td id="area-status" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Level</th>
+					<td id="level" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Dapil DPR RI</th>
+					<td id="dapil-dprri" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr id="row-number-of-kec" style="display:none;">
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kecamatan</th>
+					<td id="number-of-kec" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr id="row-number-of-kel" style="display:none;">
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kelurahan</th>
+					<td id="number-of-kel" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr id="row-number-of-desa" style="display:none;">
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Desa</th>
+					<td id="number-of-desa" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml TPS</th>
+					<td id="jml-tps" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Penduduk</th>
+					<td id="jml-pend" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">KK</th>
+					<td id="jml-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih 2024</th>
+					<td id="jml-dpt-2024" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">CDE</th>
+					<td id="jml-cde" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih /KK</th>
+					<td id="jml-pemilih-kk" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Perempuan</th>
+					<td id="jml-pemilih-perempuan" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Pemilih Muda</th>
+					<td id="jml-pemilih-muda" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Zonasi</th>
+					<td id="zonasi" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>`;
+}
+
 function getColor(zone) {
-	return zone === "ZONA 1"
-		? "#ff9999" // Light Red for zone 1
-		: zone === "ZONA 2"
-		? "#ffff99" // Light Yellow for zone 2
-		: zone === "ZONA 3"
-		? "#99ff99" // Light Green for zone 3
-		: "#ffffff"; // Default color (white) for undefined zones
+	const colors = {
+		"ZONA 1": "#ff9999",
+		"ZONA 2": "#ffff99",
+		"ZONA 3": "#99ff99",
+	};
+	return colors[zone] || "#ffffff";
 }
 
 function applyStyle(feature) {
@@ -223,8 +206,8 @@ function applyStyle(feature) {
 		fillColor: getColor(feature.properties.zonasi),
 		weight: 2,
 		opacity: 1,
-		color: "white", // Border color
-		fillOpacity: 0.7, // Opacity of the fill color
+		color: "white",
+		fillOpacity: 0.7,
 	};
 }
 
@@ -233,118 +216,85 @@ function getCentroid(coordinates) {
 	let totalLat = 0,
 		totalLng = 0,
 		totalPoints = 0;
-
-	// Assuming the coordinates array is a Polygon: [ [ [lng, lat], [lng, lat], ... ] ]
-	coordinates[0].forEach(function (coord) {
-		totalLng += coord[0];
-		totalLat += coord[1];
+	coordinates[0].forEach(([lng, lat]) => {
+		totalLng += lng;
+		totalLat += lat;
 		totalPoints++;
 	});
-
-	if (totalPoints === 0) {
-		return null; // Invalid case, no points in the polygon
-	}
-
-	return [totalLat / totalPoints, totalLng / totalPoints]; // Centroid in [lat, lng] format
+	return totalPoints ? [totalLat / totalPoints, totalLng / totalPoints] : null;
 }
 
 function getMultiPolygonCentroid(coordinates) {
 	let totalLat = 0,
 		totalLng = 0,
 		totalPoints = 0;
-
-	// Loop through each Polygon in the MultiPolygon
-	coordinates.forEach(function (polygon) {
-		polygon[0].forEach(function (coord) {
-			totalLng += coord[0]; // Longitude
-			totalLat += coord[1]; // Latitude
+	coordinates.forEach((polygon) => {
+		polygon[0].forEach(([lng, lat]) => {
+			totalLng += lng;
+			totalLat += lat;
 			totalPoints++;
 		});
 	});
-
-	if (totalPoints === 0) {
-		return null; // Invalid case, no points in the polygons
-	}
-
-	return [totalLat / totalPoints, totalLng / totalPoints]; // Centroid in [lat, lng] format
+	return totalPoints ? [totalLat / totalPoints, totalLng / totalPoints] : null;
 }
 
 function showLabelMarker(map, feature) {
-	var centroid;
+	const centroid =
+		feature.geometry.type === "MultiPolygon"
+			? getMultiPolygonCentroid(feature.geometry.coordinates)
+			: getCentroid(feature.geometry.coordinates);
 
-	// Check if it's a MultiPolygon
-	if (feature.geometry.type === "MultiPolygon") {
-		centroid = getMultiPolygonCentroid(feature.geometry.coordinates);
-	} else if (feature.geometry.type === "Polygon") {
-		centroid = getCentroid(feature.geometry.coordinates);
-	}
-
-	// Ensure centroid is valid before adding marker
 	if (centroid) {
-		// Add city name label in the center
 		const markerLabel = L.divIcon({
 			className: "province-label",
-			html: `<div class="peta-label-content">
-	            <span class="peta-label-text">${feature.properties.name}</span>
-	            </div>`,
+			html: `<div class="peta-label-content"><span class="peta-label-text">${feature.properties.name}</span></div>`,
 		});
-
 		L.marker(centroid, { icon: markerLabel }).addTo(map);
 	} else {
 		console.error("Invalid centroid for feature:", feature.properties.name);
 	}
 }
 
-function showPopup(layer, feature) {
-	// Bind a popup to display the information
-	layer.bindPopup(`
-    <div class="popup-content">
-        <h3 class="popup-title">${feature.properties.name}</h3>
-        <ul class="popup-info">
-            <li><i class="fas fa-landmark"></i> <span class="popup-label">Dapil DPR RI:</span> ${feature.properties.dapil_dpr_ri}</li>
-            <li><i class="fas fa-landmark"></i> <span class="popup-label">TPS:</span> ${feature.properties.jml_tps}</li>
-            <li><i class="fas fa-users"></i> <span class="popup-label">Penduduk:</span> ${feature.properties.jml_pend}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">KK:</span> ${feature.properties.jml_kk}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">CDE:</span> ${feature.properties.jml_cde}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih:</span> ${feature.properties.jml_dpt}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih per-KK:</span> ${feature.properties.jml_dpt_perkk}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih Perempuan:</span> ${feature.properties.jml_dpt_perempuan}</li>
-            <li><i class="fas fa-user-check"></i> <span class="popup-label">Pemilih Muda:</span> ${feature.properties.jml_dpt_muda}</li>
-            <li><i class="fas fa-map-marker-alt"></i> <span class="popup-label">Zonasi:</span> ${feature.properties.zonasi}</li>
-        </ul>
-    </div>
-  `);
-}
+function showDataTooltip(data) {
+	document.getElementById("area-code").textContent = data.region_code;
+	document.getElementById("area-name").textContent = data.region_name;
+	document.getElementById("area-status").textContent = data.region_type;
+	document.getElementById("level").textContent = data.level;
+	document.getElementById("dapil-dprri").textContent = data.dapil_dpr_ri;
+	document.getElementById("jml-pend").textContent = data.jml_pend;
+	document.getElementById("jml-kk").textContent = data.jml_kk;
+	document.getElementById("jml-dpt-2024").textContent = data.jml_dpt;
+	document.getElementById("jml-cde").textContent = data.jml_cde;
+	document.getElementById("jml-pemilih-kk").textContent = data.jml_dpt_perkk;
+	document.getElementById("jml-pemilih-perempuan").textContent = data.jml_dpt_perempuan;
+	document.getElementById("jml-pemilih-muda").textContent = data.jml_dpt_muda;
+	document.getElementById("jml-tps").textContent = data.jml_tps;
+	document.getElementById("zonasi").textContent = data.zonasi;
 
-// Function to style each area (e.g., based on some property)
-function styleArea(feature) {
-	return {
-		fillColor: getColor(feature.properties.color), // Color based on property
-		weight: 1,
-		opacity: 1,
-		color: "white",
-		fillOpacity: 0.7,
-	};
+	if (data.level === 4) {
+		document.getElementById("row-number-of-kel").style.display = "table-row";
+		document.getElementById("number-of-kel").textContent = data.jml_kel;
+		document.getElementById("row-number-of-desa").style.display = "table-row";
+		document.getElementById("number-of-desa").textContent = data.jml_desa;
+		document.getElementById("row-number-of-kec").style.display = "none";
+	} else if (data.level === 5) {
+		document.getElementById("row-number-of-kec").style.display = "none";
+		document.getElementById("row-number-of-kel").style.display = "none";
+		document.getElementById("row-number-of-desa").style.display = "none";
+	}
 }
 
 // Function to add the legend control to the map
 function addLegend(map) {
-	let legend = L.control({ position: "bottomleft" });
-
-	legend.onAdd = function (map) {
-		let div = L.DomUtil.create("div", "info legend"),
-			zones = ["ZONA 1", "ZONA 2", "ZONA 3"], // Zones 1, 2, 3
-			labels = [];
-
-		// Loop through the zones and create a label for each
-		for (let i = 0; i < zones.length; i++) {
-			labels.push('<i style="background:' + getColor(zones[i]) + '"></i> ' + zones[i]);
-		}
-
-		div.innerHTML = labels.join("<br>");
+	const legend = L.control({ position: "bottomleft" });
+	legend.onAdd = () => {
+		const div = L.DomUtil.create("div", "info legend");
+		const zones = ["ZONA 1", "ZONA 2", "ZONA 3"];
+		div.innerHTML = zones
+			.map((zone) => `<i style="background:${getColor(zone)}"></i> ${zone}`)
+			.join("<br>");
 		return div;
 	};
-
 	legend.addTo(map);
 }
 
@@ -463,72 +413,72 @@ function fetchGeoJsonData(endpoint, params = {}) {
 		frappe.call({
 			method: endpoint,
 			args: params,
-			callback: function (r) {
-				if (r.message) {
-					resolve(r.message);
-				} else {
-					reject("No data found");
-				}
+			callback(r) {
+				r.message ? resolve(r.message) : reject("No data found");
 			},
-			error: function (err) {
-				reject(err);
-			},
+			error: reject,
 		});
 	});
 }
 
-function fetchProvinces(frm, map, code, provinceMarkers) {
-	cityMarkers.forEach((marker) => {
-		map.removeLayer(marker);
+function fetchTableData(frm, level, region) {
+	const url = `polmark_dashboard.api.tabular.get_tabular_data?region=${region}`;
+	frappe.call({
+		method: url,
+		args: {
+			// any parameters you need to pass
+		},
+		callback: function (response) {
+			if (response.message) {
+				data = response.message;
+				renderTable(frm, level, data);
+			}
+		},
 	});
-	cityMarkers = [];
+}
 
-	// Clear any existing city layers
+function fetchProvinces(frm, map, code, provinceMarkers) {
+	cityMarkers.forEach((marker) => map.removeLayer(marker));
+	cityMarkers = [];
 	map.eachLayer((layer) => {
-		if (layer instanceof L.GeoJSON) {
-			map.removeLayer(layer);
-		}
+		if (layer instanceof L.GeoJSON) map.removeLayer(layer);
 	});
 
 	currentLevel = 3;
-
 	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
+
 	fetchGeoJsonData(url)
 		.then((geoJson) => {
 			if (!geoJson || geoJson.features.length === 0) {
 				console.error("No valid province data found");
-				map.setView(indonesiaDefaultView, 5); // Set default view if no data
+				map.setView(indonesiaDefaultView, 5);
 				return;
 			}
 
-			console.log("geojson province: ", geoJson);
+			// console.log("geojson province: ", geoJson);
 
 			let parentName = "";
+			let parentType = "";
 
 			provinceLayer = L.geoJSON(geoJson, {
 				style: applyStyle,
 				onEachFeature: function (feature, layer) {
-					// get region parent name
 					parentName = feature.properties.parent_name;
+					parentType = feature.properties.parent_type;
 
 					// Store province markers and icons in an array
-					let marker = L.marker(layer.getBounds().getCenter(), {
+					const marker = L.marker(layer.getBounds().getCenter(), {
 						icon: L.divIcon({
 							className: "province-label",
-							html: `<div class="peta-label-content">
-                      <span class="peta-label-text">${feature.properties.name}</span>
-                      </div>`,
+							html: `<div class="peta-label-content"><span class="peta-label-text">${feature.properties.name}</span></div>`,
 						}),
 					}).addTo(map);
 
 					// Add marker to the array
 					provinceMarkers.push(marker);
 
-					layer.on("click", function () {
-						// Hide the tooltip
-						let tooltip = document.getElementById("databox-tooltip");
-						tooltip.style.display = "none";
-
+					layer.on("click", () => {
+						document.getElementById("databox-tooltip").style.display = "none";
 						fetchCities(frm, map, feature.properties.region_code, provinceMarkers);
 					});
 
@@ -537,57 +487,8 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 						let tooltip = document.getElementById("databox-tooltip");
 						tooltip.style.display = "block";
 
-						// Dynamically set the tooltip background color based on the zone
-						if (feature.properties.zonasi === "ZONA 1") {
-							tooltip.style.backgroundColor = 'rgba(255, 102, 102, 0.8)';  // Light red for Zone 1
-						} else if (feature.properties.zonasi === "ZONA 2") {
-							tooltip.style.backgroundColor = 'rgba(255, 255, 102, 0.8)';  // Light yellow for Zone 2
-						} else if (feature.properties.zonasi === "ZONA 3") {
-							tooltip.style.backgroundColor = 'rgba(153, 255, 153, 0.8)';  // Light green for Zone 3
-						}
-
 						// Populate the tooltip with data from the GeoJSON
-						document.getElementById("area-code").textContent =
-							feature.properties.region_code;
-						document.getElementById("area-name").textContent =
-							feature.properties.region_name;
-						document.getElementById("area-status").textContent =
-							feature.properties.region_type;
-						document.getElementById("level").textContent = feature.properties.level;
-						document.getElementById("dapil-dprri").textContent =
-							feature.properties.dapil_dpr_ri;
-						document.getElementById("jml-pend").textContent =
-							feature.properties.jml_pend;
-						document.getElementById("jml-kk").textContent = feature.properties.jml_kk;
-						document.getElementById("jml-dpt-2024").textContent =
-							feature.properties.jml_dpt;
-						document.getElementById("jml-cde").textContent =
-							feature.properties.jml_cde;
-						document.getElementById("jml-pemilih-kk").textContent =
-							feature.properties.jml_dpt_perkk;
-						document.getElementById("jml-pemilih-perempuan").textContent =
-							feature.properties.jml_dpt_perempuan;
-						document.getElementById("jml-pemilih-muda").textContent =
-							feature.properties.jml_dpt_muda;
-						document.getElementById("jml-tps").textContent =
-							feature.properties.jml_tps;
-						document.getElementById("zonasi").textContent = feature.properties.zonasi;
-
-						if (feature.properties.level === 4) {
-							document.getElementById("row-number-of-kel").style.display =
-								"table-row";
-							document.getElementById("number-of-kel").textContent =
-								feature.properties.jml_kel;
-							document.getElementById("row-number-of-desa").style.display =
-								"table-row";
-							document.getElementById("number-of-desa").textContent =
-								feature.properties.jml_desa;
-							document.getElementById("row-number-of-kec").style.display = "none";
-						} else if (feature.properties.level === 5) {
-							document.getElementById("row-number-of-kec").style.display = "none";
-							document.getElementById("row-number-of-kel").style.display = "none";
-							document.getElementById("row-number-of-desa").style.display = "none";
-						}
+						showDataTooltip(feature.properties);
 
 						// Optional: Highlight the hovered province area
 						e.target.setStyle({
@@ -626,9 +527,7 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 			// render tabular data
 			fetchTableData(frm, currentLevel, code);
 
-			if (locationLabel && locationLabel.getContainer()) {
-				locationLabel.getContainer().innerHTML = `<h2>${parentName}</h2>`;
-			}
+			setLocationLabel(`${parentType} ${parentName}`);
 		})
 		.catch((error) => {
 			console.error("Error fetching provinces:", error);
@@ -637,76 +536,86 @@ function fetchProvinces(frm, map, code, provinceMarkers) {
 }
 
 function fetchCities(frm, map, code, provinceMarkers) {
-	// Remove all province markers from the map
-	provinceMarkers.forEach((marker) => {
-		map.removeLayer(marker);
+	provinceMarkers.forEach((marker) => map.removeLayer(marker));
+	provinceMarkers = [];
+	map.eachLayer((layer) => {
+		if (layer instanceof L.GeoJSON) map.removeLayer(layer);
 	});
-	provinceMarkers = []; // Clear the array
-
-	// Remove the province layer from the map
-	if (provinceLayer) {
-		map.removeLayer(provinceLayer);
-	}
 
 	currentLevel = 4;
-
 	const url = `polmark_dashboard.api.geojson.get_geojson_data?region=${code}`;
+
 	fetchGeoJsonData(url)
 		.then((geoJson) => {
-			console.log("geojson city: ", geoJson);
+			if (!geoJson || geoJson.features.length === 0) {
+				console.error("No valid city data found");
+				map.setView(provinceDefaultView, 5);
+				return;
+			}
+
+			// console.log("geojson city: ", geoJson);
 
 			let parentName = "";
+			let parentType = "";
+
 			cityLayer = L.geoJSON(geoJson, {
 				style: applyStyle,
 				onEachFeature: function (feature, layer) {
-					// get region parent name
 					parentName = feature.properties.parent_name;
+					parentType = feature.properties.parent_type;
 
-					// Custom events for cities
-					let marker = L.marker(layer.getBounds().getCenter(), {
+					const marker = L.marker(layer.getBounds().getCenter(), {
 						icon: L.divIcon({
-							className: "province-label",
-							html: `<div class="peta-label-content">
-                      <span class="peta-label-text">${feature.properties.name}</span>
-                      </div>`,
+							className: "city-label",
+							html: `<div class="peta-label-content"><span class="peta-label-text">${feature.properties.name}</span></div>`,
 						}),
 					}).addTo(map);
 
 					// Add marker to the array
 					cityMarkers.push(marker);
 
-					showPopup(layer, feature);
+					layer.on("click", () => {
+						document.getElementById("databox-tooltip").style.display = "none";
+					});
+
+					layer.on("mouseover", function (e) {
+						// Show the tooltip
+						let tooltip = document.getElementById("databox-tooltip");
+						tooltip.style.display = "block";
+
+						// Populate the tooltip with data from the GeoJSON
+						showDataTooltip(feature.properties);
+
+						// Optional: Highlight the hovered province area
+						e.target.setStyle({
+							weight: 3,
+							color: "#666",
+							fillOpacity: 0.7,
+						});
+					});
+
+					layer.on("mouseout", function (e) {
+						// Hide the tooltip
+						let tooltip = document.getElementById("databox-tooltip");
+						tooltip.style.display = "none";
+
+						// Reset style
+						e.target.setStyle({
+							weight: 1,
+							color: "#3388ff",
+							fillOpacity: 0.5,
+						});
+					});
 				},
 			}).addTo(map);
 
-			// map.addLayer(cityLayer);
 			map.fitBounds(cityLayer.getBounds());
 			document.querySelector(".back-button").style.display = "block"; // Show back button
 
 			cityDefaultView = map.getCenter();
 
-			// render tabular data
 			fetchTableData(frm, currentLevel, code);
-
-			if (locationLabel && locationLabel.getContainer()) {
-				locationLabel.getContainer().innerHTML = `<h2>${parentName}</h2>`;
-			}
+			setLocationLabel(`${parentType} ${parentName}`);
 		})
 		.catch((error) => console.error("Error fetching cities:", error));
-}
-
-function fetchTableData(frm, level, region) {
-	const url = `polmark_dashboard.api.tabular.get_tabular_data?region=${region}`;
-	frappe.call({
-		method: url,
-		args: {
-			// any parameters you need to pass
-		},
-		callback: function (response) {
-			if (response.message) {
-				data = response.message;
-				renderTable(frm, level, data);
-			}
-		},
-	});
 }

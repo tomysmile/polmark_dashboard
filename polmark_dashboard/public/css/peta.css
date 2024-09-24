@@ -122,10 +122,9 @@
 }
 
 .back-button {
-	top: 10px;
-	right: 10px;
+	left: 2px;
 	background-color: white;
-	padding: 10px;
+	padding: 4px;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
@@ -145,30 +144,25 @@
 	padding: 8px;
 }
 
-.location-label {
-	/* position: absolute; */
-	top: 10px;
-	bottom: 25px;
-	right: 10px;
-	/* left: 50%; */
-	/* transform: translateX(-50%); */
+.location-label-container {
+	top: 4px;
 	z-index: 1000;
 	background: rgba(255, 255, 255, 0.8);
 	padding: 10px;
 	border-radius: 5px;
-	font-size: 18px;
 	text-align: center;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.location-label h2 {
+.location-label-container .map-title {
 	margin: 0;
-	font-size: 16px;
+	font-size: 1.2em;
+	font-weight: bolder;
 }
 
 #databox-tooltip {
 	font-family: Arial, sans-serif;
-	font-size: 11px;
+	font-size: 0.85em;
 	background-color: rgba(255, 255, 255, 0.9);
 	/* Slight transparency */
 	border-radius: 5px;

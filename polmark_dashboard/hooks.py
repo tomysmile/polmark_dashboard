@@ -51,7 +51,10 @@ app_include_css = [
     "/assets/polmark_dashboard/css/leaflet.fullscreen/leaflet.fullscreen.css",
 ]
 
-app_include_js = ["/assets/polmark_dashboard/js/Leaflet.fullscreen.min.js"]
+app_include_js = [
+    "/assets/polmark_dashboard/js/patch-leaflet.js",
+    "/assets/polmark_dashboard/js/Leaflet.fullscreen.min.js"
+]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/polmark_dashboard/css/polmark_dashboard.css"
