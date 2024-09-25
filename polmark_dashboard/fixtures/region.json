@@ -7702,20 +7702,6 @@
  {
   "docstatus": 0,
   "doctype": "Region",
-  "level": "2",
-  "modified": "2024-09-13 17:44:20.323007",
-  "name": "11",
-  "parent_code": 1,
-  "parent_name": "INDONESIA",
-  "parent_type": "Negara",
-  "region_code": "11",
-  "region_name": "ACEH",
-  "region_type": "Provinsi",
-  "standard": 1
- },
- {
-  "docstatus": 0,
-  "doctype": "Region",
   "level": "3",
   "modified": "2024-09-13 17:44:20.630980",
   "name": "1110",
@@ -7725,6 +7711,20 @@
   "region_code": "1110",
   "region_name": "ACEH SINGKIL",
   "region_type": "Kabupaten",
+  "standard": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Region",
+  "level": "2",
+  "modified": "2024-09-13 17:44:20.323007",
+  "name": "11",
+  "parent_code": 1,
+  "parent_name": "INDONESIA",
+  "parent_type": "Negara",
+  "region_code": "11",
+  "region_name": "ACEH",
+  "region_type": "Provinsi",
   "standard": 1
  },
  {
