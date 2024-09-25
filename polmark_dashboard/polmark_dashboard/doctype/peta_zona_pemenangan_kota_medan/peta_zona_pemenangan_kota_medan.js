@@ -1,7 +1,7 @@
 // Copyright (c) 2024, thinkspedia and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Peta Zona Pemenangan Kab Bekasi", {
+frappe.ui.form.on("Peta Zona Pemenangan Kota Medan", {
 	refresh(frm) {
 		frm.set_df_property("map_html", "hidden", frm.is_new() ? 1 : 0);
 	},
