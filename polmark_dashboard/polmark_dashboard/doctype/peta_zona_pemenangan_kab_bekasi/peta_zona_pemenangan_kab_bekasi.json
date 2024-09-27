@@ -1,38 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-09-24 18:13:46.329830",
+ "creation": "2024-09-27 15:20:39.697634",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "region",
-  "region_name",
+  "name1",
   "standard",
-  "column_break_ftfd",
+  "column_break_ruha",
   "region_type",
   "region_level",
-  "parent_code",
-  "section_break_nnth",
+  "column_break_dcgv",
+  "provinsi",
+  "section_break_lguf",
   "map_html",
-  "tab_2_tab",
+  "tabel_tab",
   "data_table_wrapper"
  ],
  "fields": [
-  {
-   "fieldname": "region",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Region",
-   "options": "Region",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "region.region_name",
-   "fieldname": "region_name",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Name"
-  },
   {
    "default": "0",
    "fieldname": "standard",
@@ -40,53 +26,73 @@
    "label": "Standard"
   },
   {
-   "fetch_from": "region.region_type",
-   "fieldname": "region_type",
-   "fieldtype": "Read Only",
-   "label": "Region Type"
-  },
-  {
-   "fieldname": "column_break_ftfd",
+   "fieldname": "column_break_ruha",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "region.level",
-   "fieldname": "region_level",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Region Level"
+   "fieldname": "tabel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tabel"
   },
   {
-   "fetch_from": "region.parent_code",
-   "fieldname": "parent_code",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Parent Code"
+   "fieldname": "data_table_wrapper",
+   "fieldtype": "HTML",
+   "label": "Data Table"
   },
   {
-   "fieldname": "section_break_nnth",
+   "fieldname": "section_break_lguf",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "map_html",
    "fieldtype": "HTML",
+   "hidden": 1,
    "label": "Map HTML"
   },
   {
-   "fieldname": "data_table_wrapper",
-   "fieldtype": "HTML",
-   "label": "Data Table Wrapper"
+   "fetch_from": "kd_wilayah.province_name",
+   "fieldname": "provinsi",
+   "fieldtype": "Read Only",
+   "label": "Provinsi"
   },
   {
-   "fieldname": "tab_2_tab",
-   "fieldtype": "Tab Break",
-   "label": "Table Data"
+   "fieldname": "column_break_dcgv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Wilayah",
+   "options": "Region",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "region.region_level",
+   "fieldname": "region_level",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Level"
+  },
+  {
+   "fetch_from": "region.region_type",
+   "fieldname": "region_type",
+   "fieldtype": "Read Only",
+   "label": "Type"
+  },
+  {
+   "fetch_from": "region.region_name",
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Name"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-09-24 18:37:24.483643",
+ "modified": "2024-09-27 15:39:30.310098",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Peta Zona Pemenangan Kab Bekasi",
@@ -99,23 +105,6 @@
    "print": 1,
    "read": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "role": "All",
-   "share": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "role": "Polmark Dashboard Manager",
    "share": 1,
    "write": 1
   }
