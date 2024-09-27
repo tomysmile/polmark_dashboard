@@ -1,7 +1,7 @@
 // Copyright (c) 2024, thinkspedia and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("Peta Zona Pemenangan Kab Bekasi", {
+frappe.ui.form.on("Peta Zona Pemenangan Prov Sumut", {
 	refresh(frm) {
 		frm.set_df_property("map_html", "hidden", frm.doc.region ? 0 : 1);
 	},
@@ -596,6 +596,8 @@ function fetchGeoJsonDataByRegion({
 
 	parentMapLevel = level;
 	currentMapLevel = parseInt(level);
+
+	console.log("url: ", url);
 
 	fetchGeoJsonData(url)
 		.then((geoJson) => {
