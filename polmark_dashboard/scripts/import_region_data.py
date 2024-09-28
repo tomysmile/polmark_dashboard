@@ -21,42 +21,25 @@ def insert_to_database(doctype, file_path):
         region_name = item.get("region_name")
         region_type = item.get("region_type")
         region_code = item.get("region_code")
-        region_code_bps = item.get("region_code_bps")
         region_level = int(item.get("region_level"))
+        data_source = item.get("data_source")
         parent_name = item.get("parent_name")
         parent_type = item.get("parent_type")
         parent_code = item.get("parent_code")
-        parent_code_bps = item.get("parent_code_bps")
-        parent_level = item.get("parent_level")
-        if (parent_level is None or parent_level == "") and region_level > 1:
-            parent_level = region_level - 1
         if parent_type == "Negara":
             parent_code = "1"
-            parent_code_bps = "1"
-
-        province_name = item.get("province_name")
-        city_name = item.get("city_name")
-        district_name = item.get("district_name")
-        sub_district_name = item.get("sub_district_name")
-        data_source = item.get("data_source")
-
+        parent_level = int(item.get("parent_level"))
         doc = frappe.get_doc(
             {
                 "doctype": doctype,
                 "region_name": region_name,
                 "region_type": region_type,
                 "region_code": region_code,
-                "region_code_bps": region_code_bps,
                 "region_level": region_level,
                 "parent_name": parent_name,
                 "parent_type": parent_type,
                 "parent_code": parent_code,
-                "parent_code_bps": parent_code_bps,
                 "parent_level": parent_level,
-                "province_name": province_name,
-                "city_name": city_name,
-                "district_name": district_name,
-                "sub_district_name": sub_district_name,
                 "data_source": data_source,
                 "standard": 1
             }

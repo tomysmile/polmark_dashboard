@@ -1,0 +1,377 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:region_code",
+ "creation": "2024-09-28 13:58:54.518278",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region_code",
+  "bps_code",
+  "region_name",
+  "region_type",
+  "level",
+  "standard",
+  "column_break_setg",
+  "parent_code",
+  "parent_name",
+  "parent_type",
+  "dapil_dpr_ri",
+  "data_source",
+  "section_break_mumf",
+  "provinsi",
+  "kd_provinsi",
+  "zonasi_provinsi",
+  "column_break_ftih",
+  "kokab",
+  "kd_kokab",
+  "zonasi_kokab",
+  "column_break_fqdv",
+  "kecamatan",
+  "kd_kec",
+  "zonasi_kec",
+  "column_break_fdbc",
+  "kelurahan",
+  "kd_kel",
+  "zonasi_kel",
+  "section_break_ygvg",
+  "jml_kec",
+  "column_break_hxvq",
+  "jml_kel",
+  "column_break_anvj",
+  "jml_desa",
+  "column_break_acxb",
+  "jml_tps",
+  "section_break_jxrk",
+  "jml_pend",
+  "jml_cde",
+  "dpthp_2024",
+  "column_break_mywz",
+  "jml_dpt",
+  "jml_kk",
+  "jml_dpt_perkk",
+  "column_break_hucg",
+  "jml_dpt_perempuan",
+  "jml_dpt_muda",
+  "jml_dpt_laki",
+  "column_break_jwei",
+  "zonasi",
+  "color",
+  "section_break_nkgf",
+  "geometry"
+ ],
+ "fields": [
+  {
+   "fieldname": "region_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "bps_code",
+   "fieldtype": "Data",
+   "label": "BPS Code"
+  },
+  {
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Level"
+  },
+  {
+   "default": "0",
+   "fieldname": "standard",
+   "fieldtype": "Check",
+   "label": "Standard"
+  },
+  {
+   "fieldname": "column_break_setg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Code"
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Name"
+  },
+  {
+   "fieldname": "parent_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Type"
+  },
+  {
+   "fieldname": "dapil_dpr_ri",
+   "fieldtype": "Data",
+   "label": "Dapil DPR RI"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Source"
+  },
+  {
+   "fieldname": "section_break_mumf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "provinsi",
+   "fieldtype": "Data",
+   "label": "Provinsi"
+  },
+  {
+   "fieldname": "kd_provinsi",
+   "fieldtype": "Read Only",
+   "label": "Kode Provinsi"
+  },
+  {
+   "fieldname": "zonasi_provinsi",
+   "fieldtype": "Data",
+   "label": "Zonasi Provinsi"
+  },
+  {
+   "fieldname": "column_break_ftih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kokab",
+   "fieldtype": "Data",
+   "label": "Kota / Kabupaten"
+  },
+  {
+   "fieldname": "kd_kokab",
+   "fieldtype": "Read Only",
+   "label": "Kode Kokab"
+  },
+  {
+   "fieldname": "zonasi_kokab",
+   "fieldtype": "Data",
+   "label": "Zonasi Kokab"
+  },
+  {
+   "fieldname": "column_break_fqdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kecamatan",
+   "fieldtype": "Data",
+   "label": "Kecamatan"
+  },
+  {
+   "fieldname": "kd_kec",
+   "fieldtype": "Read Only",
+   "label": "Kode Kec"
+  },
+  {
+   "fieldname": "zonasi_kec",
+   "fieldtype": "Data",
+   "label": "Zonasi Kecamatan"
+  },
+  {
+   "fieldname": "column_break_fdbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kelurahan",
+   "fieldtype": "Data",
+   "label": "Kelurahan / Desa"
+  },
+  {
+   "fieldname": "kd_kel",
+   "fieldtype": "Read Only",
+   "label": "Kode Kel"
+  },
+  {
+   "fieldname": "zonasi_kel",
+   "fieldtype": "Data",
+   "label": "Zonasi Kelurahan"
+  },
+  {
+   "fieldname": "section_break_ygvg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jml_kec",
+   "fieldtype": "Int",
+   "label": "Jumlah Kecamatan"
+  },
+  {
+   "fieldname": "column_break_hxvq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_kel",
+   "fieldtype": "Int",
+   "label": "Jumlah Kelurahan"
+  },
+  {
+   "fieldname": "column_break_anvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_desa",
+   "fieldtype": "Int",
+   "label": "Jumlah Desa"
+  },
+  {
+   "fieldname": "column_break_acxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_tps",
+   "fieldtype": "Int",
+   "label": "Jumlah TPS"
+  },
+  {
+   "fieldname": "section_break_jxrk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jml_pend",
+   "fieldtype": "Int",
+   "label": "Jumlah Penduduk"
+  },
+  {
+   "fieldname": "jml_cde",
+   "fieldtype": "Int",
+   "label": "Jumlah CDE"
+  },
+  {
+   "fieldname": "dpthp_2024",
+   "fieldtype": "Data",
+   "label": "DPTHP 2024"
+  },
+  {
+   "fieldname": "column_break_mywz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_dpt",
+   "fieldtype": "Int",
+   "label": "Jumlah Pemilih"
+  },
+  {
+   "fieldname": "jml_kk",
+   "fieldtype": "Int",
+   "label": "Jumlah KK"
+  },
+  {
+   "fieldname": "jml_dpt_perkk",
+   "fieldtype": "Float",
+   "label": "Pemilih per-KK"
+  },
+  {
+   "fieldname": "column_break_hucg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jml_dpt_perempuan",
+   "fieldtype": "Int",
+   "label": "Pemilih Perempuan"
+  },
+  {
+   "fieldname": "jml_dpt_muda",
+   "fieldtype": "Int",
+   "label": "Pemilih Muda"
+  },
+  {
+   "fieldname": "jml_dpt_laki",
+   "fieldtype": "Int",
+   "label": "Pemilih Laki-laki"
+  },
+  {
+   "fieldname": "column_break_jwei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zonasi",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Zonasi"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "section_break_nkgf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "geometry",
+   "fieldtype": "JSON",
+   "label": "Geometry"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-28 13:58:54.518278",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "Geojson Jawa Barat",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "region_name",
+ "track_changes": 1
+}

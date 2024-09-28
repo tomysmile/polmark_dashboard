@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-09-28 11:29:49.998404",
+ "creation": "2024-09-28 13:56:48.924244",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -32,7 +32,7 @@
    "fieldname": "region_name",
    "fieldtype": "Read Only",
    "hidden": 1,
-   "label": "Name"
+   "label": "Nama"
   },
   {
    "default": "0",
@@ -93,10 +93,10 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-09-28 13:53:23.441557",
+ "modified": "2024-09-28 13:56:48.924244",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Peta Zona Pemenangan Kab Bekasi",
+ "name": "Peta Zona Pemenangan Kota Medan",
  "owner": "Administrator",
  "permissions": [
   {
