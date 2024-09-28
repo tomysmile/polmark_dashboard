@@ -2,12 +2,12 @@
  {
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan Kab Bekasi",
-  "modified": "2024-09-24 18:36:34.719290",
+  "modified": "2024-09-27 15:37:23.528875",
   "name": "Peta Zona Pemenangan Kab Bekasi",
-  "parent_code": "32",
+  "name1": "BEKASI",
+  "provinsi": "JAWA BARAT",
   "region": "3216",
   "region_level": "3",
-  "region_name": "BEKASI",
   "region_type": "Kabupaten",
   "standard": 1
  }

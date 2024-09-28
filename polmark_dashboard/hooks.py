@@ -41,8 +41,11 @@ fixtures = [
     {"doctype": "Zona Pemenangan", "filters": [["standard", "=", 1]]},
     {"doctype": "Peta Zona Pemenangan", "filters": [["standard", "=", 1]]},
     {"doctype": "Peta Zona Pemenangan Kab Bekasi", "filters": [["standard", "=", 1]]},
-    {"doctype": "Peta Zona Pemenangan Kota Medan", "filters": [["standard", "=", 1]]},
-    {"doctype": "Peta Zona Pemenangan Prov Sumut", "filters": [["standard", "=", 1]]}
+    {"doctype": "Peta Zona Pemenangan Prov Sumut", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Prov DKI Jakarta", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Prov Jawa Barat", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Prov Sumatera Utara", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Prov Kalimantan Tengah", "filters": [["standard", "=", 1]]}
 ]
 
 
