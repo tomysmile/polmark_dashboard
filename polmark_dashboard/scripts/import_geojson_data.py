@@ -83,8 +83,6 @@ def insert_to_database(doctype, file_path):
             kelurahan = properties.get("p_sub_district_name")
             kd_kel = region_code
 
-        jml_pend_2020 = properties.get("jml_pend_2020")
-        luas_km2 = properties.get("luas_km2")
         jml_kk = properties.get("t_kk")
         jml_cde = properties.get("cde")
         jml_dpt_2024 = properties.get("t_pemilih")
@@ -124,8 +122,6 @@ def insert_to_database(doctype, file_path):
                 "kelurahan": kelurahan,
                 "kd_kel": kd_kel,
                 "geometry": geojson_str,
-                "jml_pend_2020": jml_pend_2020,
-                "luas_km2": luas_km2,
                 "jml_kec": jml_kecamatan,
                 "jml_kel": jml_kelurahan,
                 "jml_desa": jml_desa,
