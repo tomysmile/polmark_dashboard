@@ -11,13 +11,22 @@
   "region_type",
   "region_code",
   "region_level",
+  "region_fullname",
   "standard",
   "column_break_pgza",
   "parent_name",
   "parent_type",
   "parent_code",
   "parent_level",
-  "data_source"
+  "data_source",
+  "section_break_guhd",
+  "province_name",
+  "column_break_szjz",
+  "city_name",
+  "column_break_eeyu",
+  "district_name",
+  "column_break_styb",
+  "sub_district_name"
  ],
  "fields": [
   {
@@ -40,7 +49,9 @@
   {
    "fieldname": "region_type",
    "fieldtype": "Data",
-   "label": "Type"
+   "in_standard_filter": 1,
+   "label": "Type",
+   "reqd": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -89,13 +100,55 @@
   {
    "fieldname": "parent_level",
    "fieldtype": "Int",
+   "in_standard_filter": 1,
    "label": "Parent Level",
    "non_negative": 1
+  },
+  {
+   "fieldname": "region_fullname",
+   "fieldtype": "Data",
+   "label": "Fullname"
+  },
+  {
+   "fieldname": "section_break_guhd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "province_name",
+   "fieldtype": "Data",
+   "label": "Province Name"
+  },
+  {
+   "fieldname": "column_break_szjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city_name",
+   "fieldtype": "Data",
+   "label": "City Name"
+  },
+  {
+   "fieldname": "column_break_eeyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district_name",
+   "fieldtype": "Data",
+   "label": "District Name"
+  },
+  {
+   "fieldname": "column_break_styb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_district_name",
+   "fieldtype": "Data",
+   "label": "Sub District Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-28 11:38:16.966725",
+ "modified": "2024-09-28 18:02:58.780688",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region",
