@@ -135,55 +135,22 @@ def join_with_space_uppercase_first(word1, word2):
     return ""
 
 
-def import_province_data():
-    file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_provinsi.json"
-    )
-    doctype = "Region 2024"
-
-    # execute the function
-    insert_to_database(doctype, file_path)
-    print("GeoJSON Provinces data imported successfully!")
-
-
-def import_city_of_jawabarat_data():
-    file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_city_of_jawa_barat.json"
-    )
-    doctype = "Region 2024"
-
-    # execute the function
-    insert_to_database(doctype, file_path)
-    print("GeoJSON City data imported successfully!")
-
-
-def import_district_of_bekasi_data():
-    file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_kec_bekasi.json"
-    )
-    doctype = "Region 2024"
-
-    # execute the function
-    insert_to_database(doctype, file_path)
-    print("GeoJSON District data imported successfully!")
-
-
-def import_subdistrict_of_bekasi_data():
-    file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_keldesa_bekasi.json"
-    )
-    doctype = "Region 2024"
-
-    # execute the function
-    insert_to_database(doctype, file_path)
-    print("GeoJSON Subdistrict data imported successfully!")
-
-
 def import_dki_jakarta():
     file_path = frappe.get_app_path(
         "polmark_dashboard", "public", "data", "geojson_indonesia.dki_jakarta.json"
     )
     doctype = "Geojson DKI Jakarta"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
+    print("GeoJSON data imported successfully!")
+
+
+def import_kab_bekasi():
+    file_path = frappe.get_app_path(
+        "polmark_dashboard", "public", "data", "geojson_indonesia.kab_bekasi.json"
+    )
+    doctype = "Geojson Kab Bekasi"
 
     # execute the function
     insert_to_database(doctype, file_path)

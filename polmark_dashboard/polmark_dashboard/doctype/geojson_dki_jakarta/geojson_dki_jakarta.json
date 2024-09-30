@@ -242,7 +242,7 @@
   },
   {
    "fieldname": "province_code",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Kode Provinsi"
   },
   {
@@ -267,7 +267,7 @@
   },
   {
    "fieldname": "city_code",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Kode Kokab"
   },
   {
@@ -277,7 +277,7 @@
   },
   {
    "fieldname": "district_code",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Kode Kec"
   },
   {
@@ -287,7 +287,7 @@
   },
   {
    "fieldname": "sub_district_code",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Kode Kel"
   },
   {
@@ -452,7 +452,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-30 13:20:20.007488",
+ "modified": "2024-09-30 18:38:00.617449",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Geojson DKI Jakarta",
