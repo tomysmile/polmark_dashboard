@@ -2,13 +2,13 @@
  {
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan Kota Bandung",
-  "modified": null,
+  "modified": "2024-09-28 18:58:47.142604",
   "name": "Peta Zona Pemenangan Kota Bandung",
   "provinsi": null,
-  "region": null,
-  "region_level": null,
-  "region_name": null,
-  "region_type": null,
-  "standard": 0
+  "region": "3273",
+  "region_level": "3",
+  "region_name": "BANDUNG",
+  "region_type": "Kota",
+  "standard": 1
  }
 ]

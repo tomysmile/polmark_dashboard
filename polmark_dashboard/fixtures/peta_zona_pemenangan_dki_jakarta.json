@@ -2,13 +2,12 @@
  {
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan DKI Jakarta",
-  "modified": null,
+  "modified": "2024-09-28 18:57:45.104444",
   "name": "Peta Zona Pemenangan DKI Jakarta",
-  "provinsi": null,
-  "region": null,
-  "region_level": null,
-  "region_name": null,
-  "region_type": null,
-  "standard": 0
+  "region": "31",
+  "region_level": "2",
+  "region_name": "DKI JAKARTA",
+  "region_type": "Provinsi",
+  "standard": 1
  }
 ]

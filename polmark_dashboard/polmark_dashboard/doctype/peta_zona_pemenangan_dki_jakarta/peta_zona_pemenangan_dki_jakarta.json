@@ -12,7 +12,6 @@
   "region_type",
   "column_break_dcgv",
   "region_level",
-  "provinsi",
   "section_break_lguf",
   "map_html",
   "tabel_tab",
@@ -24,6 +23,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Wilayah",
+   "link_filters": "[[\"Region\", \"region_level\", \"in\", [2, 3]]]",
    "options": "Region",
    "reqd": 1
   },
@@ -62,13 +62,6 @@
    "label": "Level"
   },
   {
-   "fetch_from": "kd_wilayah.province_name",
-   "fieldname": "provinsi",
-   "fieldtype": "Read Only",
-   "hidden": 1,
-   "label": "Provinsi"
-  },
-  {
    "fieldname": "section_break_lguf",
    "fieldtype": "Section Break"
   },
@@ -93,7 +86,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-09-28 13:54:00.499782",
+ "modified": "2024-09-30 13:40:34.536028",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Peta Zona Pemenangan DKI Jakarta",

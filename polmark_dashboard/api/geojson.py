@@ -8,7 +8,7 @@ def build_geojson(data):
 
     for region in data:
         # Convert 'geometry' field from string to JSON (if needed)
-        geometry_full_data = json.loads(region.get("geometry", "{}"))
+        geometry_full_data = json.loads(region.get("geojson", "{}"))
 
         # Build each feature
         feature = {
@@ -18,28 +18,47 @@ def build_geojson(data):
                 "region_name": region.get("region_name"),
                 "region_code": region.get("region_code"),
                 "region_type": region.get("region_type"),
-                "level": region.get("level"),
+                "region_level": region.get("region_level"),
+                "region_fullname": region.get("region_fullname"),
+                "region_code_bps": region.get("region_code_bps"),
                 "parent_code": region.get("parent_code"),
+                "parent_code_bps": region.get("parent_code_bps"),
                 "parent_name": region.get("parent_name"),
                 "parent_type": region.get("parent_type"),
+                "parent_level": region.get("parent_level"),
                 "data_source": region.get("data_source"),
                 "dapil_dpr_ri": region.get("dapil_dpr_ri"),
+                "zonasi": region.get("zone"),
                 "color": region.get("color"),
-                "jml_kec": region.get("jml_kec"),
-                "jml_kel": region.get("jml_kel"),
-                "jml_desa": region.get("jml_desa"),
-                "jml_tps": region.get("jml_tps"),
-                "jml_kk": region.get("jml_kk"),
-                "jml_dpt": region.get("jml_dpt"),
-                "jml_dpt_perkk": region.get("jml_dpt_perkk"),
-                "jml_dpt_perempuan": region.get("jml_dpt_perempuan"),
-                "jml_dpt_laki": region.get("jml_dpt_laki"),
-                "jml_dpt_muda": region.get("jml_dpt_muda"),
-                "jml_cde": region.get("jml_cde"),
-                "jml_pend": region.get("jml_pend"),
-                "zonasi": region.get("zonasi"),
-                "jml_pend_2020": region.get("jml_pend_2020"),
-                "luas_km2": region.get("luas_km2"),
+                "province_name": region.get("province_name"),
+                "province_code": region.get("province_code"),
+                "province_zone": region.get("province_zone"),
+                "city_name": region.get("city_name"),
+                "city_code": region.get("city_code"),
+                "city_zone": region.get("city_zone"),
+                "district_name": region.get("district_name"),
+                "district_code": region.get("district_code"),
+                "district_zone": region.get("district_zone"),
+                "sub_district_name": region.get("sub_district_name"),
+                "sub_district_code": region.get("sub_district_code"),
+                "sub_district_zone": region.get("sub_district_zone"),
+                "jml_kec": region.get("num_district"),
+                "jml_kel": region.get("num_sub_district_kelurahan"),
+                "jml_desa": region.get("num_sub_district_desa"),
+                "jml_tps": region.get("num_tps"),
+                "jml_kk": region.get("num_family"),
+                "jml_dpt": region.get("num_voter"),
+                "jml_dpt_perkk": region.get("num_voter_per_family"),
+                "jml_dpt_perempuan": region.get("num_voter_women"),
+                "jml_dpt_laki": region.get("num_voter_men"),
+                "jml_dpt_muda": region.get("num_voter_young"),
+                "jml_cde": region.get("num_cde"),
+                "jml_pend": region.get("num_citizen"),
+                "jml_dpthp2": region.get("num_voter_dpthp2"),
+                "jml_dpthp2_perkk": region.get("num_voter_per_family_dpthp2"),
+                "jml_dpthp2_perempuan": region.get("num_voter_women_dpthp2"),
+                "jml_dpthp2_laki": region.get("num_voter_men_dpthp2"),
+                "jml_dpthp2_muda": region.get("num_voter_young_dpthp2"),
             },
             "geometry": geometry_full_data.get("geometry"),
         }
@@ -50,62 +69,14 @@ def build_geojson(data):
 
 
 @frappe.whitelist(allow_guest=True)
-def get_provinces(province_id=None, parent_id=None):
-    filters = []
-
-    if province_id:
-        filters.append(["region_code", "=", province_id])
-    if parent_id:
-        filters.append(["parent_code", "=", parent_id])
-
-    # Retrieve province data from your Doctype
-    regions = frappe.get_all(
-        "Region Province", filters=filters if filters else None, fields=["*"]
-    )
-    geojson = build_geojson(regions)
-    return geojson
-
-
-@frappe.whitelist(allow_guest=True)
-def get_cities(province_id):
-    # Query for cities based on province_id
-    regions = frappe.get_all(
-        "Region City", filters={"parent_code": province_id}, fields=["*"]
-    )
-    geojson = build_geojson(regions)
-    return geojson
-
-
-@frappe.whitelist(allow_guest=True)
-def get_districts(city_id):
-    # Query for districts based on city_id
-    regions = frappe.get_all(
-        "Region District", filters={"parent_code": city_id}, fields=["*"]
-    )
-    geojson = build_geojson(regions)
-    return geojson
-
-
-@frappe.whitelist(allow_guest=True)
-def get_subdistricts(district_id):
-    # Query for districts based on city_id
-    regions = frappe.get_all(
-        "Region Subdistrict", filters={"parent_code": district_id}, fields=["*"]
-    )
-    geojson = build_geojson(regions)
-    return geojson
-
-
-@frappe.whitelist(allow_guest=True)
-def get_geojson_data(region=None):
+def get_geojson_data_by_region(region=None, region_code=None, region_level=None):
     # Fetch GeoJSON data based on the region (province, city, etc.)
     filters = {}
-
-    if region:
-        filters = {"parent_code": region}
-    else:
-        filters = {"parent_code": "1"}  # show indonesia map
-
-    regions = frappe.get_all("Region 2024", filters=filters, fields=["*"])
+    if int(region_level) == 3:
+        filters = {"province_code": region_code, "region_level": region_level}
+    elif int(region_level) > 3:
+        filters = {"parent_code": region_code, "region_level": region_level}
+    regiontable = "Geojson" + " " + region
+    regions = frappe.get_all(regiontable, filters=filters, fields=["*"])
     geojson = build_geojson(regions)
     return geojson

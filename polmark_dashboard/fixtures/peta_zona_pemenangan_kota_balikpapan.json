@@ -2,13 +2,13 @@
  {
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan Kota Balikpapan",
-  "modified": null,
+  "modified": "2024-09-28 18:58:33.599069",
   "name": "Peta Zona Pemenangan Kota Balikpapan",
   "provinsi": null,
-  "region": null,
-  "region_level": null,
-  "region_name": null,
-  "region_type": null,
-  "standard": 0
+  "region": "6471",
+  "region_level": "3",
+  "region_name": "BALIKPAPAN",
+  "region_type": "Kota",
+  "standard": 1
  }
 ]

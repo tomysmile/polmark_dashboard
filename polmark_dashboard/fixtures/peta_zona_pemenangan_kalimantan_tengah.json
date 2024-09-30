@@ -2,13 +2,13 @@
  {
   "docstatus": 0,
   "doctype": "Peta Zona Pemenangan Kalimantan Tengah",
-  "modified": null,
+  "modified": "2024-09-28 18:58:18.301326",
   "name": "Peta Zona Pemenangan Kalimantan Tengah",
   "provinsi": null,
-  "region": null,
-  "region_level": null,
-  "region_name": null,
-  "region_type": null,
-  "standard": 0
+  "region": "62",
+  "region_level": "2",
+  "region_name": "KALIMANTAN TENGAH",
+  "region_type": "Provinsi",
+  "standard": 1
  }
 ]

@@ -148,7 +148,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-28 18:02:58.780688",
+ "modified": "2024-09-28 18:57:11.516221",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region",
@@ -193,6 +193,6 @@
  "sort_field": "region_code",
  "sort_order": "ASC",
  "states": [],
- "title_field": "region_name",
+ "title_field": "region_fullname",
  "track_changes": 1
 }

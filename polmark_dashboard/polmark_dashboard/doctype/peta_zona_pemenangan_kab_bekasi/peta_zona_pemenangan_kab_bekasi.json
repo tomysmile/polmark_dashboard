@@ -24,6 +24,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Wilayah",
+   "link_filters": "[[\"Region\", \"region_level\", \"in\", [2, 3]]]",
    "options": "Region",
    "reqd": 1
   },
@@ -93,7 +94,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-09-28 13:53:23.441557",
+ "modified": "2024-09-28 18:56:19.976512",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Peta Zona Pemenangan Kab Bekasi",
