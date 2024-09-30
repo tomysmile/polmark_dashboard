@@ -53,7 +53,8 @@ fixtures = [
     {"doctype": "Geojson Jawa Barat", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson Sumatera Utara", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson Kalimantan Tengah", "filters": [["standard", "=", 1]]},
-    {"doctype": "Geojson Kota Balikpapan", "filters": [["standard", "=", 1]]}
+    {"doctype": "Geojson Kota Balikpapan", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Kab Bekasi", "filters": [["standard", "=", 1]]}
 ]
 
 
