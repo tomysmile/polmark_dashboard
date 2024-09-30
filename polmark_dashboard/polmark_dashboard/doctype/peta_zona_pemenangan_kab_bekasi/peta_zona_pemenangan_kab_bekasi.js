@@ -8,7 +8,7 @@ frappe.ui.form.on("Peta Zona Pemenangan Kab Bekasi", {
 	onload: function (frm) {
 		$(document).ready(() => {
 			if (!frm.is_new()) {
-				frm.disable_save();
+				// frm.disable_save();
 				setTimeout(() => initializeLeafletMap(frm), 0);
 			}
 		});
