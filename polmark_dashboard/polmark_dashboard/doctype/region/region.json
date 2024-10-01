@@ -116,6 +116,7 @@
   {
    "fieldname": "province_name",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Province Name"
   },
   {
@@ -125,6 +126,7 @@
   {
    "fieldname": "city_name",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "City Name"
   },
   {
@@ -134,6 +136,7 @@
   {
    "fieldname": "district_name",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "District Name"
   },
   {
@@ -143,12 +146,13 @@
   {
    "fieldname": "sub_district_name",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Sub District Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-28 18:57:11.516221",
+ "modified": "2024-10-01 10:25:21.469144",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Region",

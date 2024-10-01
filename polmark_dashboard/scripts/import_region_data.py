@@ -59,7 +59,7 @@ def insert_to_database(doctype, file_path):
                 "district_name": district_name,
                 "sub_district_name": sub_district_name,
                 "data_source": data_source,
-                "standard": 1
+                "standard": 1,
             }
         )
         doc.insert()
@@ -73,10 +73,17 @@ def remove_region_type(region_name):
     if isinstance(region_name, str) and region_name.strip():
         words = region_name.split()
         # Check if the first word is "KOTA" or "KABUPATEN" (case-insensitive)
-        if words[0].upper() in ["PROVINSI", "KOTA", "KABUPATEN", "KECAMATAN", "KELURAHAN", "DESA"]:
+        if words[0].upper() in [
+            "PROVINSI",
+            "KOTA",
+            "KABUPATEN",
+            "KECAMATAN",
+            "KELURAHAN",
+            "DESA",
+        ]:
             words = words[1:]  # Remove the first word
         # Join the words and strip any extra leading or trailing spaces
-        return ' '.join(words).strip()
+        return " ".join(words).strip()
     return region_name.strip()
 
 
@@ -112,7 +119,10 @@ def region_province_all():
 
 def region_kokab_all():
     file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_kokab_DKI_JABAR_KALTENG_KALTIM_SUMUT.json"
+        "polmark_dashboard",
+        "public",
+        "data",
+        "region_kokab_DKI_JABAR_KALTENG_KALTIM_SUMUT.json",
     )
     doctype = "Region"
 
@@ -123,7 +133,10 @@ def region_kokab_all():
 
 def region_kec_all():
     file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_kecamatan_DKI_JABAR_KALTENG_KALTIM_SUMUT.json"
+        "polmark_dashboard",
+        "public",
+        "data",
+        "region_kecamatan_DKI_JABAR_KALTENG_KALTIM_SUMUT.json",
     )
     doctype = "Region"
 
@@ -134,7 +147,10 @@ def region_kec_all():
 
 def region_desa_all():
     file_path = frappe.get_app_path(
-        "polmark_dashboard", "public", "data", "region_desa_DKI_JABAR_KALTENG_KALTIM_SUMUT.json"
+        "polmark_dashboard",
+        "public",
+        "data",
+        "region_desa_DKI_JABAR_KALTENG_KALTIM_SUMUT.json",
     )
     doctype = "Region"
 
