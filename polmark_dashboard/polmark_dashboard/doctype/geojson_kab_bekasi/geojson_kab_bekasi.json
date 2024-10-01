@@ -77,6 +77,17 @@
   "column_break_hmue",
   "num_voter_women_dpthp2",
   "num_voter_men_dpthp2",
+  "canvassing_section",
+  "target_voter",
+  "visited_voter",
+  "percentage_target_voter",
+  "column_break_jnzy",
+  "target_visited_kk",
+  "volunteer",
+  "column_break_eyev",
+  "total_baliho",
+  "total_spanduk",
+  "partisipasi_80",
   "section_break_nkgf",
   "geojson"
  ],
@@ -447,12 +458,65 @@
    "fieldname": "geojson",
    "fieldtype": "JSON",
    "label": "Geojson"
+  },
+  {
+   "fieldname": "canvassing_section",
+   "fieldtype": "Section Break",
+   "label": "CANVASSING"
+  },
+  {
+   "fieldname": "target_voter",
+   "fieldtype": "Int",
+   "label": "Target Voter"
+  },
+  {
+   "fieldname": "visited_voter",
+   "fieldtype": "Int",
+   "label": "Visited Voter"
+  },
+  {
+   "fieldname": "percentage_target_voter",
+   "fieldtype": "Float",
+   "label": "Percentage Target Voter"
+  },
+  {
+   "fieldname": "column_break_jnzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_visited_kk",
+   "fieldtype": "Int",
+   "label": "Target Visited KK"
+  },
+  {
+   "fieldname": "volunteer",
+   "fieldtype": "Int",
+   "label": "Volunteer"
+  },
+  {
+   "fieldname": "column_break_eyev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_baliho",
+   "fieldtype": "Int",
+   "label": "Total Baliho"
+  },
+  {
+   "fieldname": "total_spanduk",
+   "fieldtype": "Int",
+   "label": "Total Spanduk"
+  },
+  {
+   "fieldname": "partisipasi_80",
+   "fieldtype": "Int",
+   "label": "Partisipasi 80"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-30 18:37:39.538651",
+ "modified": "2024-10-01 17:23:05.870708",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Geojson Kab Bekasi",

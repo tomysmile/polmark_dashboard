@@ -40,11 +40,13 @@ fixtures = [
     {"doctype": "Peta Zona Pemenangan Kota Bogor", "filters": [["standard", "=", 1]]},
     {"doctype": "Peta Zona Pemenangan Kota Medan", "filters": [["standard", "=", 1]]},
     {"doctype": "Peta Zona Pemenangan Kota Balikpapan", "filters": [["standard", "=", 1]]},
+    {"doctype": "Peta Zona Pemenangan Kota Bandung", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson DKI Jakarta", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson Kab Bekasi", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson Kota Bogor", "filters": [["standard", "=", 1]]},
     {"doctype": "Geojson Kota Medan", "filters": [["standard", "=", 1]]},
-    {"doctype": "Geojson Kota Balikpapan", "filters": [["standard", "=", 1]]}
+    {"doctype": "Geojson Kota Balikpapan", "filters": [["standard", "=", 1]]},
+    {"doctype": "Geojson Kota Bandung", "filters": [["standard", "=", 1]]}
 ]
 
 

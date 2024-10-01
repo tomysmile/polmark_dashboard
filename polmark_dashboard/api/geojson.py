@@ -63,7 +63,10 @@ def build_geojson(data):
                 "jml_pemilih_terkunjungi": region.get("visited_voter"),
                 "jml_target_kk_terkunjungi": region.get("target_visited_kk"),
                 "jml_target_suara": region.get("target_voter"),
-                "jml_percentage_target_suara": region.get("percentage_target_voter")
+                "jml_percentage_target_suara": region.get("percentage_target_voter"),
+                "jml_partisipasi_80": region.get("partisipasi_80"),
+                "jml_total_baliho": region.get("total_baliho"),
+                "jml_total_spanduk": region.get("total_spanduk")
             },
             "geometry": geometry_full_data.get("geometry"),
         }

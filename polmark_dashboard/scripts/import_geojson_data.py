@@ -85,6 +85,9 @@ def insert_to_database(doctype, file_path):
                 "visited_voter": item.get("visited_voter"),
                 "percentage_target_voter": item.get("percentage_target_voter"),
                 "target_visited_kk": item.get("target_visited_kk"),
+                "partisipasi_80": item.get("partisipasi_80"),
+                "total_baliho": item.get("total_baliho"),
+                "total_spanduk": item.get("total_spanduk"),
                 "geojson": geojson_str,
                 "standard": 1,
             }
@@ -189,6 +192,17 @@ def import_kota_balikpapan():
         "polmark_dashboard", "public", "data", "geojson_indonesia.kota_balikpapan.json"
     )
     doctype = "Geojson Kota Balikpapan"
+
+    # execute the function
+    insert_to_database(doctype, file_path)
+    print("GeoJSON data imported successfully!")
+
+
+def import_kota_bandung():
+    file_path = frappe.get_app_path(
+        "polmark_dashboard", "public", "data", "geojson_indonesia.kota_bandung.json"
+    )
+    doctype = "Geojson Kota Bandung"
 
     # execute the function
     insert_to_database(doctype, file_path)
