@@ -598,13 +598,17 @@ function initializeLeafletMap(frmInstance) {
 		document.getElementById("jml-tps").textContent = data.jml_tps;
 		document.getElementById("zonasi").textContent = data.zonasi;
 
-		if (parseInt(data.level) === CONST_DISTRICT_LEVEL) {
+		if (parseInt(data.region_level) === CONST_CITY_LEVEL) {
+			document.getElementById("row-number-of-kec").style.display = "table-row";
+			document.getElementById("number-of-kec").textContent = data.jml_kec;
+		}
+		else if (parseInt(data.region_level) === CONST_DISTRICT_LEVEL) {
 			document.getElementById("row-number-of-kel").style.display = "table-row";
 			document.getElementById("number-of-kel").textContent = data.jml_kel;
 			document.getElementById("row-number-of-desa").style.display = "table-row";
 			document.getElementById("number-of-desa").textContent = data.jml_desa;
 			document.getElementById("row-number-of-kec").style.display = "none";
-		} else if (parseInt(data.level) === CONST_SUBDISTRICT_LEVEL) {
+		} else if (parseInt(data.region_level) === CONST_SUBDISTRICT_LEVEL) {
 			document.getElementById("row-number-of-kec").style.display = "none";
 			document.getElementById("row-number-of-kel").style.display = "none";
 			document.getElementById("row-number-of-desa").style.display = "none";
