@@ -1,0 +1,117 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"2pOyssx0Dh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard Provinsi Kalimantan Tengah</span>\",\"col\":12}},{\"id\":\"-7jhTlbbnw\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CNweYAdma1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Menu Utama</b></span>\",\"col\":12}},{\"id\":\"aLHDsPbuEu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Zona Pemenangan\",\"col\":6}},{\"id\":\"lu4DYro64P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hasil Survei\",\"col\":6}},{\"id\":\"4TugwtsSlj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Politik Dasar\",\"col\":6}},{\"id\":\"IHCVogEL4A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Materi Workshop\",\"col\":6}},{\"id\":\"h-3EjEF59Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Link Berita Online\",\"col\":6}},{\"id\":\"9elXnJ1osW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja\",\"col\":6}},{\"id\":\"KIT11FUFcv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kontak KPUD dan Panwas\",\"col\":6}},{\"id\":\"Uifx_nbbiV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja Kompetitor\",\"col\":6}},{\"id\":\"yZAUmkRfIA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Google Drive Desain Kreatif\",\"col\":6}},{\"id\":\"LU5fWnuItT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Biodata Kandidat\",\"col\":6}},{\"id\":\"pTe7q_xlmr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Struktur Organisasi Tim Kerja\",\"col\":6}}]",
+ "creation": "2024-10-01 18:28:16.966121",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "right",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Kalimantan Tengah",
+ "links": [],
+ "modified": "2024-10-01 18:29:54.199885",
+ "modified_by": "Administrator",
+ "module": "Polmark Dashboard",
+ "name": "Kalimantan Tengah",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Pendampingan",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 5.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Peta Zona Pemenangan",
+   "link_to": "Peta Zona Pemenangan Kalimantan Tengah",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hasil Survei",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Hasil Survei\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Peta Politik Dasar",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Peta Politik Dasar\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Materi Workshop",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Materi Workshop\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Link Berita Online",
+   "link_to": "News Link",
+   "stats_filter": "[[\"News Link\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visi Misi Program Kerja",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Visi Misi dan Program Kerja\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Kontak KPUD dan Panwas",
+   "link_to": "Phone Book",
+   "stats_filter": "[[\"Phone Book\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visi Misi Program Kerja Kompetitor",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Visi Misi dan Program Kerja Kompetitor\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Google Drive Desain Kreatif",
+   "link_to": "Google Drive Link",
+   "stats_filter": "[[\"Google Drive Link\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Biodata Kandidat",
+   "link_to": "Document Upload",
+   "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Biodata Kandidat\",false],[\"Document Upload\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Struktur Organisasi Tim Kerja",
+   "link_to": "Organisation Structure",
+   "stats_filter": "[[\"Organisation Structure\",\"region\",\"=\",\"62\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Kalimantan Tengah"
+}
