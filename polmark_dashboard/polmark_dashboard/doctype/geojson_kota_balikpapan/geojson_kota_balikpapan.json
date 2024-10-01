@@ -3,7 +3,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:region_code",
- "creation": "2024-10-01 13:17:34.145942",
+ "creation": "2024-10-01 15:06:51.140342",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -450,24 +450,9 @@
    "label": "Pemilih Laki DPTHP"
   },
   {
-   "fieldname": "section_break_nkgf",
-   "fieldtype": "Section Break",
-   "label": "GEOJSON"
-  },
-  {
-   "fieldname": "geojson",
-   "fieldtype": "JSON",
-   "label": "Geojson"
-  },
-  {
    "fieldname": "canvasing_section",
    "fieldtype": "Section Break",
    "label": "CANVASING"
-  },
-  {
-   "fieldname": "volunteer",
-   "fieldtype": "Int",
-   "label": "Volunteer"
   },
   {
    "fieldname": "target_voter",
@@ -485,22 +470,37 @@
    "label": "Percentage Target Voter"
   },
   {
+   "fieldname": "column_break_siik",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "target_visited_kk",
    "fieldtype": "Int",
    "label": "Target Visited KK"
   },
   {
-   "fieldname": "column_break_siik",
-   "fieldtype": "Column Break"
+   "fieldname": "volunteer",
+   "fieldtype": "Int",
+   "label": "Volunteer"
+  },
+  {
+   "fieldname": "section_break_nkgf",
+   "fieldtype": "Section Break",
+   "label": "GEOJSON"
+  },
+  {
+   "fieldname": "geojson",
+   "fieldtype": "JSON",
+   "label": "Geojson"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-01 15:04:36.904615",
+ "modified": "2024-10-01 15:06:51.140342",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
- "name": "Geojson Kota Medan",
+ "name": "Geojson Kota Balikpapan",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
