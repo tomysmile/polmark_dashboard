@@ -460,10 +460,6 @@ function initializeLeafletMap(frmInstance) {
 					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Level</th>
 					<td id="level" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
 				</tr>
-				<tr>
-					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Dapil DPR RI</th>
-					<td id="dapil-dprri" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
-				</tr>
 				<tr id="row-number-of-kec" style="display:none;">
 					<th style="text-align: left; padding: 5px; border-bottom: 1px solid #ccc;">Jml Kecamatan</th>
 					<td id="number-of-kec" style="padding: 5px; border-bottom: 1px solid #ccc;"></td>
@@ -587,7 +583,6 @@ function initializeLeafletMap(frmInstance) {
 		document.getElementById("area-name").textContent = data.region_name;
 		document.getElementById("area-status").textContent = data.region_type;
 		document.getElementById("level").textContent = data.region_level;
-		document.getElementById("dapil-dprri").textContent = data.dapil_dpr_ri;
 		document.getElementById("jml-pend").textContent = data.jml_pend;
 		document.getElementById("jml-kk").textContent = data.jml_kk;
 		document.getElementById("jml-dpt-2024").textContent = data.jml_dpt;
@@ -598,13 +593,17 @@ function initializeLeafletMap(frmInstance) {
 		document.getElementById("jml-tps").textContent = data.jml_tps;
 		document.getElementById("zonasi").textContent = data.zonasi;
 
-		if (parseInt(data.level) === CONST_DISTRICT_LEVEL) {
+		if (parseInt(data.region_level) === CONST_CITY_LEVEL) {
+			document.getElementById("row-number-of-kec").style.display = "table-row";
+			document.getElementById("number-of-kec").textContent = data.jml_kec;
+		}
+		else if (parseInt(data.region_level) === CONST_DISTRICT_LEVEL) {
 			document.getElementById("row-number-of-kel").style.display = "table-row";
 			document.getElementById("number-of-kel").textContent = data.jml_kel;
 			document.getElementById("row-number-of-desa").style.display = "table-row";
 			document.getElementById("number-of-desa").textContent = data.jml_desa;
 			document.getElementById("row-number-of-kec").style.display = "none";
-		} else if (parseInt(data.level) === CONST_SUBDISTRICT_LEVEL) {
+		} else if (parseInt(data.region_level) === CONST_SUBDISTRICT_LEVEL) {
 			document.getElementById("row-number-of-kec").style.display = "none";
 			document.getElementById("row-number-of-kel").style.display = "none";
 			document.getElementById("row-number-of-desa").style.display = "none";
@@ -626,7 +625,6 @@ function initializeLeafletMap(frmInstance) {
 			table += `
               <th>KD PROV</th>
               <th>PROV</th>
-              <th>DAPIL DPRRI</th>
               <th>KD KABKOTA</th>
               <th>KABKOTA</th>
           `;
@@ -634,7 +632,6 @@ function initializeLeafletMap(frmInstance) {
 			table += `
               <th>KD PROV</th>
               <th>PROV</th>
-              <th>DAPIL DPRRI</th>
               <th>KD KABKOTA</th>
               <th>KABKOTA</th>
               <th>KD KEC</th>
@@ -644,7 +641,6 @@ function initializeLeafletMap(frmInstance) {
 			table += `
               <th>KD PROV</th>
               <th>PROV</th>
-              <th>DAPIL DPRRI</th>
               <th>KD KABKOTA</th>
               <th>KABKOTA</th>
               <th>KD KEC</th>
@@ -677,7 +673,6 @@ function initializeLeafletMap(frmInstance) {
 				table += `
                 <td>${item.province_code}</td>
                 <td>${item.province_name}</td>
-                <td>${item.dapil_dpr_ri}</td>
                 <td>${item.city_code}</td>
                 <td>${item.city_name}</td>
             `;
@@ -685,7 +680,6 @@ function initializeLeafletMap(frmInstance) {
 				table += `
                 <td>${item.province_code}</td>
                 <td>${item.province_name}</td>
-                <td>${item.dapil_dpr_ri}</td>
                 <td>${item.city_code}</td>
                 <td>${item.city_name}</td>
                 <td>${item.district_code}</td>
@@ -695,7 +689,6 @@ function initializeLeafletMap(frmInstance) {
 				table += `
                 <td>${item.province_code}</td>
                 <td>${item.province_name}</td>
-                <td>${item.dapil_dpr_ri}</td>
                 <td>${item.city_code}</td>
                 <td>${item.city_name}</td>
                 <td>${item.district_code}</td>
