@@ -370,7 +370,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.473575",
+  "modified": "2024-10-01 14:51:19.407267",
   "module": "Website",
   "name": "Website",
   "number_cards": [],
@@ -379,7 +379,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 8.0,
+  "sequence_id": 9.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -1005,7 +1005,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.517328",
+  "modified": "2024-10-01 14:51:19.450004",
   "module": "Automation",
   "name": "Tools",
   "number_cards": [],
@@ -1014,7 +1014,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 9.0,
+  "sequence_id": 10.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -1335,7 +1335,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.434576",
+  "modified": "2024-10-01 14:51:19.368910",
   "module": "Core",
   "name": "Users",
   "number_cards": [],
@@ -1344,7 +1344,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 7.0,
+  "sequence_id": 8.0,
   "shortcuts": [
    {
     "color": null,
@@ -1783,7 +1783,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.568541",
+  "modified": "2024-10-01 14:51:19.498026",
   "module": "Integrations",
   "name": "Integrations",
   "number_cards": [],
@@ -1792,7 +1792,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 10.0,
+  "sequence_id": 11.0,
   "shortcuts": [],
   "title": "Integrations"
  },
@@ -2320,7 +2320,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.613598",
+  "modified": "2024-10-01 14:51:19.541688",
   "module": "Core",
   "name": "Build",
   "number_cards": [],
@@ -2329,7 +2329,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 11.0,
+  "sequence_id": 12.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -2537,7 +2537,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.248132",
+  "modified": "2024-10-01 14:51:19.138468",
   "module": "Polmark Dashboard",
   "name": "Polmark",
   "number_cards": [],
@@ -2563,7 +2563,7 @@
   "is_hidden": 0,
   "label": "Informasi Umum",
   "links": [],
-  "modified": "2024-10-01 12:14:29.280580",
+  "modified": "2024-10-01 14:51:19.170715",
   "module": "Polmark Dashboard",
   "name": "Informasi Umum",
   "number_cards": [],
@@ -2638,7 +2638,7 @@
   "is_hidden": 0,
   "label": "Pendampingan",
   "links": [],
-  "modified": "2024-10-01 12:14:29.305775",
+  "modified": "2024-10-01 14:51:19.197991",
   "module": "Polmark Dashboard",
   "name": "Pendampingan",
   "number_cards": [],
@@ -2699,7 +2699,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:14:29.365024",
+  "modified": "2024-10-01 14:51:19.331173",
   "module": "Polmark Dashboard",
   "name": "Kab Bekasi",
   "number_cards": [],
@@ -2708,7 +2708,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 5.0,
+  "sequence_id": 7.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -2902,7 +2902,7 @@
   "is_hidden": 0,
   "label": "DKI Jakarta",
   "links": [],
-  "modified": "2024-10-01 12:14:29.330058",
+  "modified": "2024-10-01 14:51:19.225084",
   "module": "Polmark Dashboard",
   "name": "DKI Jakarta",
   "number_cards": [],
@@ -3140,7 +3140,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-10-01 12:16:13.414828",
+  "modified": "2024-10-01 14:51:19.259765",
   "module": "Polmark Dashboard",
   "name": "Kota Bogor",
   "number_cards": [],
@@ -3149,7 +3149,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 6.0,
+  "sequence_id": 5.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -3329,5 +3329,243 @@
    }
   ],
   "title": "Kota Bogor"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"MZQ4BeuZiG\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard Kota Medan</span>\",\"col\":12}},{\"id\":\"8ZQteRFjlk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oKxDv1Ccsk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Menu Utama</b></span>\",\"col\":12}},{\"id\":\"lUf5bC7qnm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Zona Pemenangan\",\"col\":6}},{\"id\":\"-LRMIxZELC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Politik Dasar\",\"col\":6}},{\"id\":\"uBDLtabNaw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hasil Survei\",\"col\":6}},{\"id\":\"ty0IdFTXtV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Materi Workshop\",\"col\":6}},{\"id\":\"kQSLeb9Sn7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Link Berita Online\",\"col\":6}},{\"id\":\"kubysL3w7x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja\",\"col\":6}},{\"id\":\"4pFUvvEpNm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kontak KPUD dan Panwas\",\"col\":6}},{\"id\":\"PhMQZwKy1j\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja Kompetitor\",\"col\":6}},{\"id\":\"tCcSsZMgR1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Google Drive Desain Kreatif\",\"col\":6}},{\"id\":\"LmU0v5YeDU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Biodata Kandidat\",\"col\":6}},{\"id\":\"ZOVp-Kk1nx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Struktur Organisasi Tim Kerja\",\"col\":6}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "right",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Kota Medan",
+  "links": [
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Peta Zona Pemenangan",
+    "link_count": 0,
+    "link_to": "Peta Zona Pemenangan",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Kota Medan",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "description": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Peta Politik Dasar",
+    "link_count": 0,
+    "link_to": "Document Upload",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Kota Medan",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   }
+  ],
+  "modified": "2024-10-01 14:52:53.447621",
+  "module": "Polmark Dashboard",
+  "name": "Kota Medan",
+  "number_cards": [],
+  "parent_page": "Pendampingan",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [],
+  "sequence_id": 6.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Peta Zona Pemenangan",
+    "link_to": "Peta Zona Pemenangan Kota Medan",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Peta Politik Dasar",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Peta Politik Dasar\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Hasil Survei",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Hasil Survei\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Materi Workshop",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Materi Workshop\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Link Berita Online",
+    "link_to": "News Link",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"News Link\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Visi Misi Program Kerja",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Visi Misi dan Program Kerja\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Kontak KPUD dan Panwas",
+    "link_to": "Phone Book",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Phone Book\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Visi Misi Program Kerja Kompetitor",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Visi Misi dan Program Kerja Kompetitor\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Google Drive Desain Kreatif",
+    "link_to": "Google Drive Link",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Google Drive Link\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Biodata Kandidat",
+    "link_to": "Document Upload",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Document Upload\",\"document_category\",\"=\",\"Biodata Kandidat\",false],[\"Document Upload\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Struktur Organisasi Tim Kerja",
+    "link_to": "Organisation Structure",
+    "parent": "Kota Medan",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Organisation Structure\",\"region\",\"=\",\"1271\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "title": "Kota Medan"
  }
 ]

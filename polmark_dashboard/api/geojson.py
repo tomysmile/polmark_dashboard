@@ -59,6 +59,11 @@ def build_geojson(data):
                 "jml_dpthp2_perempuan": region.get("num_voter_women_dpthp2"),
                 "jml_dpthp2_laki": region.get("num_voter_men_dpthp2"),
                 "jml_dpthp2_muda": region.get("num_voter_young_dpthp2"),
+                "jml_relawan": region.get("volunteer"),
+                "jml_pemilih_terkunjungi": region.get("visited_voter"),
+                "jml_target_kk_terkunjungi": region.get("target_visited_kk"),
+                "jml_target_suara": region.get("target_voter"),
+                "jml_percentage_target_suara": region.get("percentage_target_voter")
             },
             "geometry": geometry_full_data.get("geometry"),
         }

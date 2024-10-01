@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"HGVjEBZ5LV\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Informasi Umum</span>\",\"col\":12}},{\"id\":\"ekA7w2wryy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"_B58dXj-mf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tahapan Pilkada\",\"col\":7}},{\"id\":\"1x3JZcanOD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PKPU 2024\",\"col\":7}},{\"id\":\"-5UM-ly_H4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rekap DPT 2024\",\"col\":7}}]",
- "creation": "2024-09-30 20:19:36.873954",
+ "creation": "2024-10-01 12:39:25.727678",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Informasi Umum",
  "links": [],
- "modified": "2024-10-01 12:14:29.280580",
+ "modified": "2024-10-01 14:51:19.170715",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Informasi Umum",

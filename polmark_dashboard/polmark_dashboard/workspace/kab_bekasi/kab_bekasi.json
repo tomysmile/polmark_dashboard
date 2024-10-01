@@ -1,7 +1,7 @@
 {
  "charts": [],
  "content": "[{\"id\":\"MZQ4BeuZiG\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard Kabupaten Bekasi</span>\",\"col\":12}},{\"id\":\"8ZQteRFjlk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oKxDv1Ccsk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Menu Utama</b></span>\",\"col\":12}},{\"id\":\"lUf5bC7qnm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Zona Pemenangan\",\"col\":6}},{\"id\":\"-LRMIxZELC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Peta Politik Dasar\",\"col\":6}},{\"id\":\"uBDLtabNaw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hasil Survei\",\"col\":6}},{\"id\":\"ty0IdFTXtV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Materi Workshop\",\"col\":6}},{\"id\":\"kQSLeb9Sn7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Link Berita Online\",\"col\":6}},{\"id\":\"kubysL3w7x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja\",\"col\":6}},{\"id\":\"4pFUvvEpNm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Kontak KPUD dan Panwas\",\"col\":6}},{\"id\":\"PhMQZwKy1j\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visi Misi Program Kerja Kompetitor\",\"col\":6}},{\"id\":\"tCcSsZMgR1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Google Drive Desain Kreatif\",\"col\":6}},{\"id\":\"LmU0v5YeDU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Biodata Kandidat\",\"col\":6}},{\"id\":\"ZOVp-Kk1nx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Struktur Organisasi Tim Kerja\",\"col\":6}}]",
- "creation": "2024-09-30 20:19:36.967870",
+ "creation": "2024-10-01 12:39:25.822677",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
@@ -34,7 +34,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-10-01 12:14:29.365024",
+ "modified": "2024-10-01 14:51:19.331173",
  "modified_by": "Administrator",
  "module": "Polmark Dashboard",
  "name": "Kab Bekasi",
@@ -44,7 +44,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 5.0,
+ "sequence_id": 7.0,
  "shortcuts": [
   {
    "color": "Grey",
